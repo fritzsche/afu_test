@@ -8,7 +8,7 @@ Es wird generiert:
 Die Ausgabe ist zum Ausdrucken gedacht, die Lösungen werden auf eine extra Seite ausgegeben.
 
 # Code
-Der Code wurde unter Zeitdruck (nahe Prüfung) in 1-2 Stungen zusammengeschustert. Es ist ein Wunder, dass er überhaupt funktioniert. Keine Garantie, dass dies auch bei Dir so ist.
+Der Code wurde unter Zeitdruck (nahe Prüfung) in 1-2 Stunden zusammengeschustert. Es ist ein Wunder, dass er überhaupt funktioniert. Keine Garantie, dass dies auch bei Dir so ist.
 
 # Lizenzen
 * Der Fragenkatalog wird unter der Lizenz der BNetzA (Creative Common) weitergegeben.
