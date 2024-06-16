@@ -12,6 +12,6 @@ Der Code wurde unter Zeitdruck (nahe Prüfung) in 1-2 Stungen zusammengeschuster
 
 # Lizenzen
 * Der Fragenkatalog wird unter der Lizenz der BNetzA (Creative Common) weitergegeben.
-* Die Bibliothek JSONPath unterliegt
-* Das Projekt selbst unterliegt der Public Domain (Unlicense)
+* Die Bibliothek JSONPath unterliegt MIT Lizenz.
+* Das Projekt selbst unterliegt der Public Domain (Unlicense).
 
