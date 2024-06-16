@@ -1,2 +1,2 @@
-# neuer_afu_test
+# Generiere Fragekatalog
 Generiert Fragen für die neuen Klasse N
