@@ -1,10 +1,11 @@
 # Generiere Fragebogen
 Dieses kleine Programm generiert per Zufallsgenerator Fragen und Antworten für Klasse N.
 Link: https://fritzsche.github.io/afu_test/
-Es wird generiert:
-1) 25 Fragen zu Vorschriften
-2) 25 Fragen zur Betriebstechnik
-3) 25 Fragen Technik Klasse N
+
+Es wird folgendes per Zufallsgenerator generiert:
+1) 25 Fragen und Antworten: Vorschriften
+2) 25 Fragen und Antworten: Betriebstechnik
+3) 25 Fragen und Antworten: Technik Klasse N
 
 Die Ausgabe ist zum Ausdrucken gedacht, die Lösungen werden auf eine extra Seite ausgegeben.
 
