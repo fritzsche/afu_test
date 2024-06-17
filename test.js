@@ -19,12 +19,12 @@ function pick(arr, num) {
     });
 }
 
-function get_answers(question) {
+function get_answers(question) {  //style="zoom: 200%"
     return [
-        question.picture_a? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_a}.svg" /></div>`:  question.answer_a,
-        question.picture_b? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_b}.svg" /></div>`: question.answer_b,
-        question.picture_c? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_c}.svg" /></div>`:question.answer_c,
-        question.picture_d? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_d}.svg" /></div>`:question.answer_d
+        question.picture_a ? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_a}.svg" /></div>` : question.answer_a,
+        question.picture_b ? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_b}.svg" /></div>` : question.answer_b,
+        question.picture_c ? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_c}.svg" /></div>` : question.answer_c,
+        question.picture_d ? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_d}.svg" /></div>` : question.answer_d
     ]
 }
 
@@ -60,11 +60,11 @@ function html_questions(questions) {
         let answers = get_answers(questions[i]);
         let res = permute_answer(answers);
         let ans_html = html_answers(res.answers);
-        if (question.picture_question) {            
+        if (question.picture_question) {
             picture = `<div><img width="300pt" src = "Fragen/svgs/${question.picture_question}.svg" /></div>`
         }
-        answer += `<li> <strong>${questions[i].number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>` 
-        result += `<li> <strong>${questions[i].number} </strong>${questions[i].question} ${ picture }<ol>${ans_html}</ol></li>`
+        answer += `<li> <strong>${questions[i].number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>`
+        result += `<li> <strong>${questions[i].number} </strong>${questions[i].question} ${picture}<ol>${ans_html}</ol></li>`
     }
     return { questions: result, answer: answer };
 }
@@ -75,19 +75,19 @@ window.onload = function () {
         .then((json) => {
             let result = jsonPath(json, "$..questions[?(@.class=1)]"); //
             // Vorschriften
-                    let vorschriften = result.filter((frage  => 
-                        frage.number.startsWith("V")      
-                     )) 
-                    let sel_vorschriften = pick(vorschriften,25)
-                    const v_questions = document.getElementById("v_questions");
-                    let v_html = html_questions(sel_vorschriften);
-                    const v_answer = document.getElementById("v_answer");           
-                    v_questions.innerHTML = `<ol>${v_html.questions}</ol>`
-                    v_answer.innerHTML = `<ol>${v_html.answer}</ol>`
-            
+            let vorschriften = result.filter((frage =>
+                frage.number.startsWith("V")
+            ))
+            let sel_vorschriften = pick(vorschriften, 25)
+            const v_questions = document.getElementById("v_questions");
+            let v_html = html_questions(sel_vorschriften);
+            const v_answer = document.getElementById("v_answer");
+            v_questions.innerHTML = `<ol>${v_html.questions}</ol>`
+            v_answer.innerHTML = `<ol>${v_html.answer}</ol>`
+
 
             // Betrieb
-            
+
             let betrieb = result.filter((frage =>
                 frage.number.startsWith("B")
             ))
@@ -101,30 +101,30 @@ window.onload = function () {
             let technik = result.filter((frage =>
                 frage.number.startsWith("N")
             ))   
-         //   console.log(technik);         
-            // Technik
-            const t_questions = document.getElementById("t_questions");
-            let sel_technik = pick(technik, 25)   
-            let t_html = html_questions(sel_technik);                     
-            const t_answer = document.getElementById("t_answer");     
-            t_questions.innerHTML = `<ol>${t_html.questions}</ol>`   
-            t_answer.innerHTML = `<ol>${t_html.answer}</ol>`                            
-            
-
-            renderMathInElement(document.body, {
-                // customised options
-                // • auto-render specific keys, e.g.:
-                delimiters: [
-                    {left: '$$', right: '$$', display: true},
-                    {left: '$', right: '$', display: false},
-                    {left: '\\(', right: '\\)', display: false},
-                    {left: '\\[', right: '\\]', display: true}
-                ],
-                // • rendering keys, e.g.:
-                throwOnError : false
-              });
+ 
+    // Technik
+    const t_questions = document.getElementById("t_questions");
+    let sel_technik = pick(technik, 25)
+    let t_html = html_questions(sel_technik);
+    const t_answer = document.getElementById("t_answer");
+    t_questions.innerHTML = `<ol>${t_html.questions}</ol>`
+    t_answer.innerHTML = `<ol>${t_html.answer}</ol>`
 
 
+    renderMathInElement(document.body, {
+        // customised options
+        // • auto-render specific keys, e.g.:
+        delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+            { left: '\\(', right: '\\)', display: false },
+            { left: '\\[', right: '\\]', display: true }
+        ],
+        // • rendering keys, e.g.:
+        throwOnError: false
+    });
 
-        });
+
+
+});
 }
