@@ -19,8 +19,13 @@ Die Fragen die hier zum Einsatz kommen sind von der Bundesnetzagentur am 16.6.20
 https://www.bundesnetzagentur.de/995320
 
 Die Fragen die tatsächlich zu Einsatz kommen können natürlich abweichen. Auch wird die Bundesnetzagentur die Fragen anders auswählen. Wie beschrieben, werden die Fragen für die einzelnen Kategorien (und die Reihenfolge der Antworten) nur mit dem Zufallsgenerator bestimmt. 
+
+Einige Fragen/Antworten des Fragekatalog enthalten Mathematische Symbole (TeX?) die im Browser nicht korrekt dargestellt werden.
+Beispiele:  NC108/NC109/NC110
+
 # Alpha Code
 Der Code wurde unter Zeitdruck (nahe Prüfung) in 1-2 Stunden zusammengeschustert. Es ist ein Wunder, dass er überhaupt funktioniert. Keine Garantie, dass dies auch bei Dir so ist.
+
 
 # Lizenzen
 * Der Fragenkatalog wird unter der Lizenz der BNetzA weitergegeben: [https://www.govdata.de/dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)
