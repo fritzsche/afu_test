@@ -60,8 +60,7 @@ function html_questions(questions) {
         let answers = get_answers(questions[i]);
         let res = permute_answer(answers);
         let ans_html = html_answers(res.answers);
-        if (question.picture_question) {
-            console.log(question.picture_question);
+        if (question.picture_question) {            
             picture = `<div><img width="300pt" src = "Fragen/svgs/${question.picture_question}.svg" /></div>`
         }
         answer += `<li> <strong>${questions[i].number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>` 
@@ -110,6 +109,22 @@ window.onload = function () {
             const t_answer = document.getElementById("t_answer");     
             t_questions.innerHTML = `<ol>${t_html.questions}</ol>`   
             t_answer.innerHTML = `<ol>${t_html.answer}</ol>`                            
+            
+
+            renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                // • rendering keys, e.g.:
+                throwOnError : false
+              });
+
+
 
         });
 }
