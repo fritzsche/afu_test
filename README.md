@@ -2,7 +2,8 @@
 Dieses kleine Programm(Website) generiert per Zufallsgenerator Fragen und Antworten für Klasse N.
 
 Bei jedem Aufruf (auch Reload) wird ein neuer Fragebogen per Zufallsgenerator erzeugt:
-Link: https://fritzsche.github.io/afu_test/
+
+https://fritzsche.github.io/afu_test/
 
 Es wird folgendes per Zufallsgenerator generiert:
 1) 25 Fragen und Antworten: Vorschriften
