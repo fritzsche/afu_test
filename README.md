@@ -1,17 +1,17 @@
-# Generiere Fragebogen
-Dieses kleine Programm(Website) generiert per Zufallsgenerator Fragen und Antworten für Klasse N.
+# Generiere Fragebögen für die Lizenzprüfung zur Afu Klasse N
+Dieses kleine Programm(Website) generiert per Zufallsgenerator Fragen und Antworten für die Amateufunkprüfung der Klasse N.
 
-Bei jedem Aufruf (auch Reload) wird ein neuer Fragebogen per Zufallsgenerator erzeugt:
-
-https://fritzsche.github.io/afu_test/
+Achtung: Bei jedem Aufruf (auch Reload) wird ein neuer Fragebogen per Zufallsgenerator erzeugt.
+Link: https://fritzsche.github.io/afu_test/
 
 Es wird folgendes per Zufallsgenerator generiert:
 1) 25 Fragen und Antworten: Vorschriften
 2) 25 Fragen und Antworten: Betriebstechnik
 3) 25 Fragen und Antworten: Technik Klasse N
 
-Die Ausgabe ist für den Druck bestimmt (Papier), die Lösungen werden auf eine separate extra Seite ausgegeben.
-Eine Lösung die Fragen Online (ohne Papier) zu beantworten wäre auch gut wird aber aktuell (noch?) nicht unterstützt. Siehe unten: Alpha Code
+Die Ausgabe ist aktuell für den Druck bestimmt (Papier). Die Lösungen werden beim Druck auf eine separate Seite gedruckt. Um Papier zu sparen kannst Du auch zunächst NUR in ein PDF drucken.
+
+Eine Lösung die Fragen Online (ohne Papier) zu beantworten wäre auch hilfreich wird aber aktuell (noch?) nicht unterstützt. Siehe unten: [Alpha Code](#alpha_code)
 
 # Prüfungsfragen
 Die Fragen die hier zum Einsatz kommen sind von der Bundesnetzagentur am 16.6.2024 in der maschienenlesbaren Version heruntergeladen worden.
@@ -24,6 +24,9 @@ Die Fragen die tatsächlich zu Einsatz kommen können natürlich abweichen. Auch
 # Alpha Code
 Der Code wurde unter Zeitdruck (nahe Prüfung) in 1-2 Stunden zusammengeschustert. Es ist ein Wunder, dass er überhaupt funktioniert. Keine Garantie, dass dies auch bei Dir so ist.
 
+# Version
+* 0.02 - (17. Juni 2024) Verwende KaTeX um Formeln korrekt auszugeben
+* 0.01 - (16. Juni 2024) Initiale Version
 
 # Lizenzen
 * Der Fragenkatalog wird unter der Lizenz der BNetzA weitergegeben: [https://www.govdata.de/dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)
