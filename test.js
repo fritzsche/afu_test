@@ -69,62 +69,69 @@ function html_questions(questions) {
     return { questions: result, answer: answer };
 }
 
-window.onload = function () {
+
+
+function render_test(title, test) {
+
     fetch('./Fragen/fragenkatalog3b.json')
         .then((response) => response.json())
         .then((json) => {
             let result = jsonPath(json, "$..questions[?(@.class=1)]"); //
-            // Vorschriften
-            let vorschriften = result.filter((frage =>
-                frage.number.startsWith("V")
+
+            let all_questions = result.filter((frage =>
+                frage.number.startsWith(test)
             ))
-            let sel_vorschriften = pick(vorschriften, 25)
-            const v_questions = document.getElementById("v_questions");
-            let v_html = html_questions(sel_vorschriften);
-            const v_answer = document.getElementById("v_answer");
-            v_questions.innerHTML = `<ol>${v_html.questions}</ol>`
-            v_answer.innerHTML = `<ol>${v_html.answer}</ol>`
+            document.getElementById("title").innerHTML = title;
+            let sel_questions = pick(all_questions, 25)
+            const questions = document.getElementById("questions");
+            let html = html_questions(sel_questions);
+            const answer = document.getElementById("answer");
+            questions.innerHTML = `<ol>${html.questions}</ol>`
+            answer.innerHTML = `<ol>${html.answer}</ol>`
 
 
-            // Betrieb
+        });
+    setTimeout(() => {
+        renderMathInElement(document.body, {
+            // customised options
+            // • auto-render specific keys, e.g.:
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true }
+            ],
+            // • rendering keys, e.g.:
+            throwOnError: true
+        });
 
-            let betrieb = result.filter((frage =>
-                frage.number.startsWith("B")
-            ))
-            const b_questions = document.getElementById("b_questions");
-            let sel_betrieb = pick(betrieb, 25)
-            let b_html = html_questions(sel_betrieb);
-            b_questions.innerHTML = `<ol>${b_html.questions}</ol>`
-            const b_answer = document.getElementById("b_answer");
-            b_answer.innerHTML = `<ol>${b_html.answer}</ol>`
+    }, 500);
 
-            let technik = result.filter((frage =>
-                frage.number.startsWith("N")
-            ))   
- 
-    // Technik
-    const t_questions = document.getElementById("t_questions");
-    let sel_technik = pick(technik, 25)
-    let t_html = html_questions(sel_technik);
-    const t_answer = document.getElementById("t_answer");
-    t_questions.innerHTML = `<ol>${t_html.questions}</ol>`
-    t_answer.innerHTML = `<ol>${t_html.answer}</ol>`
-
-
-    renderMathInElement(document.body, {
-        // customised options
-        // • auto-render specific keys, e.g.:
-        delimiters: [
-            { left: '$$', right: '$$', display: true },
-            { left: '$', right: '$', display: false },
-            { left: '\\(', right: '\\)', display: false },
-            { left: '\\[', right: '\\]', display: true }
-        ],
-        // • rendering keys, e.g.:
-        throwOnError: false
-    });
-
-
-
-});
 }
+
+
+window.onload = function () {
+    render_test("Vorschriften", "V");
+}
+
+function select_test() {
+    var sel_test = document.getElementById("test_select");
+    //document.getElementById("favourite").value = sel_test.options[sel_test.selectedIndex].text;
+    console.log(sel_test.selectedIndex);
+    switch (sel_test.selectedIndex) {
+        case 1:
+            render_test("Betriebstechnik", "B")
+            break;
+        case 2:
+            render_test("Technik Klasse N", "N")
+            break;
+        case 3:
+            render_test("Technik Klasse E", "E")
+            break;
+        case 4:
+            render_test("Technik Klasse A", "A")
+            break;
+        default: render_test("Vorschriften", "V")
+    }
+}
+

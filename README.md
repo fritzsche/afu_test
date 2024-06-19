@@ -25,6 +25,7 @@ Die Fragen die tatsächlich zu Einsatz kommen können natürlich abweichen. Auch
 Der Code wurde unter Zeitdruck (nahe Prüfung) in 1-2 Stunden zusammengeschustert. Es ist ein Wunder, dass er überhaupt funktioniert. Keine Garantie, dass dies auch bei Dir so ist.
 
 # Version
+* 0.03 - (20. Juni 2024) Prüfungsteile können separat generiert werden + Technik E + Technik A
 * 0.02 - (17. Juni 2024) Verwende KaTeX um Formeln korrekt auszugeben
 * 0.01 - (16. Juni 2024) Initiale Version
 

@@ -4,39 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#000000" />  
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" type="text/css" href="print.css" media="print" />
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
   <title>HAM Test - von Thomas Fritzsche - DJ1TF </title>
-  
-  <link rel="stylesheet" href="katex/katex.min.css" >
+
+  <link rel="stylesheet" href="katex/katex.min.css">
 
   <!-- The loading of KaTeX is deferred to speed up page rendering -->
   <script defer src="katex/katex.min.js"></script>
 
   <!-- To automatically render math in text elements, include the auto-render extension: -->
-  <script defer src="katex/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
-      onload="renderMathInElement(document.body);"></script>  
+  <script defer src="katex/contrib/auto-render.min.js"></script>
 
 </head>
 
 <body>
-  <h1>Fragen</h1>
-  <h2>Vorschriften</h2>
-  <div id="v_questions"> </div>
-  <h2>Betriebstechnik</h2>
-  <div id="b_questions"> </div>  
-  <h2>Technik</h2>
-  <div id="t_questions"> </div>  
+  <div class="no-print">
+    <h1>Generator zur Amateurfunkprüfung</h1>
+    <h3>Thomas Fritzsche (DJ1TF) - <a href="https://github.com/fritzsche/afu_test">github</a></h3>
+    <p>
+      Prüfungsteil:
+      <select id="test_select" onchange="select_test()">
+        <option>Vorschriften</option>
+        <option>Betriebstechnik</option>
+        <option>Technik Klasse N</option>
+        <option>Technik Klasse E</option>
+        <option>Technik Klasse A</option>
+      </select>
+    </p>
+  </div>
+
+  <h1 id="title"></h1>
+
+  <div id="questions"> </div>
   <div style="break-after:page"></div>
   <h1>Lösungen</h1>
-  <h2>Vorschriften</h2>
-  <div id="v_answer"> </div>
-  <h2>Betriebstechnik</h2>  
-  <div id="b_answer"> </div>
-  <h2>Technik</h2>  
-  <div id="t_answer"> </div>  
+  <div id="answer"> </div>
   <script src="jsonpath.js"></script>
-  <script src="test.js"></script>  
+  <script src="test.js"></script>
 </body>
 
 </html>

@@ -7447,7 +7447,7 @@
                                 {
                                     "number": "AF305",
                                     "class": "3",
-                                    "question": "Dieses Blockschaltbild zeigt einen SSB-Sender. Die Stufe bei \\glqq?\" ist ein...",
+                                    "question": "Dieses Blockschaltbild zeigt einen SSB-Sender. Die Stufe bei &bdquo;?&ldquo; ist ein...",
                                     "answer_a": "Quarzfilter als Bandpass f\u00fcr das gew\u00fcnschte Seitenband.",
                                     "answer_b": "RC-Hochpass zur Unterdr\u00fcckung des unteren Seitenbands.",
                                     "answer_c": "RL-Tiefpass zur Unterdr\u00fcckung des oberen Seitenbands.",
