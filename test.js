@@ -21,10 +21,10 @@ function pick(arr, num) {
 
 function get_answers(question) {  //style="zoom: 200%"
     return [
-        question.picture_a ? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_a}.svg" /></div>` : question.answer_a,
-        question.picture_b ? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_b}.svg" /></div>` : question.answer_b,
-        question.picture_c ? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_c}.svg" /></div>` : question.answer_c,
-        question.picture_d ? `<div><img width="300pt" src = "Fragen/svgs/${question.picture_d}.svg" /></div>` : question.answer_d
+        question.picture_a ? `<div><img src = "Fragen/svgs/${question.picture_a}.svg" /></div>` : question.answer_a,
+        question.picture_b ? `<div><img src = "Fragen/svgs/${question.picture_b}.svg" /></div>` : question.answer_b,
+        question.picture_c ? `<div><img src = "Fragen/svgs/${question.picture_c}.svg" /></div>` : question.answer_c,
+        question.picture_d ? `<div><img src = "Fragen/svgs/${question.picture_d}.svg" /></div>` : question.answer_d
     ]
 }
 
@@ -61,7 +61,7 @@ function html_questions(questions) {
         let res = permute_answer(answers);
         let ans_html = html_answers(res.answers);
         if (question.picture_question) {
-            picture = `<div><img width="300pt" src = "Fragen/svgs/${question.picture_question}.svg" /></div>`
+            picture = `<div><img  src = "Fragen/svgs/${question.picture_question}.svg" /></div>`
         }
         answer += `<li> <strong>${questions[i].number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>`
         result += `<li> <strong>${questions[i].number} </strong>${questions[i].question} ${picture}<ol>${ans_html}</ol></li>`

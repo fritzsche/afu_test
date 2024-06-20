@@ -4,4 +4,11 @@
     {
         display: none !important;
     }
+    img {
+        vertical-align:middle;
+        margin: 5pt;        
+        zoom: 150%;        
+        max-height: 40%;
+        max-width: 40%; 
+       }    
 }
