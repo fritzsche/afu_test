@@ -4,10 +4,12 @@ Dieses kleine Programm(Website) generiert per Zufallsgenerator Fragen und Antwor
 Achtung: Bei jedem Aufruf (auch Reload) wird ein neuer Fragebogen per Zufallsgenerator erzeugt.
 Link: https://fritzsche.github.io/afu_test/
 
-Es wird folgendes per Zufallsgenerator generiert:
-1) 25 Fragen und Antworten: Vorschriften
-2) 25 Fragen und Antworten: Betriebstechnik
-3) 25 Fragen und Antworten: Technik Klasse N
+Es können jeweils 25 Fragen (mit Antworten) für die folgenden Prüfungsteile generiert werden:
+1) Vorschriften
+2) Betriebstechnik
+3) Technik Klasse N
+4) Technik Klasse E
+5) Technik Klasse A
 
 Die Ausgabe ist aktuell für den Druck bestimmt (Papier). Die Lösungen werden beim Druck auf eine separate Seite gedruckt. Um Papier zu sparen kannst Du auch zunächst NUR in ein PDF drucken.
 
@@ -15,6 +17,8 @@ Eine Lösung die Fragen Online (ohne Papier) zu beantworten wäre auch hilfreich
 
 # Prüfungsfragen
 Die Fragen die hier zum Einsatz kommen sind von der Bundesnetzagentur am 16.6.2024 in der maschienenlesbaren Version heruntergeladen worden.
+Dies entspricht der 3. Auflage, März 2024.
+Der Fragenkatalog wird unverändert verwendet, allerdings wurde ein Formatierungsfehler in Frage AF305 behoben (siehe Commit in Github).
 
 https://www.bundesnetzagentur.de/995320
 
