@@ -1,14 +1,17 @@
-@media print
-{    
-    .no-print
-    {
+@media print {
+    html {
+        font-size: 0.9em;
+    }
+
+    .no-print {
         display: none !important;
     }
+
     img {
-        vertical-align:middle;
-        margin: 5pt;        
-        zoom: 150%;        
+        vertical-align: middle;
+        margin: 5pt;
+        zoom: 150%;
         max-height: 40%;
-        max-width: 40%; 
-       }    
+        max-width: 40%;
+    }
 }
