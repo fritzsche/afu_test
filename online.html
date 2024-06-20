@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <title>Afu Test - von Thomas Fritzsche - DJ1TF </title>
+
+  <link rel="stylesheet" href="katex/katex.min.css">
+
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="katex/katex.min.js"></script>
+
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="katex/contrib/auto-render.min.js"></script>
+
+</head>
+
+<body>
+  <div class="no-print">
+    <h1>Generator zur Amateurfunkprüfung</h1>
+    <h3>Thomas Fritzsche (DJ1TF) - <a href="https://github.com/fritzsche/afu_test">github</a></h3>
+    <p>
+      Prüfungsteil:
+      <select id="test_select" onchange="select_test()">
+        <option>Vorschriften</option>
+        <option>Betriebstechnik</option>
+        <option>Technik Klasse N</option>
+        <option>Technik Klasse E</option>
+        <option>Technik Klasse A</option>
+      </select>
+    </p>
+  </div>
+
+  <h1 id="title"></h1>
+
+  <div id="questions"> </div>
+  <div>
+    <button type="submit" onClick="eval_test()">Auswerten</button>
+  </div>
+  <script src="jsonpath.js"></script>
+  <script src="test.js"></script>
+</body>
+
+</html>

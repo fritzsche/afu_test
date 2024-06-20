@@ -43,15 +43,22 @@ function permute_answer(arr) {
 }
 
 
-function html_answers(answers) {
+function html_answers(answers,correct,number, online) {
     let result = "";
     for (let i = 0; i < answers.length; i++) {
-        result += `<li class="option">${answers[i]}</li>`
+        let opt = `data-option ="${i == correct -1 ? "correct" : "incorrect"}"`
+        if (online) {
+           result += `<div><input ${opt} type="radio" id="${number}-${i}" name="${number}" value="${number}-${i}" />
+            <label for="${number}-${i}">${answers[i]}</label></div>`
+        } else {
+          result += `<li class="option" ${opt}>${answers[i]}</li>`
+        }
     }
+    if (!online) result = `<ol>${result}</ol>`
     return result;
 }
 
-function html_questions(questions) {
+function html_questions(questions, online) {
     let question_html = "";
     let answer_html = "";
     for (let i = 0; i < questions.length; i++) {
@@ -64,13 +71,13 @@ function html_questions(questions) {
         let res = permute_answer(answers);
         // generate a html fragment from permutated
         // answers
-        let ans_html = html_answers(res.answers,res.correct);
+        let ans_html = html_answers(res.answers,res.correct,question.number,online);
         if (question.picture_question) {
             picture = `<div><img  src="Fragen/svgs/${question.picture_question}.svg" /></div>`
         }
         answer_html   += `<li> <strong>${question.number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>`
         let correct_answer = ` data-correct="${res.correct}"`
-        question_html += `<li${ correct_answer } class="question"> <strong>${question.number} </strong>${question.question} ${picture}<ol>${ans_html}</ol></li>`
+        question_html += `<li${ correct_answer } class="question"> <strong>${question.number} </strong>${question.question} ${picture} ${ans_html}</li>`
     }
     return { questions: question_html, answer: answer_html };
 }
@@ -82,18 +89,28 @@ function render_test(title, test) {
     fetch('./Fragen/fragenkatalog3b.json')
         .then((response) => response.json())
         .then((json) => {
-            let result = jsonPath(json, "$..questions[?(@.class=1)]"); //
+            const answer = document.getElementById("answer");
+            let html = "";
+            let result = jsonPath(json, "$..questions[?(@.class=1)]"); 
 
             let all_questions = result.filter((frage =>
                 frage.number.startsWith(test)
             ))
             document.getElementById("title").innerHTML = title;
-            let sel_questions = pick(all_questions, 25)
+            let sel_questions = pick(all_questions, 2)
             const questions = document.getElementById("questions");
-            let html = html_questions(sel_questions);
-            const answer = document.getElementById("answer");
+            
+
+            if (answer) {
+               html = html_questions(sel_questions, false);
+            } else {
+                html = html_questions(sel_questions, true);
+            }
+
             questions.innerHTML = `<ol>${html.questions}</ol>`
+            if (answer) {
             answer.innerHTML = `<ol>${html.answer}</ol>`
+            }
 
 
         });
@@ -139,5 +156,10 @@ function select_test() {
             break;
         default: render_test("Vorschriften", "V")
     }
+}
+
+
+function eval_test() {
+    console.log("Evaluate");
 }
 
