@@ -46,27 +46,33 @@ function permute_answer(arr) {
 function html_answers(answers) {
     let result = "";
     for (let i = 0; i < answers.length; i++) {
-        result += `<li>${answers[i]}</li>`
+        result += `<li class="option">${answers[i]}</li>`
     }
     return result;
 }
 
 function html_questions(questions) {
-    let result = "";
-    let answer = "";
+    let question_html = "";
+    let answer_html = "";
     for (let i = 0; i < questions.length; i++) {
         let question = questions[i];
         let picture = "";
-        let answers = get_answers(questions[i]);
+        // select all answers of question
+        let answers = get_answers(question);
+        // pernutate answers
+        // the correct answer number is provided
         let res = permute_answer(answers);
-        let ans_html = html_answers(res.answers);
+        // generate a html fragment from permutated
+        // answers
+        let ans_html = html_answers(res.answers,res.correct);
         if (question.picture_question) {
-            picture = `<div><img  src = "Fragen/svgs/${question.picture_question}.svg" /></div>`
+            picture = `<div><img  src="Fragen/svgs/${question.picture_question}.svg" /></div>`
         }
-        answer += `<li> <strong>${questions[i].number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>`
-        result += `<li> <strong>${questions[i].number} </strong>${questions[i].question} ${picture}<ol>${ans_html}</ol></li>`
+        answer_html   += `<li> <strong>${question.number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>`
+        let correct_answer = ` data-correct="${res.correct}"`
+        question_html += `<li${ correct_answer } class="question"> <strong>${question.number} </strong>${question.question} ${picture}<ol>${ans_html}</ol></li>`
     }
-    return { questions: result, answer: answer };
+    return { questions: question_html, answer: answer_html };
 }
 
 
