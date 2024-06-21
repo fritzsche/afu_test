@@ -21,10 +21,10 @@ function pick(arr, num) {
 
 function get_answers(question) {  //style="zoom: 200%"
     return [
-        question.picture_a ? `<div><img src = "Fragen/svgs/${question.picture_a}.svg" /></div>` : question.answer_a,
-        question.picture_b ? `<div><img src = "Fragen/svgs/${question.picture_b}.svg" /></div>` : question.answer_b,
-        question.picture_c ? `<div><img src = "Fragen/svgs/${question.picture_c}.svg" /></div>` : question.answer_c,
-        question.picture_d ? `<div><img src = "Fragen/svgs/${question.picture_d}.svg" /></div>` : question.answer_d
+        question.picture_a ? `<img src = "Fragen/svgs/${question.picture_a}.svg" />` : question.answer_a,
+        question.picture_b ? `<img src = "Fragen/svgs/${question.picture_b}.svg" />` : question.answer_b,
+        question.picture_c ? `<img src = "Fragen/svgs/${question.picture_c}.svg" />` : question.answer_c,
+        question.picture_d ? `<img src = "Fragen/svgs/${question.picture_d}.svg" />` : question.answer_d
     ]
 }
 
