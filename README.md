@@ -35,6 +35,7 @@ Ich teste die App aktuell nur mit Google Chrome Browser.
 Keine Garantie für die App.
 
 # Version
+* 0.06 - (22. Juni 2024) Verbesserung der Online Version mit Flex-Layout für mobile Geräte.
 * 0.05 - (21. Juni 2024) Die Fragebögen können jetzt direkt am Bildschirm beantwortet werden
 * 0.04 - (20. Juni 2024) Bildskalierung etwas verbessert
 * 0.03 - (19. Juni 2024) Prüfungsteile können separat generiert werden + Technik E + Technik A
