@@ -1,0 +1,102 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+  }
+*/
+img {
+    vertical-align:middle;
+    margin: 5pt;
+    zoom: 150%;
+    max-height: 100% !important;
+    max-width: 40% !important; 
+   }
+
+label p {
+    margin: 0;
+    padding: 0;
+  }
+
+html {
+    font-size: 15pt !important;
+}
+
+/*
+ol {
+    padding-left: 20px;
+    padding-right: 20px;
+}*/
+
+.green {
+    background-color: rgb(214, 240, 213);
+}
+
+.red {
+    background-color: rgb(246, 223, 230);
+}
+
+.yellow {
+    background-color: rgb(247, 241, 176);
+}
+
+.opt_lab {
+    margin: 1em 0 1em 0;
+    align-items: center;
+}
+
+/* https://stackoverflow.com/questions/23472949/prevent-wrapping-of-text-below-radio-buttons */
+label {
+/*    align-items: center;*/
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+}
+
+input[type=radio] {
+    margin: 5px;
+}
+
+
+.question {
+    margin-left: 1.5em;
+}
+
+
+.unanswered {
+    border-left: 6pt solid #f9e58b !important;
+}
+
+.correct_answer {
+    border: 2pt dashed #95ee98 !important;
+}
+
+.incorrect {
+    border-left: 6pt solid #f1b1b3 !important;
+}
+
+.correct {
+    border-left: 6pt solid #84f8a1 !important;
+}
+
+.quest {
+    border-left: 6pt solid transparent
+}
+
+
+
+#result {
+    width: 100%;
+    font-weight: bold;
+    font-size: 15pt;
+    font-family: arial, "lucida console", sans-serif;
+}
+
+#result>div {
+    width: 95%;
+    padding: 0.5em;
+    align-items: center;
+}
+
+.smily {
+    font-size: 30pt;
+}

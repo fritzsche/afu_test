@@ -19,12 +19,13 @@ function pick(arr, num) {
     });
 }
 
+
 function get_answers(question) {  //style="zoom: 200%"
     return [
-        question.picture_a ? `<img src = "Fragen/svgs/${question.picture_a}.svg" />` : question.answer_a,
-        question.picture_b ? `<img src = "Fragen/svgs/${question.picture_b}.svg" />` : question.answer_b,
-        question.picture_c ? `<img src = "Fragen/svgs/${question.picture_c}.svg" />` : question.answer_c,
-        question.picture_d ? `<img src = "Fragen/svgs/${question.picture_d}.svg" />` : question.answer_d
+        question.picture_a ? `<img src="Fragen/svgs/${question.picture_a}.svg" />` : `<span class="text_opt">${question.answer_a}</span>`,
+        question.picture_b ? `<img src="Fragen/svgs/${question.picture_b}.svg" />` : `<span class="text_opt">${question.answer_b}</span>`,
+        question.picture_c ? `<img src="Fragen/svgs/${question.picture_c}.svg" />` : `<span class="text_opt">${question.answer_c}</span>`,
+        question.picture_d ? `<img src="Fragen/svgs/${question.picture_d}.svg" />` : `<span class="text_opt">${question.answer_d}</span>`
     ]
 }
 
@@ -48,8 +49,8 @@ function html_answers(answers, correct, number, online) {
     for (let i = 0; i < answers.length; i++) {
         let opt = `data-option ="${i == correct - 1 ? "correct" : "incorrect"}"`
         if (online) {
-            result += `<div><input class="option" ${opt} type="radio" id="${number}-${i}" name="${number}" value="${number}-${i}" />
-            <label for="${number}-${i}">${answers[i]}</label></div>`
+            result += `<div class="opt_lab"><label for="${number}-${i}"><input class="option" ${opt} type="radio" id="${number}-${i}" name="${number}" value="${number}-${i}" />
+            <p>${answers[i]}</p></label></div>`
         } else {
             result += `<li class="option" ${opt}>${answers[i]}</li>`
         }
@@ -77,7 +78,7 @@ function html_questions(questions, online) {
         }
         answer_html += `<li> <strong>${question.number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>`
         let correct_answer = ` data-correct="${res.correct}"`
-        question_html += `<li${correct_answer} class="question"> <strong>${question.number} </strong>${question.question} ${picture} ${ans_html}</li>`
+        question_html += `<div class="quest"><li${correct_answer} class="question"> <strong>${question.number} </strong>${question.question} ${picture} ${ans_html}</li></div>`
     }
     return { questions: question_html, answer: answer_html };
 }
@@ -106,7 +107,7 @@ function render_test(title, test) {
             } else {
                 html = html_questions(sel_questions, true);
                 document.querySelector("button").hidden = false;
-                document.querySelector("#result").innerHTML = ""   
+                document.querySelector("#result").innerHTML = ""
             }
 
             questions.innerHTML = `<ol>${html.questions}</ol>`
@@ -163,22 +164,37 @@ function select_test() {
 function eval_test() {
     console.log("Evaluate");
     var correct = 0;
+    // calculate all correct answers
     var all_correct = document.querySelectorAll('.option[data-option=correct]:checked');
     if (all_correct) correct = all_correct.length;
-
+    // deactivate radio buttons
     var radio_buttons = document.querySelectorAll('input[type=radio]:not(:checked)');
     if (radio_buttons) radio_buttons.forEach(element => {
         element.disabled = true
     })
 
-    var green = document.querySelectorAll('div:has(> .option[data-option=correct])');
+    var green = document.querySelectorAll('.opt_lab:has( .option[data-option=correct])');
     if (green) green.forEach(element => {
-        element.classList.add("green");
+        element.classList.add("correct_answer");
     });
-    var red = document.querySelectorAll('div:has(> .option[data-option=incorrect]:checked)');
-    if (red) red.forEach(element => {
-        element.classList.add("red");
+
+
+
+    var red = document.querySelectorAll('.quest:has( .option[data-option=incorrect]:checked)');
+    red.forEach(element => {
+        element.classList.add("incorrect");
     });
+
+    var yellow = document.querySelectorAll('.quest:not(:has( .option:checked )) ');
+    yellow.forEach(element => {
+        element.classList.add("unanswered");
+    });
+
+    var corr = document.querySelectorAll('.quest:has( .option[data-option=correct]:checked )');
+    corr.forEach(element => {
+        element.classList.add("correct");
+    });
+
 
     var nochmal = '<button type="submit" onClick="select_test()">Nochmal!</button>'
     var result_str = `<div class="red"><span class="smily"> &#128531;</span> ${correct} von 25 Fragen richtig beantwortet: leider nicht bestanden... ${nochmal}<div>`
@@ -187,9 +203,10 @@ function eval_test() {
     } else if (correct >= 17) {
         result_str = `<div class="yellow"><span class="smily">&#128528;</span> ${correct} von 25 Fragen richtig beantwortet:  Eventuell eine mündliche Nachprüfung... ${nochmal}<div>`
     }
-    
+
     document.querySelector("button").hidden = true;
     document.querySelector("#result").innerHTML = result_str
+    window.scrollTo(0, document.body.scrollHeight)
 
 }
 
