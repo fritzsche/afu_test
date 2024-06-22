@@ -1,12 +1,10 @@
 # Simulator für Lizenzprüfung (ab 24.6.2024)
-Dieses kleine Programm(Website) generiert per Zufallsgenerator Fragen und Antworten für die Amateufunkprüfung (ab 24.5.2024).
+Dieses kleine Programm(Website) generiert per Zufallsgenerator Fragen und Antworten für die Amateufunkprüfung (gültig ab 24.5.2024).
 
-Es gibt ein version für den Druck (Papier), hier werden die Lösungen auf eine separate Seite gedruckt.
+Es gibt ein Version für den Druck (Papier) und eine Version für das Bearbeiten am Bildschirm.
 
-Du kannst aber auch Papier sparen und die Fragen direkt am Bildschirm Beantworten.
-
-* Zur Ausdrucken: https://fritzsche.github.io/afu_test/
-* Fragen am Bildschirm: https://fritzsche.github.io/afu_test/online.html
+* Ausdrucken: https://fritzsche.github.io/afu_test/
+* Bildschirm: https://fritzsche.github.io/afu_test/online.html
 
 Es können jeweils 25 Fragen (mit Antworten) für die folgenden Prüfungsteile generiert werden:
 
@@ -26,13 +24,13 @@ Der Fragenkatalog wird unverändert verwendet, allerdings wurde ein Formatierung
 
 https://www.bundesnetzagentur.de/995320
 
-Die Fragen die tatsächlich zu Einsatz kommen können natürlich abweichen. Auch wird die Bundesnetzagentur die Fragen anders auswählen. Wie beschrieben, werden die Fragen für die einzelnen Kategorien (und die Reihenfolge der Antworten) nur mit dem Zufallsgenerator bestimmt. 
+Die Fragen, die in einem echten Test zum Einsatz kommen, können natürlich abweichen. Wie beschrieben, werden die Fragen für die einzelnen Prüfungsteile (und die Reihenfolge der Antworten) per Zufallsgenerator bestimmt. 
 
 
 # Beta Code
 Der Code wurde unter Zeitdruck (nahe Prüfung) in kurzer Zeit entstanden. 
 Ich teste die App aktuell nur mit Google Chrome Browser.
-Keine Garantie für die App.
+Keine Garantie!
 
 # Version
 * 0.06 - (22. Juni 2024) Verbesserung der Online Version mit Flex-Layout für mobile Geräte.
