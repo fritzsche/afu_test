@@ -50,7 +50,7 @@ function html_answers(answers, correct, number, online) {
         let opt = `data-option ="${i == correct - 1 ? "correct" : "incorrect"}"`
         if (online) {
             result += `<div class="opt_lab"><label for="${number}-${i}"><input class="option" ${opt} type="radio" id="${number}-${i}" name="${number}" value="${number}-${i}" />
-            <p>${answers[i]}</p></label></div>`
+            ${answers[i]}</label></div>`
         } else {
             result += `<li class="option" ${opt}>${answers[i]}</li>`
         }

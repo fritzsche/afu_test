@@ -1,17 +1,16 @@
-/*
-* {
-    margin: 0;
-    padding: 0;
-  }
-*/
+
+
 img {
     vertical-align:middle;
     margin: 5pt;
-    zoom: 150%;
-    max-height: 100% !important;
-    max-width: 40% !important; 
+    zoom: 200%;
+    max-height: 45%;
+    max-width: 45%; 
    }
 
+input{
+   align-self: center;
+}
 label p {
     margin: 0;
     padding: 0;
@@ -20,12 +19,6 @@ label p {
 html {
     font-size: 15pt !important;
 }
-
-/*
-ol {
-    padding-left: 20px;
-    padding-right: 20px;
-}*/
 
 .green {
     background-color: rgb(214, 240, 213);
@@ -53,7 +46,7 @@ label {
 }
 
 input[type=radio] {
-    margin: 5px;
+    margin: 6px;
 }
 
 
