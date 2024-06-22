@@ -7,13 +7,26 @@ function getRandomInt(min, max) {
 }
 
 
-function pick(arr, num) {
+function pick(questions, num) {
     let result = []
-    for (let i = 0; i < num; i++) {
-        let r = getRandomInt(0, arr.length);
-        result.push(arr[r]);
-        arr.splice(r, 1);
+    // sort questions
+    questions.sort((a, b) => {
+        return a.number.toLowerCase().localeCompare(b.number.toLowerCase());
+    });    
+   
+    // when picking questions we try to distribute though the
+    // complete question catalog by buidling packages of question 
+    // we draw questions one at a time
+    
+    for(let rem_num=num;rem_num>0;rem_num--) {    
+      let pack_size = Math.floor( questions.length / rem_num )
+      let pack_mod = questions.length % rem_num 
+      if (pack_mod > 0) pack_size++
+      let r = getRandomInt(0, pack_size)
+      result.push(questions[r])
+      questions.splice(0, pack_size);
     }
+
     return result.sort((a, b) => {
         return a.number.toLowerCase().localeCompare(b.number.toLowerCase());
     });
