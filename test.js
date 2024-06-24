@@ -103,15 +103,33 @@ function render_test(title, test) {
     fetch('./Fragen/fragenkatalog3b.json')
         .then((response) => response.json())
         .then((json) => {
-            const answer = document.getElementById("answer");
+            const answer = document.getElementById("answer")
+
+
             let html = "";
             let result = jsonPath(json, "$..questions[?(@.class=1)]");
 
-            let all_questions = result.filter((frage =>
-                frage.number.startsWith(test)
-            ))
-            document.getElementById("title").innerHTML = title;
-            let sel_questions = pick(all_questions, 25)
+            let all_questions = [];
+            // Query parameter special code 
+            let specificQuestions = [];    
+            const urlParams = new URLSearchParams(window.location.search)
+            const specificQuestionsString = urlParams.get('q')
+            if(specificQuestionsString) {
+                specificQuestions = specificQuestionsString.split(/\s|;|\r/g).filter(Boolean) 
+                console.log(specificQuestions)
+
+                all_questions = result.filter((frage =>
+                    specificQuestions.indexOf(frage.number) >= 0            
+                ))
+                document.getElementById("title").innerHTML = 'Fragen';
+
+            } else {            
+              all_questions = result.filter((frage =>
+                  frage.number.startsWith(test)
+              ))
+              document.getElementById("title").innerHTML = title;
+            }
+            let sel_questions = pick(all_questions, Math.min(25,all_questions.length))
             const questions = document.getElementById("questions");
 
 
