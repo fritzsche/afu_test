@@ -116,12 +116,13 @@ function render_test(title, test) {
             const specificQuestionsString = urlParams.get('q')
             if(specificQuestionsString) {
                 specificQuestions = specificQuestionsString.split(/\s|;|\r/g).filter(Boolean) 
-                console.log(specificQuestions)
+        
 
                 all_questions = result.filter((frage =>
                     specificQuestions.indexOf(frage.number) >= 0            
                 ))
                 document.getElementById("title").innerHTML = 'Fragen';
+                document.getElementById("test_select").style.display = 'none';
 
             } else {            
               all_questions = result.filter((frage =>
