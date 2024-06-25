@@ -40,6 +40,7 @@ Ich teste die App aktuell nur mit Google Chrome Browser.
 Keine Garantie!
 
 # Version
+* 0.08 - (25. Juni 2024) Fix: Auswahl Prüfungsteil + undokumentiertes Feature: URL query parameter um individuelle Test zu erzeugen
 * 0.07 - (22. Juni 2024) Zufallsgenerator wird Fragen gleichmäßiger über den Fragekatalog verteilt auswählen.
 * 0.06 - (22. Juni 2024) Verbesserung der Online Version mit Flex-Layout für mobile Geräte.
 * 0.05 - (21. Juni 2024) Die Fragebögen können jetzt direkt am Bildschirm beantwortet werden
