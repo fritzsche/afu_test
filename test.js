@@ -89,9 +89,9 @@ function html_questions(questions, online) {
         if (question.picture_question) {
             picture = `<div><img  src="Fragen/svgs/${question.picture_question}.svg" /></div>`
         }
-        answer_html += `<li> <strong>${question.number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>`
+        answer_html += `<li> <strong class="title">${question.number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>`
         let correct_answer = ` data-correct="${res.correct}"`
-        question_html += `<div class="quest"><li${correct_answer} class="question"> <strong>${question.number} </strong>${question.question} ${picture} ${ans_html}</li></div>`
+        question_html += `<div class="quest"><li${correct_answer} class="question"> <strong class="title">${question.number} </strong>${question.question} ${picture} ${ans_html}</li></div>`
     }
     return { questions: question_html, answer: answer_html };
 }
@@ -122,7 +122,7 @@ function render_test(title, test) {
                     specificQuestions.indexOf(frage.number) >= 0            
                 ))
                 document.getElementById("title").innerHTML = 'Fragen';
-                document.getElementById("test_select").style.display = 'none';
+                document.getElementById("sel_test").style.display = 'none';
 
             } else {            
               all_questions = result.filter((frage =>

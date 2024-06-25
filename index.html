@@ -20,26 +20,30 @@
 </head>
 
 <body>
-  <div class="no-print">
-    <h1>Generator zur Amateurfunkprüfung</h1>
-    <h3>Thomas Fritzsche (DJ1TF) - <a href="https://github.com/fritzsche/afu_test">github</a></h3>
-    <p id="test_select">
-      Prüfungsteil:
-      <select id="test_select" onchange="select_test()">
-        <option>Vorschriften</option>
-        <option>Betriebstechnik</option>
-        <option>Technik Klasse N</option>
-        <option>Technik Klasse E</option>
-        <option>Technik Klasse A</option>
-      </select>
-    </p>
+  <div class="no-print title">
+    <h2>Simulator für die Amateurfunkprüfung - von DJ1TF/JJ1QPB - Thomas (für Druck)</h2>
+    <div id="sel_test">
+      <div>Link: <a href="online.html">Fragen im Browser beantworten und auswerten</a> </div>
+      <div>Projekt:<a href="https://github.com/fritzsche/afu_test"><img class="icon"
+            src="icon/github-mark.png">Github</a> </div>
+      <p id="sel_test">
+        Prüfungsteil:
+        <select id="test_select" onchange="select_test()">
+          <option>Vorschriften</option>
+          <option>Betriebstechnik</option>
+          <option>Technik Klasse N</option>
+          <option>Technik Klasse E</option>
+          <option>Technik Klasse A</option>
+        </select>
+      </p>
+    </div>
   </div>
 
-  <h1 id="title"></h1>
+  <h2 class="title" id="title"></h2>
 
   <div id="questions"> </div>
   <div style="break-after:page"></div>
-  <h1>Lösungen</h1>
+  <h2 class="title">Lösungen</h2>
   <div id="answer"> </div>
   <script src="jsonpath.js"></script>
   <script src="test.js"></script>

@@ -3,6 +3,14 @@ html {
   font-family: "Times New Roman", Times, serif;  
 }
 
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon {
+  height: 12pt;
+}
+
 img {
  vertical-align:middle;
  margin: 5pt;
