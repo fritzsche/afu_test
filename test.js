@@ -180,7 +180,7 @@ window.onload = function () {
 function select_test() {
     var sel_test = document.getElementById("test_select");
     //document.getElementById("favourite").value = sel_test.options[sel_test.selectedIndex].text;
-    console.log(sel_test.selectedIndex);
+    
     switch (sel_test.selectedIndex) {
         case 1:
             render_test("Betriebstechnik", "B")
