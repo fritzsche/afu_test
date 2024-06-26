@@ -18,11 +18,17 @@ function pick(questions, num) {
     // complete question catalog by buidling packages of question 
     // we draw questions one at a time
     
+    // the final flag is used if the random number generator choose the last 
+    // element of a package. In this case the next pack with select from 2nd in package 
+    // to avoid the to consecutive numbers are selected.
+
+    final = false;
     for(let rem_num=num;rem_num>0;rem_num--) {    
       let pack_size = Math.floor( questions.length / rem_num )
       let pack_mod = questions.length % rem_num 
       if (pack_mod > 0) pack_size++
-      let r = getRandomInt(0, pack_size)
+      let r = getRandomInt(final?1:0, pack_size)
+      final = (pack_size == r + 1) ? true : false;
       result.push(questions[r])
       questions.splice(0, pack_size);
     }
