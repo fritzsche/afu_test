@@ -27,7 +27,7 @@ function pick(questions, num) {
       let pack_size = Math.floor( questions.length / rem_num )
       let pack_mod = questions.length % rem_num 
       if (pack_mod > 0) pack_size++
-      let r = getRandomInt(final?1:0, pack_size)
+      let r = getRandomInt( pack_size > 1 && final?1:0, pack_size)
       final = (pack_size == r + 1) ? true : false;
       result.push(questions[r])
       questions.splice(0, pack_size);
