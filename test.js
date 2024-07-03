@@ -102,6 +102,35 @@ function html_questions(questions, online) {
     return { questions: question_html, answer: answer_html };
 }
 
+// Fisher–Yates shuffle
+function shuffle(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
+function pick_orig( questions ) {
+  shuffle( questions )  
+ // console.log( questions )
+  // get categories
+  let cats = {}
+  questions.forEach((question) => {
+    // hierarchy level 2
+     let num = question.number.slice(0, 3)
+     if(!cats[num]) cats[num] = { len: 1, pick: 0}; else  cats[num].len++
+     // hierarchy level 1
+     num = question.number.slice(0, 2)
+     if(!cats[num]) cats[num] = { len: 1, pick: 0}; else  cats[num].len++
+  })
+  for(var key in cats) {
+    cats[ key ].min = Math.floor( questions.length / cats[ key ].len );
+    console.log(key)
+  } 
+  console.log(cats)  
+}
 
 
 function render_test(title, test) {
@@ -136,6 +165,7 @@ function render_test(title, test) {
               ))
               document.getElementById("title").innerHTML = title;
             }
+            let bla = pick_orig(all_questions, Math.min(25,all_questions.length))
             let sel_questions = pick(all_questions, Math.min(25,all_questions.length))
             const questions = document.getElementById("questions");
 
