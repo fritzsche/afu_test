@@ -126,8 +126,8 @@ function pick_orig( questions ) {
      if(!cats[num]) cats[num] = { len: 1, pick: 0}; else  cats[num].len++
   })
   for(var key in cats) {
-    cats[ key ].min = Math.floor( questions.length / cats[ key ].len );
-    console.log(key)
+    cats[ key ].min = Math.floor( 25 * ( cats[ key ].len /  questions.length ) );
+    cats[ key ].max = Math.ceil( 25 * ( cats[ key ].len /  questions.length ) );
   } 
   console.log(cats)  
 }
