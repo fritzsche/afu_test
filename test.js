@@ -15,7 +15,7 @@ function pick(questions, num) {
     });    
    
     // when picking questions we try to distribute though the
-    // complete question catalog by buidling packages of question 
+    // complete question catalog by building packages of question 
     // we draw questions one at a time
     
     // the final flag is used if the random number generator choose the last 
@@ -86,10 +86,10 @@ function html_questions(questions, online) {
         let picture = "";
         // select all answers of question
         let answers = get_answers(question);
-        // pernutate answers
+        // permuted answers
         // the correct answer number is provided
         let res = permute_answer(answers);
-        // generate a html fragment from permutated
+        // generate a html fragment from permuted
         // answers
         let ans_html = html_answers(res.answers, res.correct, question.number, online);
         if (question.picture_question) {
@@ -156,7 +156,7 @@ function render_test(title, test) {
         });
     setTimeout(() => {
         renderMathInElement(document.body, {
-            // customised options
+            // customized options
             // • auto-render specific keys, e.g.:
             delimiters: [
                 { left: '$$', right: '$$', display: true },
