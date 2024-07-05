@@ -12,25 +12,25 @@ function pick(questions, num) {
     // sort questions
     questions.sort((a, b) => {
         return a.number.toLowerCase().localeCompare(b.number.toLowerCase());
-    });    
-   
+    });
+
     // when picking questions we try to distribute though the
     // complete question catalog by buidling packages of question 
     // we draw questions one at a time
-    
+
     // the final flag is used if the random number generator choose the last 
     // element of a package. In this case the next pack with select from 2nd in package 
     // to avoid the to consecutive numbers are selected.
 
     final = false;
-    for(let rem_num=num;rem_num>0;rem_num--) {    
-      let pack_size = Math.floor( questions.length / rem_num )
-      let pack_mod = questions.length % rem_num 
-      if (pack_mod > 0) pack_size++
-      let r = getRandomInt( pack_size > 1 && final?1:0, pack_size)
-      final = (pack_size == r + 1) ? true : false;
-      result.push(questions[r])
-      questions.splice(0, pack_size);
+    for (let rem_num = num; rem_num > 0; rem_num--) {
+        let pack_size = Math.floor(questions.length / rem_num)
+        let pack_mod = questions.length % rem_num
+        if (pack_mod > 0) pack_size++
+        let r = getRandomInt(pack_size > 1 && final ? 1 : 0, pack_size)
+        final = (pack_size == r + 1) ? true : false;
+        result.push(questions[r])
+        questions.splice(0, pack_size);
     }
 
     return result.sort((a, b) => {
@@ -112,24 +112,75 @@ function shuffle(array) {
     }
 }
 
-function pick_orig( questions ) {
-  shuffle( questions )  
- // console.log( questions )
-  // get categories
-  let cats = {}
-  questions.forEach((question) => {
-    // hierarchy level 2
-     let num = question.number.slice(0, 3)
-     if(!cats[num]) cats[num] = { len: 1, pick: 0}; else  cats[num].len++
-     // hierarchy level 1
-     num = question.number.slice(0, 2)
-     if(!cats[num]) cats[num] = { len: 1, pick: 0}; else  cats[num].len++
-  })
-  for(var key in cats) {
-    cats[ key ].min = Math.floor( 25 * ( cats[ key ].len /  questions.length ) );
-    cats[ key ].max = Math.ceil( 25 * ( cats[ key ].len /  questions.length ) );
-  } 
-  console.log(cats)  
+function pick_orig(questions) {
+    let result = []
+    shuffle(questions)
+    // get categories
+    let cats = {}
+    questions.forEach((question) => {
+        // hierarchy level 2
+        let num = question.number.slice(0, 3)
+        if (!cats[num]) cats[num] = { len: 1, pick: 0 }; else cats[num].len++
+        // hierarchy level 1
+        num = question.number.slice(0, 2)
+        if (!cats[num]) cats[num] = { len: 1, pick: 0 }; else cats[num].len++
+    })
+    let min_2 = 0;
+    let min_3 = 0;
+    let total = 25;
+    for (var key in cats) {
+        cats[key].min = Math.floor(25 * (cats[key].len / questions.length));
+        cats[key].max = Math.ceil(25 * (cats[key].len / questions.length));
+        if (key.length == 2) min_2 += cats[key].min; else min_3 += cats[key].min;
+    }
+    // fill 3rd level
+    for (let i = 0; ; i++) {
+        let pos = i % questions.length;
+        let question = questions[pos];
+        let cat3 = cats[question.number.slice(0, 3)];
+        let cat2 = cats[question.number.slice(0, 2)];
+        if (cat3.pick < cat3.min && cat2.pick < cat2.min) {
+            cat2.pick++; cat3.pick++;
+            min_2--; min_3--; total--;
+            result.push(question)
+            questions.splice(pos, 1)            
+            if (min_2 == 0 || min_3 == 0) break;
+        }
+    }
+    // fill 2nd level    
+    for (let i = 0; ; i++) {
+        let pos = i % questions.length;
+        let question = questions[pos];
+        let cat3 = cats[question.number.slice(0, 3)];
+        let cat2 = cats[question.number.slice(0, 2)];
+        if (cat2.pick < cat2.min && cat3.pick < cat3.max) {
+            cat2.pick++; cat3.pick++;
+            min_2--;
+            total--;
+            result.push(question)                       
+            questions.splice(pos, 1)
+            if (min_2 == 0) break;             
+        }
+    }
+    // pick further option
+    for (let i = 0; ; i++) {
+        let pos = i % questions.length;
+        let question = questions[pos];
+        let cat3 = cats[question.number.slice(0, 3)];
+        let cat2 = cats[question.number.slice(0, 2)];
+        if (cat2.pick < cat2.max && cat3.pick < cat3.max) {
+            cat2.pick++; cat3.pick++;
+            total--;
+            result.push(question)
+            questions.splice(pos, 1)            
+            if (total == 0) break
+        }
+    }
+    result.sort((a, b) => {
+        return a.number.toLowerCase().localeCompare(b.number.toLowerCase());
+    });    
+    console.log(cats)
+    console.log(result)
 }
 
 
@@ -146,27 +197,27 @@ function render_test(title, test) {
 
             let all_questions = [];
             // Query parameter special code 
-            let specificQuestions = [];    
+            let specificQuestions = [];
             const urlParams = new URLSearchParams(window.location.search)
             const specificQuestionsString = urlParams.get('q')
-            if(specificQuestionsString) {
-                specificQuestions = specificQuestionsString.split(/\s|;|\r/g).filter(Boolean) 
-        
+            if (specificQuestionsString) {
+                specificQuestions = specificQuestionsString.split(/\s|;|\r/g).filter(Boolean)
+
 
                 all_questions = result.filter((frage =>
-                    specificQuestions.indexOf(frage.number) >= 0            
+                    specificQuestions.indexOf(frage.number) >= 0
                 ))
                 document.getElementById("title").innerHTML = 'Fragen';
                 document.getElementById("sel_test").style.display = 'none';
 
-            } else {            
-              all_questions = result.filter((frage =>
-                  frage.number.startsWith(test)
-              ))
-              document.getElementById("title").innerHTML = title;
+            } else {
+                all_questions = result.filter((frage =>
+                    frage.number.startsWith(test)
+                ))
+                document.getElementById("title").innerHTML = title;
             }
-            let bla = pick_orig(all_questions, Math.min(25,all_questions.length))
-            let sel_questions = pick(all_questions, Math.min(25,all_questions.length))
+            let bla = pick_orig(all_questions, Math.min(25, all_questions.length))
+            let sel_questions = pick(all_questions, Math.min(25, all_questions.length))
             const questions = document.getElementById("questions");
 
 
@@ -210,7 +261,7 @@ window.onload = function () {
 function select_test() {
     var sel_test = document.getElementById("test_select");
     //document.getElementById("favourite").value = sel_test.options[sel_test.selectedIndex].text;
-    
+
     switch (sel_test.selectedIndex) {
         case 1:
             render_test("Betriebstechnik", "B")
