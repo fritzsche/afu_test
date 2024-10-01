@@ -16,6 +16,12 @@ Es können jeweils 25 Fragen (mit Antworten) für die folgenden Prüfungsteile g
 
 __Achtung:__ Bei jedem Aufruf (auch Reload) wird ein neuer Fragebogen per Zufallsgenerator erzeugt.
 
+# Youtube
+Ein Bericht auf dem Youtube Kanal Funkwelle über AFU-Test:
+
+[![Video Funkwelle](https://img.youtube.com/vi/dTlOy99aC1A/0.jpg)](https://www.youtube.com/watch?v=YdTlOy99aC1A)
+
+
 
 # Prüfungsfragen
 
