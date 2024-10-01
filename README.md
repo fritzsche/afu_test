@@ -19,7 +19,7 @@ __Achtung:__ Bei jedem Aufruf (auch Reload) wird ein neuer Fragebogen per Zufall
 # Youtube
 Ein Bericht auf dem Youtube Kanal Funkwelle über AFU-Test:
 
-[![Video Funkwelle](https://img.youtube.com/vi/dTlOy99aC1A/0.jpg)](https://www.youtube.com/watch?v=YdTlOy99aC1A)
+[![Video Funkwelle](https://img.youtube.com/vi/dTlOy99aC1A/0.jpg)](https://www.youtube.com/watch?v=dTlOy99aC1A)
 
 
 
