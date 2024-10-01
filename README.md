@@ -22,8 +22,8 @@ Ein Bericht auf dem Youtube Kanal Funkwelle über AFU-Test:
 [![Video Funkwelle](https://img.youtube.com/vi/dTlOy99aC1A/0.jpg)](https://www.youtube.com/watch?v=dTlOy99aC1A)
 
 # Erfahrung und Ausblick
-AFU-Test wurde in wenigen Tagen entwickelt. Zum Start der Klasse N bereits auf der HAM Radio 2024 mit Erfolg von DN9KEN und DN9KAI getestet. 
-Auswahl der Fragen und Formatierung kommen einem echten Test bei der BNetzA offenbar bereits sehr nahe.
+AFU-Test wurde in wenigen Tagen entwickelt und zum Start der Klasse N bereits auf der HAM Radio 2024 mit Erfolg(!) von DN9KEN und DN9KAI zur Prüfungsvorbereitung getestet. 
+Auswahl der Fragen und Formatierung kommen einem echten Test bei der BNetzA (Erfahrungsbericht) bereits sehr nahe.
 
 In der Praxis hat sich vor allem die (bislang im Quelltext versteckte) Funktion zur gezielten Generierung von Fragen als nützlich erwiesen (z.B. besonders schwere Fragen) und soll als nächstes in dem Projekt einfach nutzbar gemacht werden. Über weitere Ideen / Anregungen / Wünsche freue ich mich. Gerne als Github Issue oder Github-Pull-Request.
 
