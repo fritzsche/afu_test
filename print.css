@@ -1,4 +1,9 @@
 @media print {
+    body{
+        width: 21cm;
+        height: 29.7cm;
+        margin: 20mm 25mm 20mm 25mm; 
+   } 
     html {
         font-size: 12pt;
     }
