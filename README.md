@@ -1,5 +1,5 @@
 # Simulator für Lizenzprüfung (ab 24.6.2024)
-Dieses kleine Programm(Website) generiert per Zufallsgenerator Fragen und Antworten für die Amateufunkprüfung (gültig ab 24.5.2024).
+Dieses kleine Programm(Website) generiert per Zufallsgenerator Fragen und Antworten für die Amateurfunkprüfung (gültig ab 24.5.2024).
 
 Es gibt ein Version für den Druck (Papier) und eine Version für das Bearbeiten am Bildschirm.
 
@@ -52,7 +52,7 @@ Keine Garantie!
 # Version
 * 0.09 - (3. Oktober 2024) Javascript wird als Module geladen + kleine Fehler im "Strict" Modus behoben
 * 0.08 - (25. Juni 2024) Fix: Auswahl Prüfungsteil + undokumentiertes Feature: URL query parameter um individuelle Test zu erzeugen
-* 0.07 - (22. Juni 2024) Zufallsgenerator wird Fragen gleichmäßiger über den Fragekatalog verteilt auswählen.
+* 0.07 - (22. Juni 2024) Zufallsgenerator wird Fragen gleichmäßiger über den Fragenkatalog verteilt auswählen.
 * 0.06 - (22. Juni 2024) Verbesserung der Online Version mit Flex-Layout für mobile Geräte.
 * 0.05 - (21. Juni 2024) Die Fragebögen können jetzt direkt am Bildschirm beantwortet werden
 * 0.04 - (20. Juni 2024) Bildskalierung etwas verbessert
