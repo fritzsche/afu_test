@@ -1,11 +1,8 @@
-
-
 function getRandomInt(min, max) {
     const minCeiled = Math.ceil(min);
     const maxFloored = Math.floor(max);
     return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
 }
-
 
 function pick(questions, num) {
     let result = []
@@ -22,7 +19,7 @@ function pick(questions, num) {
     // element of a package. In this case the next pack with select from 2nd in package 
     // to avoid the to consecutive numbers are selected.
 
-    final = false;
+    let final = false;
     for(let rem_num=num;rem_num>0;rem_num--) {    
       let pack_size = Math.floor( questions.length / rem_num )
       let pack_mod = questions.length % rem_num 
@@ -145,7 +142,7 @@ function render_test(title, test) {
             } else {
                 html = html_questions(sel_questions, true);
                 document.querySelector("button").hidden = false;
-                document.querySelector("#result").innerHTML = ""
+                document.querySelector("#result").hidden = true;
             }
 
             questions.innerHTML = `<ol>${html.questions}</ol>`
@@ -173,14 +170,8 @@ function render_test(title, test) {
 }
 
 
-window.onload = function () {
-    render_test("Vorschriften", "V");
-}
-
 function select_test() {
     var sel_test = document.getElementById("test_select");
-    //document.getElementById("favourite").value = sel_test.options[sel_test.selectedIndex].text;
-    
     switch (sel_test.selectedIndex) {
         case 1:
             render_test("Betriebstechnik", "B")
@@ -196,11 +187,11 @@ function select_test() {
             break;
         default: render_test("Vorschriften", "V")
     }
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 
 
 function eval_test() {
-    console.log("Evaluate");
     var correct = 0;
     // calculate all correct answers
     var all_correct = document.querySelectorAll('.option[data-option=correct]:checked');
@@ -233,18 +224,29 @@ function eval_test() {
         element.classList.add("correct");
     });
 
-
-    var nochmal = '<button type="submit" onClick="select_test()">Nochmal!</button>'
-    var result_str = `<div class="red"><span class="smily"> &#128531;</span> ${correct} von 25 Fragen richtig beantwortet: leider nicht bestanden... ${nochmal}<div>`
+    var result_str = `<span class="red"><span class="smily"> &#128531;</span> ${correct} von 25 Fragen richtig beantwortet: leider nicht bestanden... </span>`
     if (correct >= 19) {
-        result_str = `<div class="green"><span class="smily">&#128512;</span> ${correct} von 25 Fragen richtig beantwortet:  Bestanden!!! ${nochmal}<div>`
+        result_str = `<span class="green"><span class="smily">&#128512;</span> ${correct} von 25 Fragen richtig beantwortet:  Bestanden!!! </span>`
     } else if (correct >= 17) {
-        result_str = `<div class="yellow"><span class="smily">&#128528;</span> ${correct} von 25 Fragen richtig beantwortet:  Eventuell eine mündliche Nachprüfung... ${nochmal}<div>`
+        result_str = `<span class="yellow"><span class="smily">&#128528;</span> ${correct} von 25 Fragen richtig beantwortet:  Eventuell eine mündliche Nachprüfung... </span>`
     }
 
     document.querySelector("button").hidden = true;
-    document.querySelector("#result").innerHTML = result_str
+    document.querySelector("#result_span").innerHTML = result_str
+    document.querySelector("#result").hidden = false;    
     window.scrollTo(0, document.body.scrollHeight)
 
 }
 
+window.onload =  () => {
+    render_test("Vorschriften", "V")
+    let test_select = document.getElementById("test_select")
+    if (test_select) test_select.addEventListener("change", select_test)
+
+    let evaluate_button = document.getElementById("evaluate_button")          
+    if (evaluate_button) evaluate_button.addEventListener("click", eval_test)
+
+    let again_button = document.getElementById("again_button")          
+    if (again_button) again_button.addEventListener("click", select_test) 
+    
+ }
