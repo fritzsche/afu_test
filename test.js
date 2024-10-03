@@ -148,9 +148,9 @@ function render_test(title, test) {
                 document.querySelector("#result").innerHTML = ""
             }
 
-            questions.innerHTML = `<ol>${html.questions}test1</ol>`
+            questions.innerHTML = `<ol>${html.questions}</ol>`
             if (answer) {
-                answer.innerHTML = `<ol>${html.answer}test2</ol>`
+                answer.innerHTML = `<ol>${html.answer}</ol>`
             }
 
         });
