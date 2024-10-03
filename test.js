@@ -1,3 +1,6 @@
+import { Config } from "./config.js"
+const config = new Config()
+
 function getRandomInt(min, max) {
     const minCeiled = Math.ceil(min);
     const maxFloored = Math.floor(max);
@@ -169,24 +172,38 @@ function render_test(title, test) {
 
 }
 
+const test_name = (test) => {
+    switch (test) {
+        case 'B': return "Betriebstechnik"
+        case 'N': return "Technik Klasse N"
+        case 'E': return "Technik Klasse E"
+        case 'A': return "Technik Klasse A"
+        case 'V': return "Vorschriften"
+        default: return ""
+    }
+}
 
 function select_test() {
-    var sel_test = document.getElementById("test_select");
+    var sel_test = document.getElementById("test_select")
+    let selected_test = 'V'
     switch (sel_test.selectedIndex) {
         case 1:
-            render_test("Betriebstechnik", "B")
+            selected_test = 'B'
             break;
         case 2:
-            render_test("Technik Klasse N", "N")
+            selected_test = 'N'
             break;
         case 3:
-            render_test("Technik Klasse E", "E")
+            selected_test= 'E'
             break;
         case 4:
-            render_test("Technik Klasse A", "A")
+            selected_test = 'A'
             break;
-        default: render_test("Vorschriften", "V")
+        default: selected_test = 'V'
     }
+    config.current_test = selected_test
+    render_test(test_name(selected_test), selected_test)
+    config.store()
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 
@@ -201,13 +218,10 @@ function eval_test() {
     if (radio_buttons) radio_buttons.forEach(element => {
         element.disabled = true
     })
-
     var green = document.querySelectorAll('.opt_lab:has( .option[data-option=correct])');
     if (green) green.forEach(element => {
         element.classList.add("correct_answer");
     });
-
-
 
     var red = document.querySelectorAll('.quest:has( .option[data-option=incorrect]:checked)');
     red.forEach(element => {
@@ -239,7 +253,11 @@ function eval_test() {
 }
 
 window.onload =  () => {
-    render_test("Vorschriften", "V")
+    config.load()
+    let current_test = config.current_test
+    render_test(test_name(current_test), current_test)
+    config.set_test_select_option(current_test)
+
     let test_select = document.getElementById("test_select")
     if (test_select) test_select.addEventListener("change", select_test)
 

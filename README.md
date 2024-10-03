@@ -50,15 +50,16 @@ Ich teste die App aktuell nur mit Google Chrome Browser.
 Keine Garantie!
 
 # Version
-* 0.09 - (3. Oktober 2024) Javascript wird als Module geladen + kleine Fehler im "Strict" Modus behoben
-* 0.08 - (25. Juni 2024) Fix: Auswahl Prüfungsteil + undokumentiertes Feature: URL query parameter um individuelle Test zu erzeugen
+* 0.10 - (4. Oktober 2024) Ausgewählter Prüfungsteil bleibt bei einem reload ausgewählt.
+* 0.09 - (3. Oktober 2024) Javascript wird als Module geladen + kleine Fehler im "Strict" Modus behoben.
+* 0.08 - (25. Juni 2024) Fix: Auswahl Prüfungsteil + undokumentiertes Feature: URL query parameter um individuelle Test zu erzeugen.
 * 0.07 - (22. Juni 2024) Zufallsgenerator wird Fragen gleichmäßiger über den Fragenkatalog verteilt auswählen.
 * 0.06 - (22. Juni 2024) Verbesserung der Online Version mit Flex-Layout für mobile Geräte.
-* 0.05 - (21. Juni 2024) Die Fragebögen können jetzt direkt am Bildschirm beantwortet werden
-* 0.04 - (20. Juni 2024) Bildskalierung etwas verbessert
-* 0.03 - (19. Juni 2024) Prüfungsteile können separat generiert werden + Technik E + Technik A
-* 0.02 - (17. Juni 2024) Verwende KaTeX um Formeln korrekt auszugeben
-* 0.01 - (16. Juni 2024) Initiale Version
+* 0.05 - (21. Juni 2024) Die Fragebögen können jetzt direkt am Bildschirm beantwortet werden.
+* 0.04 - (20. Juni 2024) Bildskalierung etwas verbessert.
+* 0.03 - (19. Juni 2024) Prüfungsteile können separat generiert werden + Technik E + Technik A.
+* 0.02 - (17. Juni 2024) Verwende KaTeX um Formeln korrekt auszugeben.
+* 0.01 - (16. Juni 2024) Initiale Version.
 
 # Lizenzen
 * Der Fragenkatalog wird unter der Lizenz der BNetzA weitergegeben: [https://www.govdata.de/dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)
