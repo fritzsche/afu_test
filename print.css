@@ -19,7 +19,7 @@
         max-height: 40%;
         max-width: 40%;
     }
-    br {
-    page-break-after: always;
+    div {
+    page-break-inside: avoid;
     }
 }
