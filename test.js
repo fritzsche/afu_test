@@ -97,7 +97,7 @@ function html_questions(questions, online) {
         }
         answer_html += `<li> <strong class="title">${question.number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>`
         let correct_answer = ` data-correct="${res.correct}"`
-        question_html += `<br><div class="quest"><li${correct_answer} class="question"> <strong class="title">${question.number} </strong>${question.question} ${picture} ${ans_html}</li></div>`
+        question_html += `<div class="quest"><li${correct_answer} class="question"> <strong class="title">${question.number} </strong>${question.question} ${picture} ${ans_html}</li></div><br>`
     }
     return { questions: question_html, answer: answer_html };
 }
