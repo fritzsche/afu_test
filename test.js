@@ -12,25 +12,25 @@ function pick(questions, num) {
     // sort questions
     questions.sort((a, b) => {
         return a.number.toLowerCase().localeCompare(b.number.toLowerCase());
-    });    
-   
+    });
+
     // when picking questions we try to distribute though the
     // complete question catalog by building packages of question 
     // we draw questions one at a time
-    
+
     // the final flag is used if the random number generator choose the last 
     // element of a package. In this case the next pack with select from 2nd in package 
     // to avoid the to consecutive numbers are selected.
 
     let final = false;
-    for(let rem_num=num;rem_num>0;rem_num--) {    
-      let pack_size = Math.floor( questions.length / rem_num )
-      let pack_mod = questions.length % rem_num 
-      if (pack_mod > 0) pack_size++
-      let r = getRandomInt( pack_size > 1 && final?1:0, pack_size)
-      final = (pack_size == r + 1) ? true : false;
-      result.push(questions[r])
-      questions.splice(0, pack_size);
+    for (let rem_num = num; rem_num > 0; rem_num--) {
+        let pack_size = Math.floor(questions.length / rem_num)
+        let pack_mod = questions.length % rem_num
+        if (pack_mod > 0) pack_size++
+        let r = getRandomInt(pack_size > 1 && final ? 1 : 0, pack_size)
+        final = (pack_size == r + 1) ? true : false;
+        result.push(questions[r])
+        questions.splice(0, pack_size);
     }
 
     return result.sort((a, b) => {
@@ -117,26 +117,26 @@ function render_test(title, test) {
 
             let all_questions = [];
             // Query parameter special code 
-            let specificQuestions = [];    
+            let specificQuestions = [];
             const urlParams = new URLSearchParams(window.location.search)
             const specificQuestionsString = urlParams.get('q')
-            if(specificQuestionsString) {
-                specificQuestions = specificQuestionsString.split(/\s|;|\r/g).filter(Boolean) 
-        
+            if (specificQuestionsString) {
+                specificQuestions = specificQuestionsString.split(/\s|;|\r/g).filter(Boolean)
+
 
                 all_questions = result.filter((frage =>
-                    specificQuestions.indexOf(frage.number) >= 0            
+                    specificQuestions.indexOf(frage.number) >= 0
                 ))
                 document.getElementById("title").innerHTML = 'Fragen';
                 document.getElementById("sel_test").style.display = 'none';
 
-            } else {            
-              all_questions = result.filter((frage =>
-                  frage.number.startsWith(test)
-              ))
-              document.getElementById("title").innerHTML = title;
+            } else {
+                all_questions = result.filter((frage =>
+                    frage.number.startsWith(test)
+                ))
+                document.getElementById("title").innerHTML = title;
             }
-            let sel_questions = pick(all_questions, Math.min(25,all_questions.length))
+            let sel_questions = pick(all_questions, Math.min(25, all_questions.length))
             const questions = document.getElementById("questions");
 
 
@@ -194,7 +194,7 @@ function select_test() {
             selected_test = 'N'
             break;
         case 3:
-            selected_test= 'E'
+            selected_test = 'E'
             break;
         case 4:
             selected_test = 'A'
@@ -247,12 +247,18 @@ function eval_test() {
 
     document.querySelector("button").hidden = true;
     document.querySelector("#result_span").innerHTML = result_str
-    document.querySelector("#result").hidden = false;    
+    document.querySelector("#result").hidden = false;
     window.scrollTo(0, document.body.scrollHeight)
 
 }
 
-window.onload =  () => {
+function print_option() {
+   config.change_print_avoid_page_break()
+   config.change_print_more_margin()
+}
+
+
+window.onload = () => {
     config.load()
     let current_test = config.current_test
     render_test(test_name(current_test), current_test)
@@ -261,10 +267,18 @@ window.onload =  () => {
     let test_select = document.getElementById("test_select")
     if (test_select) test_select.addEventListener("change", select_test)
 
-    let evaluate_button = document.getElementById("evaluate_button")          
+    let evaluate_button = document.getElementById("evaluate_button")
     if (evaluate_button) evaluate_button.addEventListener("click", eval_test)
 
-    let again_button = document.getElementById("again_button")          
-    if (again_button) again_button.addEventListener("click", select_test) 
-    
- }
+    let again_button = document.getElementById("again_button")
+    if (again_button) again_button.addEventListener("click", select_test)
+
+    let print_no_page_break = document.getElementById("print_no_page_break")
+    if (print_no_page_break) {
+         config.load()
+         config.apply_print_options()
+         print_no_page_break.addEventListener("change", print_option)
+         let print_more_margin = document.getElementById("print_more_margin").addEventListener("change",print_option)
+    }
+
+}

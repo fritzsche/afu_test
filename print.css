@@ -14,4 +14,18 @@
         max-height: 40%;
         max-width: 40%;
     }
+
+    .avoid_break .question {
+        break-inside: avoid;
+      }
+
+      .more_margin .question {
+        margin-bottom: 20pt;
+      }     
+
+      .more_margin .option {
+        margin-top: 10pt;
+      }  
+            
+
 }

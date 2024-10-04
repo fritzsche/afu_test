@@ -19,4 +19,11 @@ img {
  max-width: 40%; 
 }
 
+.more_margin .question {
+  margin-bottom: 20pt;
+}
+
+.more_margin .option {
+  margin-top: 10pt;
+}  
 

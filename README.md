@@ -50,6 +50,7 @@ Ich teste die App aktuell nur mit Google Chrome Browser.
 Keine Garantie!
 
 # Version
+* 0.11 - (4. Oktober 2024) Druckoptionen mit denen Seitenumbruch in Fragen verhindert und mehr Abstände eingefügt werden können (bessere Optik aber mehr Papierverbrauch)
 * 0.10 - (4. Oktober 2024) Ausgewählter Prüfungsteil bleibt bei einem reload ausgewählt.
 * 0.09 - (3. Oktober 2024) Javascript wird als Module geladen + kleine Fehler im "Strict" Modus behoben.
 * 0.08 - (25. Juni 2024) Fix: Auswahl Prüfungsteil + undokumentiertes Feature: URL query parameter um individuelle Test zu erzeugen.
