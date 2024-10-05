@@ -238,11 +238,11 @@ function eval_test() {
         element.classList.add("correct");
     });
 
-    var result_str = `<span class="red"><span class="smily"> &#128531;</span> ${correct} von 25 Fragen richtig beantwortet: leider nicht bestanden... </span>`
+    var result_str = `<span class="red"><span class="smiley"> &#128531;</span> ${correct} von 25 Fragen richtig beantwortet: leider nicht bestanden... </span>`
     if (correct >= 19) {
-        result_str = `<span class="green"><span class="smily">&#128512;</span> ${correct} von 25 Fragen richtig beantwortet:  Bestanden!!! </span>`
+        result_str = `<span class="green"><span class="smiley">&#128512;</span> ${correct} von 25 Fragen richtig beantwortet:  Bestanden!!! </span>`
     } else if (correct >= 17) {
-        result_str = `<span class="yellow"><span class="smily">&#128528;</span> ${correct} von 25 Fragen richtig beantwortet:  Eventuell eine mündliche Nachprüfung... </span>`
+        result_str = `<span class="yellow"><span class="smiley">&#128528;</span> ${correct} von 25 Fragen richtig beantwortet:  Eventuell eine mündliche Nachprüfung... </span>`
     }
 
     document.querySelector("button").hidden = true;
@@ -257,6 +257,14 @@ function print_option() {
    config.change_print_more_margin()
 }
 
+function update_evaluate(e) {
+    if (e.target.classList.contains('option')) {
+        let evaluate_button = document.getElementById("evaluate_button")
+        var selected = document.querySelectorAll('.option:checked')
+        var all = document.querySelectorAll('.quest')
+        console.log("update evaluate",selected.length,all.length)
+    }
+}
 
 window.onload = () => {
     config.load()
@@ -280,5 +288,17 @@ window.onload = () => {
          print_no_page_break.addEventListener("change", print_option)
          let print_more_margin = document.getElementById("print_more_margin").addEventListener("change",print_option)
     }
+
+    var question = document.getElementById("questions")
+    if (question) {
+       console.log("connect")
+       question.addEventListener("change",update_evaluate)
+    }
+
+//    debugger;
+/*    options.forEach(option => {
+        option.addEventListener("change",update_evaluate)
+        console.log("hello")
+    })*/
 
 }

@@ -3,26 +3,26 @@
 }
 
 
-
 ol {
     padding-left: 5px;
 }
 
 img {
-    vertical-align:middle;
+    vertical-align: middle;
     margin: 5pt;
     zoom: 200%;
     max-height: 45%;
-    max-width: 45%; 
-   }
-
-input{
-   align-self: center;
+    max-width: 45%;
 }
+
+input {
+    align-self: center;
+}
+
 label p {
     margin: 0;
     padding: 0;
-  }
+}
 
 html {
     font-size: 15pt !important;
@@ -36,7 +36,7 @@ html {
 
 /* https://stackoverflow.com/questions/23472949/prevent-wrapping-of-text-below-radio-buttons */
 label {
-/*    align-items: center;*/
+    /*    align-items: center;*/
     display: flex;
     flex: 1;
     align-items: flex-start;
@@ -72,8 +72,6 @@ input[type=radio] {
     border-left: 6pt solid transparent
 }
 
-
-
 #result {
     width: 100%;
     font-weight: bold;
@@ -87,22 +85,22 @@ input[type=radio] {
     align-items: center;
 }
 
-.smily {
+.smiley {
     font-size: 30pt;
 }
 
-#result:has( .green) {
+#result:has(.green) {
     background-color: rgb(214, 240, 213);
 }
 
-#result:has( .red) {
+#result:has(.red) {
     background-color: rgb(246, 223, 230);
 }
 
-#result:has( .yellow) {
+#result:has(.yellow) {
     background-color: rgb(247, 241, 176);
 }
 
-#result  {
+#result {
     display: hidden;
-  }
+}
