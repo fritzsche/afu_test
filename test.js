@@ -1,6 +1,10 @@
 import { Config } from "./config.js"
 const config = new Config()
 
+
+import { Test } from "./online.js"
+const onlineTest = new Test()
+
 function getRandomInt(min, max) {
     const minCeiled = Math.ceil(min);
     const maxFloored = Math.floor(max);
@@ -104,9 +108,9 @@ function html_questions(questions, online) {
 
 
 
-function render_test(title, test) {
+async function render_test(title, test) {
 
-    fetch('./Fragen/fragenkatalog3b.json')
+    await fetch('./Fragen/fragenkatalog3b.json')
         .then((response) => response.json())
         .then((json) => {
             const answer = document.getElementById("answer")
@@ -144,8 +148,7 @@ function render_test(title, test) {
                 html = html_questions(sel_questions, false);
             } else {
                 html = html_questions(sel_questions, true);
-                document.querySelector("button").hidden = false;
-                document.querySelector("#result").hidden = true;
+                onlineTest.showAnswer( );
             }
 
             questions.innerHTML = `<ol>${html.questions}</ol>`
@@ -154,7 +157,6 @@ function render_test(title, test) {
             }
 
         });
-    setTimeout(() => {
         renderMathInElement(document.body, {
             // customized options
             // • auto-render specific keys, e.g.:
@@ -167,9 +169,7 @@ function render_test(title, test) {
             // • rendering keys, e.g.:
             throwOnError: true
         });
-
-    }, 500);
-
+    onlineTest.updateAnsweredQuestions()
 }
 
 const test_name = (test) => {
@@ -207,79 +207,19 @@ function select_test() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 
-
-function eval_test() {
-    var correct = 0;
-    // calculate all correct answers
-    var all_correct = document.querySelectorAll('.option[data-option=correct]:checked');
-    if (all_correct) correct = all_correct.length;
-    // deactivate radio buttons
-    var radio_buttons = document.querySelectorAll('input[type=radio]:not(:checked)');
-    if (radio_buttons) radio_buttons.forEach(element => {
-        element.disabled = true
-    })
-    var green = document.querySelectorAll('.opt_lab:has( .option[data-option=correct])');
-    if (green) green.forEach(element => {
-        element.classList.add("correct_answer");
-    });
-
-    var red = document.querySelectorAll('.quest:has( .option[data-option=incorrect]:checked)');
-    red.forEach(element => {
-        element.classList.add("incorrect");
-    });
-
-    var yellow = document.querySelectorAll('.quest:not(:has( .option:checked )) ');
-    yellow.forEach(element => {
-        element.classList.add("unanswered");
-    });
-
-    var corr = document.querySelectorAll('.quest:has( .option[data-option=correct]:checked )');
-    corr.forEach(element => {
-        element.classList.add("correct");
-    });
-
-    var result_str = `<span class="red"><span class="smiley"> &#128531;</span> ${correct} von 25 Fragen richtig beantwortet: leider nicht bestanden... </span>`
-    if (correct >= 19) {
-        result_str = `<span class="green"><span class="smiley">&#128512;</span> ${correct} von 25 Fragen richtig beantwortet:  Bestanden!!! </span>`
-    } else if (correct >= 17) {
-        result_str = `<span class="yellow"><span class="smiley">&#128528;</span> ${correct} von 25 Fragen richtig beantwortet:  Eventuell eine mündliche Nachprüfung... </span>`
-    }
-
-    document.querySelector("button").hidden = true;
-    document.querySelector("#result_span").innerHTML = result_str
-    document.querySelector("#result").hidden = false;
-    window.scrollTo(0, document.body.scrollHeight)
-
-}
-
 function print_option() {
    config.change_print_avoid_page_break()
    config.change_print_more_margin()
 }
 
-function update_evaluate(e) {
-    if (e.target.classList.contains('option')) {
-        let evaluate_button = document.getElementById("evaluate_button")
-        var selected = document.querySelectorAll('.option:checked')
-        var all = document.querySelectorAll('.quest')
-        console.log("update evaluate",selected.length,all.length)
-    }
-}
-
-window.onload = () => {
+window.onload = async () => {
     config.load()
     let current_test = config.current_test
-    render_test(test_name(current_test), current_test)
+    await render_test(test_name(current_test), current_test)
     config.set_test_select_option(current_test)
 
     let test_select = document.getElementById("test_select")
     if (test_select) test_select.addEventListener("change", select_test)
-
-    let evaluate_button = document.getElementById("evaluate_button")
-    if (evaluate_button) evaluate_button.addEventListener("click", eval_test)
-
-    let again_button = document.getElementById("again_button")
-    if (again_button) again_button.addEventListener("click", select_test)
 
     let print_no_page_break = document.getElementById("print_no_page_break")
     if (print_no_page_break) {
@@ -288,17 +228,5 @@ window.onload = () => {
          print_no_page_break.addEventListener("change", print_option)
          let print_more_margin = document.getElementById("print_more_margin").addEventListener("change",print_option)
     }
-
-    var question = document.getElementById("questions")
-    if (question) {
-       console.log("connect")
-       question.addEventListener("change",update_evaluate)
-    }
-
-//    debugger;
-/*    options.forEach(option => {
-        option.addEventListener("change",update_evaluate)
-        console.log("hello")
-    })*/
-
+   onlineTest.registerEvent(select_test)
 }

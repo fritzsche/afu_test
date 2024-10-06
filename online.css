@@ -54,18 +54,21 @@ input[type=radio] {
 
 .unanswered {
     border-left: 6pt solid #f9e58b !important;
+    background-color: rgb(250, 250, 236);
 }
 
 .correct_answer {
-    border: 2pt dashed #95ee98 !important;
+    border: 2pt dashed #08a02e!important;
 }
 
 .incorrect {
     border-left: 6pt solid #f1b1b3 !important;
+    background-color: rgb(245, 238, 240);
 }
 
 .correct {
-    border-left: 6pt solid #84f8a1 !important;
+    border-left: 6pt solid #1ef053 !important;
+    background-color: rgb(234, 249, 237);    
 }
 
 .quest {
@@ -80,9 +83,12 @@ input[type=radio] {
 }
 
 #result {
-    width: 95%;
+    border-radius: 10px;
+    border: 2px solid black;        
+
     padding: 0.5em;
     align-items: center;
+    display: hidden;    
 }
 
 .smiley {
@@ -101,6 +107,21 @@ input[type=radio] {
     background-color: rgb(247, 241, 176);
 }
 
-#result {
-    display: hidden;
+
+
+#online_answer {
+    border-radius: 10px;
+    border: 2px solid black;    
+    background-color: rgb(242, 242, 242);
+    font-family: arial, "lucida console", sans-serif;   
+    padding: 0.5em;
+    align-items: center;
+}
+
+.no_answer {
+    color: rgb(240, 8, 78);
+}
+
+#online_noanswer:not(.no_answer) {
+    color: rgb(37, 79, 34);
 }

@@ -50,6 +50,7 @@ Ich teste die App aktuell nur mit Google Chrome Browser.
 Keine Garantie!
 
 # Version
+* 0.12 - (6. Oktober 2024) Restrukturierung des Programms, in der Online Version wird die Anzahl der unbeantworteten Fragen angezeigt. Das Ergebnis der Bildschirmauswertung wird mit stärker sichtbaren Farben angezeigt, damit falsche Antworten einfacher zu finden sind.
 * 0.11 - (4. Oktober 2024) Druckoptionen mit denen Seitenumbruch in Fragen verhindert und mehr Abstände eingefügt werden können (bessere Optik aber mehr Papierverbrauch)
 * 0.10 - (4. Oktober 2024) Ausgewählter Prüfungsteil bleibt bei einem reload ausgewählt.
 * 0.09 - (3. Oktober 2024) Javascript wird als Module geladen + kleine Fehler im "Strict" Modus behoben.
