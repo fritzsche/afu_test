@@ -91,14 +91,12 @@ class Test {
     }
 
     showResult() {
-        document.querySelector("#online_answer").hidden = true;
-        document.querySelector("#result").hidden = false;
-//        document.querySelector("#online_noanswer").hidden = true;    
+        document.querySelector("#online_answer").hidden = true
+        document.querySelector("#result").hidden = false
     }
     showAnswer() {
-        document.querySelector("#online_answer").hidden = false;
-        document.querySelector("#result").hidden = true;
-//        document.querySelector("#online_noanswer").hidden = false;        
+        document.querySelector("#online_answer").hidden = false
+        document.querySelector("#result").hidden = true
     }
 }
 
