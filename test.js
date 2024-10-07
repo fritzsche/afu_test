@@ -114,10 +114,19 @@ async function render_test(title, test) {
         .then((response) => response.json())
         .then((json) => {
             const answer = document.getElementById("answer")
-
-
             let html = "";
-            let result = jsonPath(json, "$..questions[?(@.class=1)]");
+
+            let result = new Array();
+            const traverse = (jsonObj) => {
+                if (jsonObj !== null && typeof jsonObj == "object") {
+                    Object.entries(jsonObj).forEach(([key, value]) => {
+                        if (key === 'questions') result.push(...value);
+                        else traverse(value);
+                    });
+                }
+            }
+
+            traverse(json)
 
             let all_questions = [];
             // Query parameter special code 

@@ -50,6 +50,7 @@ Ich teste die App aktuell nur mit Google Chrome Browser.
 Keine Garantie!
 
 # Version
+* 0.13 - (7. Oktober 2024) Aufräumen: Entferne JSONPath Bibliothek als Abhängigkeit (Verwendet Object.entries).
 * 0.12 - (6. Oktober 2024) Restrukturierung des Programms, in der Online Version wird die Anzahl der unbeantworteten Fragen angezeigt. Das Ergebnis der Bildschirmauswertung wird mit stärker sichtbaren Farben angezeigt, damit falsche Antworten einfacher zu finden sind.
 * 0.11 - (4. Oktober 2024) Druckoptionen mit denen Seitenumbruch in Fragen verhindert und mehr Abstände eingefügt werden können (bessere Optik aber mehr Papierverbrauch)
 * 0.10 - (4. Oktober 2024) Ausgewählter Prüfungsteil bleibt bei einem reload ausgewählt.
@@ -65,7 +66,6 @@ Keine Garantie!
 
 # Lizenzen
 * Der Fragenkatalog wird unter der Lizenz der BNetzA weitergegeben: [https://www.govdata.de/dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)
-* Die Bibliothek JSONPath unterliegt MIT Lizenz.
 * Die Bibliothek KaTeX unterlieft der MIT Lizenz.
 * Das Projekt selbst unterliegt der Public Domain (Unlicense).
 
