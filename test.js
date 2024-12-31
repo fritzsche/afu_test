@@ -97,7 +97,23 @@ function html_questions(questions, online) {
         // answers
         let ans_html = html_answers(res.answers, res.correct, question.number, online);
         if (question.picture_question) {
-            picture = `<div><img  src="Fragen/svgs/${question.picture_question}.svg" /></div>`
+            const isFirefox = navigator.userAgent.toLowerCase().includes('firefox');
+            let badQuestion = false;
+            switch (question.number) {
+                case 'BE207':
+                case 'BE208':
+                case 'BE209':
+                case 'NE209':                    
+                case 'NF101':
+                case 'NF102':
+                case 'NF103':
+                case 'NF104':
+                case 'NF105':
+                case 'NF106':
+                case 'NG302': badQuestion = true;
+            }
+            if (isFirefox && badQuestion) picture = `<div><img  src="Fragen/svgs/${question.picture_question}.png" /></div>`
+            else picture = `<div><img  src="Fragen/svgs/${question.picture_question}.svg" /></div>`
         }
         answer_html += `<li> <strong class="title">${question.number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>`
         let correct_answer = ` data-correct="${res.correct}"`

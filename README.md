@@ -50,6 +50,8 @@ Ich teste die App aktuell nur mit Google Chrome Browser.
 Keine Garantie!
 
 # Version
+* 0.14 - (31. Dezember 2024) Fix: Der Firefox Browser einige Fragen nicht als SVG darstellen, so dass für diese Fragen Grafiken im PNG Format verwendet werden.
+Grafiken: BE207, BE208, BE209, NE209, NF101, NF102, NF103, NF104, NF105, NF106, NG302
 * 0.13 - (7. Oktober 2024) Aufräumen: Entferne JSONPath Bibliothek als Abhängigkeit (Verwendet Object.entries).
 * 0.12 - (6. Oktober 2024) Restrukturierung des Programms, in der Online Version wird die Anzahl der unbeantworteten Fragen angezeigt. Das Ergebnis der Bildschirmauswertung wird mit stärker sichtbaren Farben angezeigt, damit falsche Antworten einfacher zu finden sind.
 * 0.11 - (4. Oktober 2024) Druckoptionen mit denen Seitenumbruch in Fragen verhindert und mehr Abstände eingefügt werden können (bessere Optik aber mehr Papierverbrauch)
