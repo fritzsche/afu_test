@@ -34,7 +34,12 @@
             href="https://github.com/fritzsche/afu_test" target=”_blank”>GitHub</a> </li>
       </ul>
       <p id="sel_test">
-        <strong>Prüfungsteil:</strong>
+        <label><strong>Prüfungsteil / 50&#8486;:</strong></label>
+        <select id="pr_or_50">
+          <option value="P">Prüfungsteil</option>
+          <option value="5">50&#8486;</option>
+        </select>
+      <div id="pruefung"><strong>Prüfungsteil:</strong>
         <select id="test_select">
           <option value="V">Vorschriften</option>
           <option value="B">Betriebstechnik</option>
@@ -42,13 +47,25 @@
           <option value="E">Technik Klasse E</option>
           <option value="A">Technik Klasse A</option>
         </select>
+      </div>
+      <div id="ohm">
+        <strong>Lernziel:</strong>
+        <select id="ziel_select">
+          <option value="N">Klasse N</option>
+          <option value="NE">Klasse E</option>
+          <option value="NEA">Klasse A</option>
+          <option value="E">Von N nach E</option>
+          <option value="EA">Von N nach A</option>
+          <option value="A">Von E nach A</option>
+        </select>
+      </div>      
       </p>
       <p>
         <strong>Druckoptionen: </strong>
         <input type="checkbox" id="print_no_page_break" name="print_no_page_break" />
         <label for="print_no_page_break">Kein Seitenumbruch in Fragen</label>
         <input type="checkbox" id="print_more_margin" name="print_more_margin" />
-        <label for="print_more_margin">Extra Abstände</label>        
+        <label for="print_more_margin">Extra Abstände</label>
       </p>
     </div>
   </div>

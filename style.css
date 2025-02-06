@@ -1,6 +1,6 @@
 html {
   font-size: 13pt;
-  font-family: "Times New Roman", Times, serif;  
+  font-family: "Times New Roman", Times, serif;
 }
 
 .title {
@@ -12,11 +12,11 @@ html {
 }
 
 img {
- vertical-align:middle;
- margin: 5pt;
- zoom: 150%;
- max-height: 40%;
- max-width: 40%; 
+  vertical-align: middle;
+  margin: 5pt;
+  zoom: 150%;
+  max-height: 40%;
+  max-width: 40%;
 }
 
 .more_margin .question {
@@ -25,5 +25,9 @@ img {
 
 .more_margin .option {
   margin-top: 10pt;
-}  
+}
 
+
+.hidden {
+  display: none;
+}

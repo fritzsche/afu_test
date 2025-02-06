@@ -1,0 +1,5518 @@
+{
+  "sections": [
+    {
+      "chapter": 1,
+      "chapter_classes": "A",
+      "chapter_txt": "Wellenausbreitung",
+      "section": 1,
+      "section_txt": "Troposphäre III",
+      "class": "A"
+    },
+    {
+      "chapter": 1,
+      "chapter_classes": "A",
+      "chapter_txt": "Wellenausbreitung",
+      "section": 2,
+      "section_txt": "Aurora II",
+      "class": "A"
+    },
+    {
+      "chapter": 1,
+      "chapter_classes": "A",
+      "chapter_txt": "Wellenausbreitung",
+      "section": 3,
+      "section_txt": "Sporadic-E III",
+      "class": "A"
+    },
+    {
+      "chapter": 1,
+      "chapter_classes": "A",
+      "chapter_txt": "Wellenausbreitung",
+      "section": 4,
+      "section_txt": "Ionosphäre III",
+      "class": "A"
+    },
+    {
+      "chapter": 1,
+      "chapter_classes": "A",
+      "chapter_txt": "Wellenausbreitung",
+      "section": 5,
+      "section_txt": "Tote Zone II",
+      "class": "A"
+    },
+    {
+      "chapter": 1,
+      "chapter_classes": "A",
+      "chapter_txt": "Wellenausbreitung",
+      "section": 6,
+      "section_txt": "Interferenz",
+      "class": "A"
+    },
+    {
+      "chapter": 1,
+      "chapter_classes": "A",
+      "chapter_txt": "Wellenausbreitung",
+      "section": 7,
+      "section_txt": "Sprungdistanz II",
+      "class": "A"
+    },
+    {
+      "chapter": 1,
+      "chapter_classes": "A",
+      "chapter_txt": "Wellenausbreitung",
+      "section": 8,
+      "section_txt": "MUF und LUF II",
+      "class": "A"
+    },
+    {
+      "chapter": 1,
+      "chapter_classes": "A",
+      "chapter_txt": "Wellenausbreitung",
+      "section": 9,
+      "section_txt": "Kritische Frequenz",
+      "class": "A"
+    },
+    {
+      "chapter": 1,
+      "chapter_classes": "A",
+      "chapter_txt": "Wellenausbreitung",
+      "section": 10,
+      "section_txt": "Langer und kurzer Weg II",
+      "class": "A"
+    },
+    {
+      "chapter": 1,
+      "chapter_classes": "A",
+      "chapter_txt": "Wellenausbreitung",
+      "section": 11,
+      "section_txt": "Scatter",
+      "class": "A"
+    },
+    {
+      "chapter": 2,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom, Spannung, Widerstand, Leistung, Energie",
+      "section": 1,
+      "section_txt": "Physikalische Stromrichtung",
+      "class": "A"
+    },
+    {
+      "chapter": 2,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom, Spannung, Widerstand, Leistung, Energie",
+      "section": 2,
+      "section_txt": "Strom- und Spannungsmessung III",
+      "class": "A"
+    },
+    {
+      "chapter": 2,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom, Spannung, Widerstand, Leistung, Energie",
+      "section": 3,
+      "section_txt": "Oszilloskop II",
+      "class": "A"
+    },
+    {
+      "chapter": 2,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom, Spannung, Widerstand, Leistung, Energie",
+      "section": 4,
+      "section_txt": "Leiterwiderstand",
+      "class": "A"
+    },
+    {
+      "chapter": 2,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom, Spannung, Widerstand, Leistung, Energie",
+      "section": 5,
+      "section_txt": "Leistung beim Wechselstrom",
+      "class": "A"
+    },
+    {
+      "chapter": 2,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom, Spannung, Widerstand, Leistung, Energie",
+      "section": 6,
+      "section_txt": "Dezibel II",
+      "class": "A"
+    },
+    {
+      "chapter": 2,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom, Spannung, Widerstand, Leistung, Energie",
+      "section": 7,
+      "section_txt": "Ladung und Energie",
+      "class": "A"
+    },
+    {
+      "chapter": 3,
+      "chapter_classes": "A",
+      "chapter_txt": "Bauelemente",
+      "section": 1,
+      "section_txt": "Phase",
+      "class": "A"
+    },
+    {
+      "chapter": 3,
+      "chapter_classes": "A",
+      "chapter_txt": "Bauelemente",
+      "section": 2,
+      "section_txt": "Kondensator II",
+      "class": "A"
+    },
+    {
+      "chapter": 3,
+      "chapter_classes": "A",
+      "chapter_txt": "Bauelemente",
+      "section": 3,
+      "section_txt": "Spule II",
+      "class": "A"
+    },
+    {
+      "chapter": 3,
+      "chapter_classes": "A",
+      "chapter_txt": "Bauelemente",
+      "section": 4,
+      "section_txt": "Übertrager II",
+      "class": "A"
+    },
+    {
+      "chapter": 3,
+      "chapter_classes": "A",
+      "chapter_txt": "Bauelemente",
+      "section": 5,
+      "section_txt": "Diode II",
+      "class": "A"
+    },
+    {
+      "chapter": 3,
+      "chapter_classes": "A",
+      "chapter_txt": "Bauelemente",
+      "section": 6,
+      "section_txt": "Transistor II",
+      "class": "A"
+    },
+    {
+      "chapter": 3,
+      "chapter_classes": "A",
+      "chapter_txt": "Bauelemente",
+      "section": 7,
+      "section_txt": "Halbleiter II",
+      "class": "A"
+    },
+    {
+      "chapter": 3,
+      "chapter_classes": "A",
+      "chapter_txt": "Bauelemente",
+      "section": 8,
+      "section_txt": "Integrierte Schaltkreise",
+      "class": "A"
+    },
+    {
+      "chapter": 4,
+      "chapter_classes": "A",
+      "chapter_txt": "Reihen- und Parallelschaltung von Bauelementen",
+      "section": 1,
+      "section_txt": "Widerstandsnetzwerke II",
+      "class": "A"
+    },
+    {
+      "chapter": 4,
+      "chapter_classes": "A",
+      "chapter_txt": "Reihen- und Parallelschaltung von Bauelementen",
+      "section": 2,
+      "section_txt": "Spannungsteiler II",
+      "class": "A"
+    },
+    {
+      "chapter": 4,
+      "chapter_classes": "A",
+      "chapter_txt": "Reihen- und Parallelschaltung von Bauelementen",
+      "section": 3,
+      "section_txt": "Brückenschaltung",
+      "class": "A"
+    },
+    {
+      "chapter": 4,
+      "chapter_classes": "A",
+      "chapter_txt": "Reihen- und Parallelschaltung von Bauelementen",
+      "section": 4,
+      "section_txt": "Spule in Reihenschaltung",
+      "class": "A"
+    },
+    {
+      "chapter": 4,
+      "chapter_classes": "A",
+      "chapter_txt": "Reihen- und Parallelschaltung von Bauelementen",
+      "section": 5,
+      "section_txt": "Reihen- und Parallelschaltung gemischter Bauelemente",
+      "class": "A"
+    },
+    {
+      "chapter": 5,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom- und Spannungsversorgung",
+      "section": 1,
+      "section_txt": "Innenwiderstand",
+      "class": "A"
+    },
+    {
+      "chapter": 5,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom- und Spannungsversorgung",
+      "section": 2,
+      "section_txt": "Akkus",
+      "class": "A"
+    },
+    {
+      "chapter": 5,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom- und Spannungsversorgung",
+      "section": 3,
+      "section_txt": "Photovoltaik",
+      "class": "A"
+    },
+    {
+      "chapter": 5,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom- und Spannungsversorgung",
+      "section": 4,
+      "section_txt": "Spannungswandler",
+      "class": "A"
+    },
+    {
+      "chapter": 5,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom- und Spannungsversorgung",
+      "section": 5,
+      "section_txt": "Gleichrichter II",
+      "class": "A"
+    },
+    {
+      "chapter": 5,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom- und Spannungsversorgung",
+      "section": 6,
+      "section_txt": "Brückengleichrichter",
+      "class": "A"
+    },
+    {
+      "chapter": 5,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom- und Spannungsversorgung",
+      "section": 7,
+      "section_txt": "Vollweggleichrichter",
+      "class": "A"
+    },
+    {
+      "chapter": 5,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom- und Spannungsversorgung",
+      "section": 8,
+      "section_txt": "Restwelligkeit",
+      "class": "A"
+    },
+    {
+      "chapter": 5,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom- und Spannungsversorgung",
+      "section": 9,
+      "section_txt": "Schaltnetzteil II",
+      "class": "A"
+    },
+    {
+      "chapter": 5,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom- und Spannungsversorgung",
+      "section": 10,
+      "section_txt": "Spannungsstabilisierung",
+      "class": "A"
+    },
+    {
+      "chapter": 5,
+      "chapter_classes": "A",
+      "chapter_txt": "Strom- und Spannungsversorgung",
+      "section": 11,
+      "section_txt": "Fernspeiseweiche",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 1,
+      "section_txt": "Schwingkreis II",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 2,
+      "section_txt": "Spannungsgesteuerter Oszillator (VCO)",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 3,
+      "section_txt": "Temperaturkompensation von Oszillatoren",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 4,
+      "section_txt": "GPS-disziplinierter Oszillator",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 5,
+      "section_txt": "Spannungsstabilität von Oszillatoren",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 6,
+      "section_txt": "Oszillatorschaltungen",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 7,
+      "section_txt": "Direkte digitale Synthese",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 8,
+      "section_txt": "Phasenregelschleife (PLL)",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 9,
+      "section_txt": "Frequenzvervielfacher II",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 10,
+      "section_txt": "Konverter und Transverter II",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 11,
+      "section_txt": "Kollektorschaltung",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 12,
+      "section_txt": "Emitterschaltung",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 13,
+      "section_txt": "Verstärkerklassen",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 14,
+      "section_txt": "Verstärkungsleistung",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 15,
+      "section_txt": "Wirkungsgrad",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 16,
+      "section_txt": "Linearverstärker",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 17,
+      "section_txt": "Eigenschwingung",
+      "class": "A"
+    },
+    {
+      "chapter": 6,
+      "chapter_classes": "A",
+      "chapter_txt": "Grundlegende Schaltungen",
+      "section": 18,
+      "section_txt": "Begrenzung der Verstärkerbandbreite",
+      "class": "A"
+    },
+    {
+      "chapter": 7,
+      "chapter_classes": "A",
+      "chapter_txt": "Modulation",
+      "section": 1,
+      "section_txt": "Amplitudenmodulation (AM) II",
+      "class": "A"
+    },
+    {
+      "chapter": 7,
+      "chapter_classes": "A",
+      "chapter_txt": "Modulation",
+      "section": 2,
+      "section_txt": "Einseitenbandmodulation (SSB) III",
+      "class": "A"
+    },
+    {
+      "chapter": 7,
+      "chapter_classes": "A",
+      "chapter_txt": "Modulation",
+      "section": 3,
+      "section_txt": "Frequenzmodulation (FM) III",
+      "class": "A"
+    },
+    {
+      "chapter": 7,
+      "chapter_classes": "A",
+      "chapter_txt": "Modulation",
+      "section": 4,
+      "section_txt": "Phasenmodulation (PM)",
+      "class": "A"
+    },
+    {
+      "chapter": 7,
+      "chapter_classes": "A",
+      "chapter_txt": "Modulation",
+      "section": 5,
+      "section_txt": "Bandbreite III",
+      "class": "A"
+    },
+    {
+      "chapter": 7,
+      "chapter_classes": "A",
+      "chapter_txt": "Modulation",
+      "section": 6,
+      "section_txt": "Dynamikkompressor II",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 1,
+      "section_txt": "Überlagerungsempfänger (Einfachsuper) II",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 2,
+      "section_txt": "Mischer II",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 3,
+      "section_txt": "Spiegelfrequenzen",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 4,
+      "section_txt": "Doppelüberlagerungsempfänger (Doppelsuper)",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 5,
+      "section_txt": "Trennschärfe II",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 6,
+      "section_txt": "BFO II",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 7,
+      "section_txt": "Inter- und Kreuzmodulation",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 8,
+      "section_txt": "Begrenzerverstärker",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 9,
+      "section_txt": "Low Noise Block (LNB)",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 10,
+      "section_txt": "S-Meter",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 11,
+      "section_txt": "Dämpfungsglieder",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 12,
+      "section_txt": "Automatische Verstärkerregelung (AGC) II",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 13,
+      "section_txt": "SNR und Rauschzahl",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 14,
+      "section_txt": "Rauschen",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 15,
+      "section_txt": "Squelch II",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 16,
+      "section_txt": "Demodulator",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 17,
+      "section_txt": "Frequenzmessung II",
+      "class": "A"
+    },
+    {
+      "chapter": 8,
+      "chapter_classes": "A",
+      "chapter_txt": "Empfänger",
+      "section": 18,
+      "section_txt": "Frequenzgenauigkeit",
+      "class": "A"
+    },
+    {
+      "chapter": 9,
+      "chapter_classes": "A",
+      "chapter_txt": "Sender",
+      "section": 1,
+      "section_txt": "Modulatoren",
+      "class": "A"
+    },
+    {
+      "chapter": 9,
+      "chapter_classes": "A",
+      "chapter_txt": "Sender",
+      "section": 2,
+      "section_txt": "Nicht-sinusförmige Signale",
+      "class": "A"
+    },
+    {
+      "chapter": 9,
+      "chapter_classes": "A",
+      "chapter_txt": "Sender",
+      "section": 3,
+      "section_txt": "Leistungsverstärker",
+      "class": "A"
+    },
+    {
+      "chapter": 9,
+      "chapter_classes": "A",
+      "chapter_txt": "Sender",
+      "section": 4,
+      "section_txt": "Parasitäre Schwingungen",
+      "class": "A"
+    },
+    {
+      "chapter": 9,
+      "chapter_classes": "A",
+      "chapter_txt": "Sender",
+      "section": 5,
+      "section_txt": "Messungen am Sender",
+      "class": "A"
+    },
+    {
+      "chapter": 9,
+      "chapter_classes": "A",
+      "chapter_txt": "Sender",
+      "section": 6,
+      "section_txt": "Dummy-Load II",
+      "class": "A"
+    },
+    {
+      "chapter": 9,
+      "chapter_classes": "A",
+      "chapter_txt": "Sender",
+      "section": 7,
+      "section_txt": "Unerwünschte Aussendungen III",
+      "class": "A"
+    },
+    {
+      "chapter": 9,
+      "chapter_classes": "A",
+      "chapter_txt": "Sender",
+      "section": 8,
+      "section_txt": "Störungen elektronischer Geräte II",
+      "class": "A"
+    },
+    {
+      "chapter": 9,
+      "chapter_classes": "A",
+      "chapter_txt": "Sender",
+      "section": 9,
+      "section_txt": "Remote-Station",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 1,
+      "section_txt": "Phasenumtastung (PSK)",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 2,
+      "section_txt": "Symbolumschaltung und Bandbreite",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 3,
+      "section_txt": "Mehrwertige Verfahren",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 4,
+      "section_txt": "Quadraturamplitudenmodulation  (QAM)",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 5,
+      "section_txt": "Orthogonales Frequenzmultiplexverfahren (OFDM)",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 6,
+      "section_txt": "Shannon-Hartley-Gesetz",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 7,
+      "section_txt": "Quellencodierung",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 8,
+      "section_txt": "Kanalcodierung",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 9,
+      "section_txt": "Fehlererkennung",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 10,
+      "section_txt": "Fehlerkorrektur",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 11,
+      "section_txt": "Sende- und Empfangsketten",
+      "class": "A"
+    },
+    {
+      "chapter": 10,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Übertragungsverfahren",
+      "section": 12,
+      "section_txt": "Synchronization",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 1,
+      "section_txt": "Sampling und Quantisierung",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 2,
+      "section_txt": "Sampling",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 3,
+      "section_txt": "Abtasttheorem",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 4,
+      "section_txt": "Quantisierung",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 5,
+      "section_txt": "Analog-Digital-Umsetzer (ADC)",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 6,
+      "section_txt": "Digital-Analog-Umsetzer (DAC)",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 7,
+      "section_txt": "Anwendung von ADC und DAC",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 8,
+      "section_txt": "Anti-Alias-Filter",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 9,
+      "section_txt": "Rekonstruktionsfilter",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 10,
+      "section_txt": "Fourier-Transformation",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 11,
+      "section_txt": "Digitale Filter",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 12,
+      "section_txt": "I/Q-Verfahren",
+      "class": "A"
+    },
+    {
+      "chapter": 11,
+      "chapter_classes": "A",
+      "chapter_txt": "Digitale Signalverarbeitung",
+      "section": 13,
+      "section_txt": "Latenz",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 1,
+      "section_txt": "Polarisation III",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 2,
+      "section_txt": "Antennenformen III",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 3,
+      "section_txt": "Verkürzungsfaktor II",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 4,
+      "section_txt": "Fußpunktimpedanz II",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 5,
+      "section_txt": "Elektrische Verlängerung und Verkürzung",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 6,
+      "section_txt": "Near Vertical Incidence Skywave (NVIS)",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 7,
+      "section_txt": "Traps",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 8,
+      "section_txt": "Yagi-Uda-Antenne III",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 9,
+      "section_txt": "Parabolspiegel II",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 10,
+      "section_txt": "Offset-Spiegel",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 11,
+      "section_txt": "Vor-/Rückverhältnis",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 12,
+      "section_txt": "Halbwertsbreite",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 13,
+      "section_txt": "Strom- und Spannungsspeisung II",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 14,
+      "section_txt": "Frequenzabhängige Stromverteilung",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 15,
+      "section_txt": "Übertragungsleitungen III",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 16,
+      "section_txt": "Wellenwiderstand",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 17,
+      "section_txt": "Kabeldämpfung II",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 18,
+      "section_txt": "Skineffekt",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 19,
+      "section_txt": "Stehwellenverhältnis (SWR) III",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 20,
+      "section_txt": "Stehwellenmessgerät (SWR-Meter) II",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 21,
+      "section_txt": "Vektorieller Netzwerkanalysator (VNA) II",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 22,
+      "section_txt": "Phasenverschiebung in Übertragungsleitungen",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 23,
+      "section_txt": "Impedanztransformation",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 24,
+      "section_txt": "Lecherleitung",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 25,
+      "section_txt": "Mantelwellen II",
+      "class": "A"
+    },
+    {
+      "chapter": 12,
+      "chapter_classes": "A",
+      "chapter_txt": "Antennen und Übertragungsleitungen",
+      "section": 26,
+      "section_txt": "Umwegleitung",
+      "class": "A"
+    },
+    {
+      "chapter": 13,
+      "chapter_classes": "A",
+      "chapter_txt": "Personenschutzabstand",
+      "section": 1,
+      "section_txt": "Effektive Strahlungsleistung (ERP) II",
+      "class": "A"
+    },
+    {
+      "chapter": 13,
+      "chapter_classes": "A",
+      "chapter_txt": "Personenschutzabstand",
+      "section": 2,
+      "section_txt": "Personenschutzabstand III",
+      "class": "A"
+    },
+    {
+      "chapter": 13,
+      "chapter_classes": "A",
+      "chapter_txt": "Personenschutzabstand",
+      "section": 3,
+      "section_txt": "Näherungsformel II",
+      "class": "A"
+    },
+    {
+      "chapter": 13,
+      "chapter_classes": "A",
+      "chapter_txt": "Personenschutzabstand",
+      "section": 4,
+      "section_txt": "Nahfeld",
+      "class": "A"
+    },
+    {
+      "chapter": 13,
+      "chapter_classes": "A",
+      "chapter_txt": "Personenschutzabstand",
+      "section": 5,
+      "section_txt": "Personenschutz bei Richtantennen",
+      "class": "A"
+    },
+    {
+      "chapter": 14,
+      "chapter_classes": "A",
+      "chapter_txt": "Sicherheit",
+      "section": 1,
+      "section_txt": "Öffnen elektrischer Geräte II",
+      "class": "A"
+    },
+    {
+      "chapter": 14,
+      "chapter_classes": "A",
+      "chapter_txt": "Sicherheit",
+      "section": 2,
+      "section_txt": "Schutzerdung und Potentialausgleich II",
+      "class": "A"
+    },
+    {
+      "chapter": 14,
+      "chapter_classes": "A",
+      "chapter_txt": "Sicherheit",
+      "section": 3,
+      "section_txt": "Berühren von Antennen II",
+      "class": "A"
+    }
+  ],
+  "questions": [
+    {
+      "chapter": 1,
+      "section": 1,
+      "question": 1,
+      "number": "AH203"
+    },
+    {
+      "chapter": 1,
+      "section": 1,
+      "question": 2,
+      "number": "AH309"
+    },
+    {
+      "chapter": 1,
+      "section": 1,
+      "question": 3,
+      "number": "AH201"
+    },
+    {
+      "chapter": 1,
+      "section": 1,
+      "question": 4,
+      "number": "AH221"
+    },
+    {
+      "chapter": 1,
+      "section": 1,
+      "question": 5,
+      "number": "AH101"
+    },
+    {
+      "chapter": 1,
+      "section": 1,
+      "question": 6,
+      "number": "AH107"
+    },
+    {
+      "chapter": 1,
+      "section": 1,
+      "question": 7,
+      "number": "AH108"
+    },
+    {
+      "chapter": 1,
+      "section": 1,
+      "question": 8,
+      "number": "AH106"
+    },
+    {
+      "chapter": 1,
+      "section": 1,
+      "question": 9,
+      "number": "AH105"
+    },
+    {
+      "chapter": 1,
+      "section": 1,
+      "question": 10,
+      "number": "AH219"
+    },
+    {
+      "chapter": 1,
+      "section": 2,
+      "question": 1,
+      "number": "AH306"
+    },
+    {
+      "chapter": 1,
+      "section": 2,
+      "question": 2,
+      "number": "AH304"
+    },
+    {
+      "chapter": 1,
+      "section": 2,
+      "question": 3,
+      "number": "AH305"
+    },
+    {
+      "chapter": 1,
+      "section": 2,
+      "question": 4,
+      "number": "AH307"
+    },
+    {
+      "chapter": 1,
+      "section": 2,
+      "question": 5,
+      "number": "AH308"
+    },
+    {
+      "chapter": 1,
+      "section": 2,
+      "question": 6,
+      "number": "AH303"
+    },
+    {
+      "chapter": 1,
+      "section": 2,
+      "question": 7,
+      "number": "AH302"
+    },
+    {
+      "chapter": 1,
+      "section": 3,
+      "question": 1,
+      "number": "AH220"
+    },
+    {
+      "chapter": 1,
+      "section": 3,
+      "question": 2,
+      "number": "AH301"
+    },
+    {
+      "chapter": 1,
+      "section": 3,
+      "question": 3,
+      "number": "AH214"
+    },
+    {
+      "chapter": 1,
+      "section": 4,
+      "question": 1,
+      "number": "AH202"
+    },
+    {
+      "chapter": 1,
+      "section": 4,
+      "question": 2,
+      "number": "AH102"
+    },
+    {
+      "chapter": 1,
+      "section": 4,
+      "question": 3,
+      "number": "AH103"
+    },
+    {
+      "chapter": 1,
+      "section": 4,
+      "question": 4,
+      "number": "AH104"
+    },
+    {
+      "chapter": 1,
+      "section": 5,
+      "question": 1,
+      "number": "AH215"
+    },
+    {
+      "chapter": 1,
+      "section": 6,
+      "question": 1,
+      "number": "AH222"
+    },
+    {
+      "chapter": 1,
+      "section": 7,
+      "question": 1,
+      "number": "AH213"
+    },
+    {
+      "chapter": 1,
+      "section": 7,
+      "question": 2,
+      "number": "AH212"
+    },
+    {
+      "chapter": 1,
+      "section": 8,
+      "question": 1,
+      "number": "AH210"
+    },
+    {
+      "chapter": 1,
+      "section": 8,
+      "question": 2,
+      "number": "AH211"
+    },
+    {
+      "chapter": 1,
+      "section": 8,
+      "question": 3,
+      "number": "AH209"
+    },
+    {
+      "chapter": 1,
+      "section": 8,
+      "question": 4,
+      "number": "AH208"
+    },
+    {
+      "chapter": 1,
+      "section": 8,
+      "question": 5,
+      "number": "AH207"
+    },
+    {
+      "chapter": 1,
+      "section": 8,
+      "question": 6,
+      "number": "AH206"
+    },
+    {
+      "chapter": 1,
+      "section": 9,
+      "question": 1,
+      "number": "AH205"
+    },
+    {
+      "chapter": 1,
+      "section": 9,
+      "question": 2,
+      "number": "AH204"
+    },
+    {
+      "chapter": 1,
+      "section": 10,
+      "question": 1,
+      "number": "AH217"
+    },
+    {
+      "chapter": 1,
+      "section": 10,
+      "question": 2,
+      "number": "AH218"
+    },
+    {
+      "chapter": 1,
+      "section": 10,
+      "question": 3,
+      "number": "AH216"
+    },
+    {
+      "chapter": 1,
+      "section": 11,
+      "question": 1,
+      "number": "AH310"
+    },
+    {
+      "chapter": 1,
+      "section": 11,
+      "question": 2,
+      "number": "AH311"
+    },
+    {
+      "chapter": 1,
+      "section": 11,
+      "question": 3,
+      "number": "AH223"
+    },
+    {
+      "chapter": 2,
+      "section": 1,
+      "question": 1,
+      "number": "AB601"
+    },
+    {
+      "chapter": 2,
+      "section": 2,
+      "question": 1,
+      "number": "AI105"
+    },
+    {
+      "chapter": 2,
+      "section": 2,
+      "question": 2,
+      "number": "AI102"
+    },
+    {
+      "chapter": 2,
+      "section": 2,
+      "question": 3,
+      "number": "AI101"
+    },
+    {
+      "chapter": 2,
+      "section": 2,
+      "question": 4,
+      "number": "AI104"
+    },
+    {
+      "chapter": 2,
+      "section": 2,
+      "question": 5,
+      "number": "AI103"
+    },
+    {
+      "chapter": 2,
+      "section": 3,
+      "question": 1,
+      "number": "AI305"
+    },
+    {
+      "chapter": 2,
+      "section": 3,
+      "question": 2,
+      "number": "AI306"
+    },
+    {
+      "chapter": 2,
+      "section": 3,
+      "question": 3,
+      "number": "AI303"
+    },
+    {
+      "chapter": 2,
+      "section": 3,
+      "question": 4,
+      "number": "AI304"
+    },
+    {
+      "chapter": 2,
+      "section": 3,
+      "question": 5,
+      "number": "AI301"
+    },
+    {
+      "chapter": 2,
+      "section": 3,
+      "question": 6,
+      "number": "AI302"
+    },
+    {
+      "chapter": 2,
+      "section": 4,
+      "question": 1,
+      "number": "AB103"
+    },
+    {
+      "chapter": 2,
+      "section": 4,
+      "question": 2,
+      "number": "AB102"
+    },
+    {
+      "chapter": 2,
+      "section": 4,
+      "question": 3,
+      "number": "AB101"
+    },
+    {
+      "chapter": 2,
+      "section": 5,
+      "question": 1,
+      "number": "AB301"
+    },
+    {
+      "chapter": 2,
+      "section": 6,
+      "question": 1,
+      "number": "AA108"
+    },
+    {
+      "chapter": 2,
+      "section": 6,
+      "question": 2,
+      "number": "AA109"
+    },
+    {
+      "chapter": 2,
+      "section": 6,
+      "question": 3,
+      "number": "AA112"
+    },
+    {
+      "chapter": 2,
+      "section": 6,
+      "question": 4,
+      "number": "AA105"
+    },
+    {
+      "chapter": 2,
+      "section": 6,
+      "question": 5,
+      "number": "AA111"
+    },
+    {
+      "chapter": 2,
+      "section": 6,
+      "question": 6,
+      "number": "AA110"
+    },
+    {
+      "chapter": 2,
+      "section": 6,
+      "question": 7,
+      "number": "AA106"
+    },
+    {
+      "chapter": 2,
+      "section": 6,
+      "question": 8,
+      "number": "AA107"
+    },
+    {
+      "chapter": 2,
+      "section": 7,
+      "question": 1,
+      "number": "AA103"
+    },
+    {
+      "chapter": 2,
+      "section": 7,
+      "question": 2,
+      "number": "AB503"
+    },
+    {
+      "chapter": 2,
+      "section": 7,
+      "question": 3,
+      "number": "AB502"
+    },
+    {
+      "chapter": 2,
+      "section": 7,
+      "question": 4,
+      "number": "AA102"
+    },
+    {
+      "chapter": 3,
+      "section": 1,
+      "question": 1,
+      "number": "AB303"
+    },
+    {
+      "chapter": 3,
+      "section": 1,
+      "question": 2,
+      "number": "AB302"
+    },
+    {
+      "chapter": 3,
+      "section": 2,
+      "question": 1,
+      "number": "AC103"
+    },
+    {
+      "chapter": 3,
+      "section": 2,
+      "question": 2,
+      "number": "AC106"
+    },
+    {
+      "chapter": 3,
+      "section": 2,
+      "question": 3,
+      "number": "AC104"
+    },
+    {
+      "chapter": 3,
+      "section": 2,
+      "question": 4,
+      "number": "AC107"
+    },
+    {
+      "chapter": 3,
+      "section": 2,
+      "question": 5,
+      "number": "AC105"
+    },
+    {
+      "chapter": 3,
+      "section": 2,
+      "question": 6,
+      "number": "AC109"
+    },
+    {
+      "chapter": 3,
+      "section": 2,
+      "question": 7,
+      "number": "AC110"
+    },
+    {
+      "chapter": 3,
+      "section": 2,
+      "question": 8,
+      "number": "AC102"
+    },
+    {
+      "chapter": 3,
+      "section": 2,
+      "question": 9,
+      "number": "AC108"
+    },
+    {
+      "chapter": 3,
+      "section": 2,
+      "question": 10,
+      "number": "AC101"
+    },
+    {
+      "chapter": 3,
+      "section": 2,
+      "question": 11,
+      "number": "AC111"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 1,
+      "number": "AC210"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 2,
+      "number": "AC211"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 3,
+      "number": "AC208"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 4,
+      "number": "AC205"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 5,
+      "number": "AC206"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 6,
+      "number": "AC207"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 7,
+      "number": "AC209"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 8,
+      "number": "AC202"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 9,
+      "number": "AC204"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 10,
+      "number": "AC203"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 11,
+      "number": "AC201"
+    },
+    {
+      "chapter": 3,
+      "section": 3,
+      "question": 12,
+      "number": "AA101"
+    },
+    {
+      "chapter": 3,
+      "section": 4,
+      "question": 1,
+      "number": "AC306"
+    },
+    {
+      "chapter": 3,
+      "section": 4,
+      "question": 2,
+      "number": "AC305"
+    },
+    {
+      "chapter": 3,
+      "section": 4,
+      "question": 3,
+      "number": "AC304"
+    },
+    {
+      "chapter": 3,
+      "section": 4,
+      "question": 4,
+      "number": "AC303"
+    },
+    {
+      "chapter": 3,
+      "section": 4,
+      "question": 5,
+      "number": "AC307"
+    },
+    {
+      "chapter": 3,
+      "section": 4,
+      "question": 6,
+      "number": "AC302"
+    },
+    {
+      "chapter": 3,
+      "section": 4,
+      "question": 7,
+      "number": "AC301"
+    },
+    {
+      "chapter": 3,
+      "section": 5,
+      "question": 1,
+      "number": "AC406"
+    },
+    {
+      "chapter": 3,
+      "section": 5,
+      "question": 2,
+      "number": "AC405"
+    },
+    {
+      "chapter": 3,
+      "section": 5,
+      "question": 3,
+      "number": "AC407"
+    },
+    {
+      "chapter": 3,
+      "section": 5,
+      "question": 4,
+      "number": "AC408"
+    },
+    {
+      "chapter": 3,
+      "section": 5,
+      "question": 5,
+      "number": "AC403"
+    },
+    {
+      "chapter": 3,
+      "section": 5,
+      "question": 6,
+      "number": "AC404"
+    },
+    {
+      "chapter": 3,
+      "section": 5,
+      "question": 7,
+      "number": "AC401"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 1,
+      "number": "AC512"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 2,
+      "number": "AC510"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 3,
+      "number": "AC506"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 4,
+      "number": "AC522"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 5,
+      "number": "AC521"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 6,
+      "number": "AC516"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 7,
+      "number": "AC523"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 8,
+      "number": "AC504"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 9,
+      "number": "AC503"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 10,
+      "number": "AC502"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 11,
+      "number": "AC519"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 12,
+      "number": "AC520"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 13,
+      "number": "AC517"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 14,
+      "number": "AC518"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 15,
+      "number": "AC515"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 16,
+      "number": "AC514"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 17,
+      "number": "AC509"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 18,
+      "number": "AC511"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 19,
+      "number": "AC508"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 20,
+      "number": "AC507"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 21,
+      "number": "AC524"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 22,
+      "number": "AC513"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 23,
+      "number": "AC501"
+    },
+    {
+      "chapter": 3,
+      "section": 6,
+      "question": 24,
+      "number": "AC505"
+    },
+    {
+      "chapter": 3,
+      "section": 7,
+      "question": 1,
+      "number": "AB105"
+    },
+    {
+      "chapter": 3,
+      "section": 7,
+      "question": 2,
+      "number": "AC402"
+    },
+    {
+      "chapter": 3,
+      "section": 7,
+      "question": 3,
+      "number": "AB109"
+    },
+    {
+      "chapter": 3,
+      "section": 7,
+      "question": 4,
+      "number": "AB108"
+    },
+    {
+      "chapter": 3,
+      "section": 7,
+      "question": 5,
+      "number": "AB106"
+    },
+    {
+      "chapter": 3,
+      "section": 7,
+      "question": 6,
+      "number": "AB107"
+    },
+    {
+      "chapter": 3,
+      "section": 7,
+      "question": 7,
+      "number": "AB104"
+    },
+    {
+      "chapter": 3,
+      "section": 8,
+      "question": 1,
+      "number": "AF427"
+    },
+    {
+      "chapter": 3,
+      "section": 8,
+      "question": 2,
+      "number": "AF425"
+    },
+    {
+      "chapter": 3,
+      "section": 8,
+      "question": 3,
+      "number": "AF426"
+    },
+    {
+      "chapter": 3,
+      "section": 8,
+      "question": 4,
+      "number": "AC603"
+    },
+    {
+      "chapter": 3,
+      "section": 8,
+      "question": 5,
+      "number": "AC602"
+    },
+    {
+      "chapter": 3,
+      "section": 8,
+      "question": 6,
+      "number": "AC604"
+    },
+    {
+      "chapter": 3,
+      "section": 8,
+      "question": 7,
+      "number": "AC601"
+    },
+    {
+      "chapter": 4,
+      "section": 1,
+      "question": 1,
+      "number": "AD114"
+    },
+    {
+      "chapter": 4,
+      "section": 1,
+      "question": 2,
+      "number": "AD109"
+    },
+    {
+      "chapter": 4,
+      "section": 1,
+      "question": 3,
+      "number": "AD110"
+    },
+    {
+      "chapter": 4,
+      "section": 1,
+      "question": 4,
+      "number": "AD108"
+    },
+    {
+      "chapter": 4,
+      "section": 1,
+      "question": 5,
+      "number": "AD107"
+    },
+    {
+      "chapter": 4,
+      "section": 1,
+      "question": 6,
+      "number": "AD106"
+    },
+    {
+      "chapter": 4,
+      "section": 2,
+      "question": 1,
+      "number": "AD115"
+    },
+    {
+      "chapter": 4,
+      "section": 3,
+      "question": 1,
+      "number": "AD113"
+    },
+    {
+      "chapter": 4,
+      "section": 3,
+      "question": 2,
+      "number": "AD112"
+    },
+    {
+      "chapter": 4,
+      "section": 3,
+      "question": 3,
+      "number": "AD111"
+    },
+    {
+      "chapter": 4,
+      "section": 4,
+      "question": 1,
+      "number": "AD102"
+    },
+    {
+      "chapter": 4,
+      "section": 5,
+      "question": 1,
+      "number": "AD105"
+    },
+    {
+      "chapter": 4,
+      "section": 5,
+      "question": 2,
+      "number": "AD104"
+    },
+    {
+      "chapter": 4,
+      "section": 5,
+      "question": 3,
+      "number": "AD103"
+    },
+    {
+      "chapter": 4,
+      "section": 5,
+      "question": 4,
+      "number": "AD101"
+    },
+    {
+      "chapter": 5,
+      "section": 1,
+      "question": 1,
+      "number": "AB201"
+    },
+    {
+      "chapter": 5,
+      "section": 1,
+      "question": 2,
+      "number": "AB203"
+    },
+    {
+      "chapter": 5,
+      "section": 1,
+      "question": 3,
+      "number": "AB204"
+    },
+    {
+      "chapter": 5,
+      "section": 1,
+      "question": 4,
+      "number": "AB202"
+    },
+    {
+      "chapter": 5,
+      "section": 1,
+      "question": 5,
+      "number": "AB205"
+    },
+    {
+      "chapter": 5,
+      "section": 1,
+      "question": 6,
+      "number": "AB207"
+    },
+    {
+      "chapter": 5,
+      "section": 1,
+      "question": 7,
+      "number": "AB206"
+    },
+    {
+      "chapter": 5,
+      "section": 1,
+      "question": 8,
+      "number": "AB208"
+    },
+    {
+      "chapter": 5,
+      "section": 2,
+      "question": 1,
+      "number": "AB501"
+    },
+    {
+      "chapter": 5,
+      "section": 2,
+      "question": 2,
+      "number": "AB210"
+    },
+    {
+      "chapter": 5,
+      "section": 2,
+      "question": 3,
+      "number": "AB211"
+    },
+    {
+      "chapter": 5,
+      "section": 2,
+      "question": 4,
+      "number": "AB209"
+    },
+    {
+      "chapter": 5,
+      "section": 3,
+      "question": 1,
+      "number": "AB212"
+    },
+    {
+      "chapter": 5,
+      "section": 3,
+      "question": 2,
+      "number": "AD301"
+    },
+    {
+      "chapter": 5,
+      "section": 4,
+      "question": 1,
+      "number": "AB214"
+    },
+    {
+      "chapter": 5,
+      "section": 4,
+      "question": 2,
+      "number": "AB213"
+    },
+    {
+      "chapter": 5,
+      "section": 5,
+      "question": 1,
+      "number": "AD303"
+    },
+    {
+      "chapter": 5,
+      "section": 5,
+      "question": 2,
+      "number": "AD304"
+    },
+    {
+      "chapter": 5,
+      "section": 5,
+      "question": 3,
+      "number": "AD302"
+    },
+    {
+      "chapter": 5,
+      "section": 6,
+      "question": 1,
+      "number": "AD305"
+    },
+    {
+      "chapter": 5,
+      "section": 6,
+      "question": 2,
+      "number": "AD306"
+    },
+    {
+      "chapter": 5,
+      "section": 7,
+      "question": 1,
+      "number": "AD310"
+    },
+    {
+      "chapter": 5,
+      "section": 7,
+      "question": 2,
+      "number": "AD307"
+    },
+    {
+      "chapter": 5,
+      "section": 7,
+      "question": 3,
+      "number": "AD308"
+    },
+    {
+      "chapter": 5,
+      "section": 8,
+      "question": 1,
+      "number": "AD309"
+    },
+    {
+      "chapter": 5,
+      "section": 9,
+      "question": 1,
+      "number": "AD313"
+    },
+    {
+      "chapter": 5,
+      "section": 9,
+      "question": 2,
+      "number": "AD314"
+    },
+    {
+      "chapter": 5,
+      "section": 9,
+      "question": 3,
+      "number": "AD312"
+    },
+    {
+      "chapter": 5,
+      "section": 9,
+      "question": 4,
+      "number": "AD311"
+    },
+    {
+      "chapter": 5,
+      "section": 10,
+      "question": 1,
+      "number": "AD321"
+    },
+    {
+      "chapter": 5,
+      "section": 10,
+      "question": 2,
+      "number": "AD320"
+    },
+    {
+      "chapter": 5,
+      "section": 10,
+      "question": 3,
+      "number": "AD317"
+    },
+    {
+      "chapter": 5,
+      "section": 10,
+      "question": 4,
+      "number": "AD318"
+    },
+    {
+      "chapter": 5,
+      "section": 10,
+      "question": 5,
+      "number": "AD319"
+    },
+    {
+      "chapter": 5,
+      "section": 10,
+      "question": 6,
+      "number": "AD315"
+    },
+    {
+      "chapter": 5,
+      "section": 10,
+      "question": 7,
+      "number": "AD316"
+    },
+    {
+      "chapter": 5,
+      "section": 11,
+      "question": 1,
+      "number": "AD324"
+    },
+    {
+      "chapter": 5,
+      "section": 11,
+      "question": 2,
+      "number": "AD325"
+    },
+    {
+      "chapter": 5,
+      "section": 11,
+      "question": 3,
+      "number": "AD323"
+    },
+    {
+      "chapter": 5,
+      "section": 11,
+      "question": 4,
+      "number": "AD322"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 1,
+      "number": "AD213"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 2,
+      "number": "AD214"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 3,
+      "number": "AD215"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 4,
+      "number": "AD217"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 5,
+      "number": "AD203"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 6,
+      "number": "AD202"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 7,
+      "number": "AD219"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 8,
+      "number": "AD222"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 9,
+      "number": "AD221"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 10,
+      "number": "AD228"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 11,
+      "number": "AD227"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 12,
+      "number": "AD229"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 13,
+      "number": "AD205"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 14,
+      "number": "AD220"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 15,
+      "number": "AD224"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 16,
+      "number": "AD223"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 17,
+      "number": "AD226"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 18,
+      "number": "AD225"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 19,
+      "number": "AD201"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 20,
+      "number": "AD207"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 21,
+      "number": "AD209"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 22,
+      "number": "AD208"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 23,
+      "number": "AD211"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 24,
+      "number": "AD210"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 25,
+      "number": "AD212"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 26,
+      "number": "AD216"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 27,
+      "number": "AD204"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 28,
+      "number": "AD206"
+    },
+    {
+      "chapter": 6,
+      "section": 1,
+      "question": 29,
+      "number": "AD218"
+    },
+    {
+      "chapter": 6,
+      "section": 2,
+      "question": 1,
+      "number": "AD611"
+    },
+    {
+      "chapter": 6,
+      "section": 2,
+      "question": 2,
+      "number": "AD601"
+    },
+    {
+      "chapter": 6,
+      "section": 3,
+      "question": 1,
+      "number": "AD604"
+    },
+    {
+      "chapter": 6,
+      "section": 3,
+      "question": 2,
+      "number": "AD605"
+    },
+    {
+      "chapter": 6,
+      "section": 3,
+      "question": 3,
+      "number": "AD603"
+    },
+    {
+      "chapter": 6,
+      "section": 3,
+      "question": 4,
+      "number": "AD602"
+    },
+    {
+      "chapter": 6,
+      "section": 3,
+      "question": 5,
+      "number": "AF215"
+    },
+    {
+      "chapter": 6,
+      "section": 4,
+      "question": 1,
+      "number": "AD606"
+    },
+    {
+      "chapter": 6,
+      "section": 5,
+      "question": 1,
+      "number": "AD607"
+    },
+    {
+      "chapter": 6,
+      "section": 5,
+      "question": 2,
+      "number": "AD608"
+    },
+    {
+      "chapter": 6,
+      "section": 5,
+      "question": 3,
+      "number": "AD612"
+    },
+    {
+      "chapter": 6,
+      "section": 5,
+      "question": 4,
+      "number": "AD609"
+    },
+    {
+      "chapter": 6,
+      "section": 6,
+      "question": 1,
+      "number": "AD618"
+    },
+    {
+      "chapter": 6,
+      "section": 6,
+      "question": 2,
+      "number": "AD610"
+    },
+    {
+      "chapter": 6,
+      "section": 6,
+      "question": 3,
+      "number": "AD615"
+    },
+    {
+      "chapter": 6,
+      "section": 6,
+      "question": 4,
+      "number": "AD616"
+    },
+    {
+      "chapter": 6,
+      "section": 6,
+      "question": 5,
+      "number": "AD613"
+    },
+    {
+      "chapter": 6,
+      "section": 6,
+      "question": 6,
+      "number": "AD619"
+    },
+    {
+      "chapter": 6,
+      "section": 6,
+      "question": 7,
+      "number": "AD617"
+    },
+    {
+      "chapter": 6,
+      "section": 6,
+      "question": 8,
+      "number": "AD614"
+    },
+    {
+      "chapter": 6,
+      "section": 7,
+      "question": 1,
+      "number": "AD620"
+    },
+    {
+      "chapter": 6,
+      "section": 8,
+      "question": 1,
+      "number": "AD703"
+    },
+    {
+      "chapter": 6,
+      "section": 8,
+      "question": 2,
+      "number": "AD704"
+    },
+    {
+      "chapter": 6,
+      "section": 8,
+      "question": 3,
+      "number": "AD701"
+    },
+    {
+      "chapter": 6,
+      "section": 8,
+      "question": 4,
+      "number": "AD705"
+    },
+    {
+      "chapter": 6,
+      "section": 8,
+      "question": 5,
+      "number": "AD702"
+    },
+    {
+      "chapter": 6,
+      "section": 9,
+      "question": 1,
+      "number": "AF314"
+    },
+    {
+      "chapter": 6,
+      "section": 9,
+      "question": 2,
+      "number": "AF312"
+    },
+    {
+      "chapter": 6,
+      "section": 9,
+      "question": 3,
+      "number": "AF313"
+    },
+    {
+      "chapter": 6,
+      "section": 9,
+      "question": 4,
+      "number": "AF311"
+    },
+    {
+      "chapter": 6,
+      "section": 10,
+      "question": 1,
+      "number": "AF301"
+    },
+    {
+      "chapter": 6,
+      "section": 10,
+      "question": 2,
+      "number": "AF502"
+    },
+    {
+      "chapter": 6,
+      "section": 10,
+      "question": 3,
+      "number": "AF501"
+    },
+    {
+      "chapter": 6,
+      "section": 11,
+      "question": 1,
+      "number": "AD405"
+    },
+    {
+      "chapter": 6,
+      "section": 11,
+      "question": 2,
+      "number": "AD404"
+    },
+    {
+      "chapter": 6,
+      "section": 11,
+      "question": 3,
+      "number": "AD403"
+    },
+    {
+      "chapter": 6,
+      "section": 11,
+      "question": 4,
+      "number": "AD402"
+    },
+    {
+      "chapter": 6,
+      "section": 11,
+      "question": 5,
+      "number": "AD401"
+    },
+    {
+      "chapter": 6,
+      "section": 12,
+      "question": 1,
+      "number": "AD407"
+    },
+    {
+      "chapter": 6,
+      "section": 12,
+      "question": 2,
+      "number": "AD406"
+    },
+    {
+      "chapter": 6,
+      "section": 12,
+      "question": 3,
+      "number": "AD410"
+    },
+    {
+      "chapter": 6,
+      "section": 12,
+      "question": 4,
+      "number": "AD412"
+    },
+    {
+      "chapter": 6,
+      "section": 12,
+      "question": 5,
+      "number": "AD414"
+    },
+    {
+      "chapter": 6,
+      "section": 12,
+      "question": 6,
+      "number": "AD413"
+    },
+    {
+      "chapter": 6,
+      "section": 12,
+      "question": 7,
+      "number": "AD411"
+    },
+    {
+      "chapter": 6,
+      "section": 12,
+      "question": 8,
+      "number": "AD409"
+    },
+    {
+      "chapter": 6,
+      "section": 12,
+      "question": 9,
+      "number": "AD408"
+    },
+    {
+      "chapter": 6,
+      "section": 12,
+      "question": 10,
+      "number": "AD415"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 1,
+      "number": "AJ218"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 2,
+      "number": "AF403"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 3,
+      "number": "AF402"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 4,
+      "number": "AD422"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 5,
+      "number": "AD417"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 6,
+      "number": "AD423"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 7,
+      "number": "AD418"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 8,
+      "number": "AD425"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 9,
+      "number": "AD424"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 10,
+      "number": "AD421"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 11,
+      "number": "AD420"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 12,
+      "number": "AD419"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "question": 13,
+      "number": "AD416"
+    },
+    {
+      "chapter": 6,
+      "section": 14,
+      "question": 1,
+      "number": "AD426"
+    },
+    {
+      "chapter": 6,
+      "section": 14,
+      "question": 2,
+      "number": "AD428"
+    },
+    {
+      "chapter": 6,
+      "section": 14,
+      "question": 3,
+      "number": "AD427"
+    },
+    {
+      "chapter": 6,
+      "section": 15,
+      "question": 1,
+      "number": "AD429"
+    },
+    {
+      "chapter": 6,
+      "section": 15,
+      "question": 2,
+      "number": "AD430"
+    },
+    {
+      "chapter": 6,
+      "section": 16,
+      "question": 1,
+      "number": "AD431"
+    },
+    {
+      "chapter": 6,
+      "section": 17,
+      "question": 1,
+      "number": "AJ215"
+    },
+    {
+      "chapter": 6,
+      "section": 17,
+      "question": 2,
+      "number": "AJ216"
+    },
+    {
+      "chapter": 6,
+      "section": 17,
+      "question": 3,
+      "number": "AD432"
+    },
+    {
+      "chapter": 6,
+      "section": 18,
+      "question": 1,
+      "number": "AD433"
+    },
+    {
+      "chapter": 7,
+      "section": 1,
+      "question": 1,
+      "number": "AE202"
+    },
+    {
+      "chapter": 7,
+      "section": 1,
+      "question": 2,
+      "number": "AE201"
+    },
+    {
+      "chapter": 7,
+      "section": 1,
+      "question": 3,
+      "number": "AE204"
+    },
+    {
+      "chapter": 7,
+      "section": 1,
+      "question": 4,
+      "number": "AE203"
+    },
+    {
+      "chapter": 7,
+      "section": 2,
+      "question": 1,
+      "number": "AE213"
+    },
+    {
+      "chapter": 7,
+      "section": 2,
+      "question": 2,
+      "number": "AE208"
+    },
+    {
+      "chapter": 7,
+      "section": 2,
+      "question": 3,
+      "number": "AE209"
+    },
+    {
+      "chapter": 7,
+      "section": 2,
+      "question": 4,
+      "number": "AE207"
+    },
+    {
+      "chapter": 7,
+      "section": 2,
+      "question": 5,
+      "number": "AE205"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 1,
+      "number": "AE312"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 2,
+      "number": "AE311"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 3,
+      "number": "AE308"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 4,
+      "number": "AE301"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 5,
+      "number": "AE307"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 6,
+      "number": "AE310"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 7,
+      "number": "AE305"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 8,
+      "number": "AE306"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 9,
+      "number": "AE303"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 10,
+      "number": "AE304"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 11,
+      "number": "AE302"
+    },
+    {
+      "chapter": 7,
+      "section": 3,
+      "question": 12,
+      "number": "AE309"
+    },
+    {
+      "chapter": 7,
+      "section": 4,
+      "question": 1,
+      "number": "AE313"
+    },
+    {
+      "chapter": 7,
+      "section": 5,
+      "question": 1,
+      "number": "AE101"
+    },
+    {
+      "chapter": 7,
+      "section": 6,
+      "question": 1,
+      "number": "AE212"
+    },
+    {
+      "chapter": 7,
+      "section": 6,
+      "question": 2,
+      "number": "AE210"
+    },
+    {
+      "chapter": 7,
+      "section": 6,
+      "question": 3,
+      "number": "AE211"
+    },
+    {
+      "chapter": 8,
+      "section": 1,
+      "question": 1,
+      "number": "AF115"
+    },
+    {
+      "chapter": 8,
+      "section": 2,
+      "question": 1,
+      "number": "AF214"
+    },
+    {
+      "chapter": 8,
+      "section": 2,
+      "question": 2,
+      "number": "AF213"
+    },
+    {
+      "chapter": 8,
+      "section": 2,
+      "question": 3,
+      "number": "AF212"
+    },
+    {
+      "chapter": 8,
+      "section": 3,
+      "question": 1,
+      "number": "AF201"
+    },
+    {
+      "chapter": 8,
+      "section": 3,
+      "question": 2,
+      "number": "AF107"
+    },
+    {
+      "chapter": 8,
+      "section": 3,
+      "question": 3,
+      "number": "AF204"
+    },
+    {
+      "chapter": 8,
+      "section": 3,
+      "question": 4,
+      "number": "AF109"
+    },
+    {
+      "chapter": 8,
+      "section": 3,
+      "question": 5,
+      "number": "AF203"
+    },
+    {
+      "chapter": 8,
+      "section": 3,
+      "question": 6,
+      "number": "AF202"
+    },
+    {
+      "chapter": 8,
+      "section": 3,
+      "question": 7,
+      "number": "AF111"
+    },
+    {
+      "chapter": 8,
+      "section": 3,
+      "question": 8,
+      "number": "AF106"
+    },
+    {
+      "chapter": 8,
+      "section": 3,
+      "question": 9,
+      "number": "AF110"
+    },
+    {
+      "chapter": 8,
+      "section": 3,
+      "question": 10,
+      "number": "AF108"
+    },
+    {
+      "chapter": 8,
+      "section": 4,
+      "question": 1,
+      "number": "AF113"
+    },
+    {
+      "chapter": 8,
+      "section": 4,
+      "question": 2,
+      "number": "AF120"
+    },
+    {
+      "chapter": 8,
+      "section": 4,
+      "question": 3,
+      "number": "AF210"
+    },
+    {
+      "chapter": 8,
+      "section": 4,
+      "question": 4,
+      "number": "AF117"
+    },
+    {
+      "chapter": 8,
+      "section": 4,
+      "question": 5,
+      "number": "AF209"
+    },
+    {
+      "chapter": 8,
+      "section": 4,
+      "question": 6,
+      "number": "AF116"
+    },
+    {
+      "chapter": 8,
+      "section": 4,
+      "question": 7,
+      "number": "AF114"
+    },
+    {
+      "chapter": 8,
+      "section": 4,
+      "question": 8,
+      "number": "AF112"
+    },
+    {
+      "chapter": 8,
+      "section": 4,
+      "question": 9,
+      "number": "AF118"
+    },
+    {
+      "chapter": 8,
+      "section": 4,
+      "question": 10,
+      "number": "AF119"
+    },
+    {
+      "chapter": 8,
+      "section": 5,
+      "question": 1,
+      "number": "AF207"
+    },
+    {
+      "chapter": 8,
+      "section": 5,
+      "question": 2,
+      "number": "AF205"
+    },
+    {
+      "chapter": 8,
+      "section": 5,
+      "question": 3,
+      "number": "AF206"
+    },
+    {
+      "chapter": 8,
+      "section": 5,
+      "question": 4,
+      "number": "AF208"
+    },
+    {
+      "chapter": 8,
+      "section": 6,
+      "question": 1,
+      "number": "AF216"
+    },
+    {
+      "chapter": 8,
+      "section": 6,
+      "question": 2,
+      "number": "AF211"
+    },
+    {
+      "chapter": 8,
+      "section": 7,
+      "question": 1,
+      "number": "AF220"
+    },
+    {
+      "chapter": 8,
+      "section": 7,
+      "question": 2,
+      "number": "AF221"
+    },
+    {
+      "chapter": 8,
+      "section": 7,
+      "question": 3,
+      "number": "AF218"
+    },
+    {
+      "chapter": 8,
+      "section": 7,
+      "question": 4,
+      "number": "AF222"
+    },
+    {
+      "chapter": 8,
+      "section": 7,
+      "question": 5,
+      "number": "AF223"
+    },
+    {
+      "chapter": 8,
+      "section": 7,
+      "question": 6,
+      "number": "AF219"
+    },
+    {
+      "chapter": 8,
+      "section": 7,
+      "question": 7,
+      "number": "AF217"
+    },
+    {
+      "chapter": 8,
+      "section": 8,
+      "question": 1,
+      "number": "AF226"
+    },
+    {
+      "chapter": 8,
+      "section": 9,
+      "question": 1,
+      "number": "AF230"
+    },
+    {
+      "chapter": 8,
+      "section": 9,
+      "question": 2,
+      "number": "AF231"
+    },
+    {
+      "chapter": 8,
+      "section": 10,
+      "question": 1,
+      "number": "AF102"
+    },
+    {
+      "chapter": 8,
+      "section": 10,
+      "question": 2,
+      "number": "AA113"
+    },
+    {
+      "chapter": 8,
+      "section": 10,
+      "question": 3,
+      "number": "AF105"
+    },
+    {
+      "chapter": 8,
+      "section": 10,
+      "question": 4,
+      "number": "AA114"
+    },
+    {
+      "chapter": 8,
+      "section": 10,
+      "question": 5,
+      "number": "AF103"
+    },
+    {
+      "chapter": 8,
+      "section": 10,
+      "question": 6,
+      "number": "AF104"
+    },
+    {
+      "chapter": 8,
+      "section": 10,
+      "question": 7,
+      "number": "AF101"
+    },
+    {
+      "chapter": 8,
+      "section": 11,
+      "question": 1,
+      "number": "AD802"
+    },
+    {
+      "chapter": 8,
+      "section": 11,
+      "question": 2,
+      "number": "AD801"
+    },
+    {
+      "chapter": 8,
+      "section": 11,
+      "question": 3,
+      "number": "AD805"
+    },
+    {
+      "chapter": 8,
+      "section": 11,
+      "question": 4,
+      "number": "AD804"
+    },
+    {
+      "chapter": 8,
+      "section": 11,
+      "question": 5,
+      "number": "AD803"
+    },
+    {
+      "chapter": 8,
+      "section": 11,
+      "question": 6,
+      "number": "AD806"
+    },
+    {
+      "chapter": 8,
+      "section": 12,
+      "question": 1,
+      "number": "AF224"
+    },
+    {
+      "chapter": 8,
+      "section": 13,
+      "question": 1,
+      "number": "AF228"
+    },
+    {
+      "chapter": 8,
+      "section": 13,
+      "question": 2,
+      "number": "AF229"
+    },
+    {
+      "chapter": 8,
+      "section": 13,
+      "question": 3,
+      "number": "AF227"
+    },
+    {
+      "chapter": 8,
+      "section": 14,
+      "question": 1,
+      "number": "AB409"
+    },
+    {
+      "chapter": 8,
+      "section": 14,
+      "question": 2,
+      "number": "AB408"
+    },
+    {
+      "chapter": 8,
+      "section": 15,
+      "question": 1,
+      "number": "AF225"
+    },
+    {
+      "chapter": 8,
+      "section": 16,
+      "question": 1,
+      "number": "AD506"
+    },
+    {
+      "chapter": 8,
+      "section": 16,
+      "question": 2,
+      "number": "AD505"
+    },
+    {
+      "chapter": 8,
+      "section": 16,
+      "question": 3,
+      "number": "AD504"
+    },
+    {
+      "chapter": 8,
+      "section": 16,
+      "question": 4,
+      "number": "AD502"
+    },
+    {
+      "chapter": 8,
+      "section": 16,
+      "question": 5,
+      "number": "AD501"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "question": 1,
+      "number": "AI507"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "question": 2,
+      "number": "AI510"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "question": 3,
+      "number": "AI503"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "question": 4,
+      "number": "AI501"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "question": 5,
+      "number": "AI505"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "question": 6,
+      "number": "AI509"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "question": 7,
+      "number": "AI508"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "question": 8,
+      "number": "AI502"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "question": 9,
+      "number": "AI504"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "question": 10,
+      "number": "AI506"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "question": 11,
+      "number": "AI511"
+    },
+    {
+      "chapter": 8,
+      "section": 18,
+      "question": 1,
+      "number": "AA116"
+    },
+    {
+      "chapter": 8,
+      "section": 18,
+      "question": 2,
+      "number": "AA115"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 1,
+      "number": "AD507"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 2,
+      "number": "AF303"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 3,
+      "number": "AF310"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 4,
+      "number": "AF306"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 5,
+      "number": "AF307"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 6,
+      "number": "AD509"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 7,
+      "number": "AF305"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 8,
+      "number": "AE206"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 9,
+      "number": "AD510"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 10,
+      "number": "AF309"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 11,
+      "number": "AF302"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 12,
+      "number": "AD508"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 13,
+      "number": "AF308"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 14,
+      "number": "AD503"
+    },
+    {
+      "chapter": 9,
+      "section": 1,
+      "question": 15,
+      "number": "AF304"
+    },
+    {
+      "chapter": 9,
+      "section": 2,
+      "question": 1,
+      "number": "AJ206"
+    },
+    {
+      "chapter": 9,
+      "section": 2,
+      "question": 2,
+      "number": "AI614"
+    },
+    {
+      "chapter": 9,
+      "section": 2,
+      "question": 3,
+      "number": "AI615"
+    },
+    {
+      "chapter": 9,
+      "section": 2,
+      "question": 4,
+      "number": "AJ202"
+    },
+    {
+      "chapter": 9,
+      "section": 2,
+      "question": 5,
+      "number": "AB402"
+    },
+    {
+      "chapter": 9,
+      "section": 2,
+      "question": 6,
+      "number": "AB401"
+    },
+    {
+      "chapter": 9,
+      "section": 2,
+      "question": 7,
+      "number": "AJ205"
+    },
+    {
+      "chapter": 9,
+      "section": 2,
+      "question": 8,
+      "number": "AJ201"
+    },
+    {
+      "chapter": 9,
+      "section": 2,
+      "question": 9,
+      "number": "AB403"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 1,
+      "number": "AF428"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 2,
+      "number": "AF422"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 3,
+      "number": "AF418"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 4,
+      "number": "AF419"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 5,
+      "number": "AF417"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 6,
+      "number": "AF421"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 7,
+      "number": "AF424"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 8,
+      "number": "AF423"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 9,
+      "number": "AF420"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 10,
+      "number": "AF401"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 11,
+      "number": "AF406"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 12,
+      "number": "AF407"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 13,
+      "number": "AF404"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 14,
+      "number": "AF405"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 15,
+      "number": "AF415"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 16,
+      "number": "AF414"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 17,
+      "number": "AF413"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 18,
+      "number": "AF410"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 19,
+      "number": "AF409"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 20,
+      "number": "AF411"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 21,
+      "number": "AF408"
+    },
+    {
+      "chapter": 9,
+      "section": 3,
+      "question": 22,
+      "number": "AF412"
+    },
+    {
+      "chapter": 9,
+      "section": 4,
+      "question": 1,
+      "number": "AJ212"
+    },
+    {
+      "chapter": 9,
+      "section": 4,
+      "question": 2,
+      "number": "AJ213"
+    },
+    {
+      "chapter": 9,
+      "section": 4,
+      "question": 3,
+      "number": "AJ217"
+    },
+    {
+      "chapter": 9,
+      "section": 4,
+      "question": 4,
+      "number": "AF416"
+    },
+    {
+      "chapter": 9,
+      "section": 5,
+      "question": 1,
+      "number": "AI606"
+    },
+    {
+      "chapter": 9,
+      "section": 5,
+      "question": 2,
+      "number": "AI607"
+    },
+    {
+      "chapter": 9,
+      "section": 5,
+      "question": 3,
+      "number": "AI611"
+    },
+    {
+      "chapter": 9,
+      "section": 5,
+      "question": 4,
+      "number": "AI610"
+    },
+    {
+      "chapter": 9,
+      "section": 5,
+      "question": 5,
+      "number": "AI613"
+    },
+    {
+      "chapter": 9,
+      "section": 5,
+      "question": 6,
+      "number": "AI612"
+    },
+    {
+      "chapter": 9,
+      "section": 5,
+      "question": 7,
+      "number": "AI609"
+    },
+    {
+      "chapter": 9,
+      "section": 5,
+      "question": 8,
+      "number": "AI608"
+    },
+    {
+      "chapter": 9,
+      "section": 5,
+      "question": 9,
+      "number": "AI604"
+    },
+    {
+      "chapter": 9,
+      "section": 5,
+      "question": 10,
+      "number": "AI605"
+    },
+    {
+      "chapter": 9,
+      "section": 6,
+      "question": 1,
+      "number": "AI603"
+    },
+    {
+      "chapter": 9,
+      "section": 6,
+      "question": 2,
+      "number": "AI602"
+    },
+    {
+      "chapter": 9,
+      "section": 6,
+      "question": 3,
+      "number": "AI601"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 1,
+      "number": "AJ207"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 2,
+      "number": "AJ225"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 3,
+      "number": "AJ224"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 4,
+      "number": "AJ204"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 5,
+      "number": "AJ208"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 6,
+      "number": "AJ210"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 7,
+      "number": "AJ219"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 8,
+      "number": "AJ209"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 9,
+      "number": "AJ211"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 10,
+      "number": "AJ223"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 11,
+      "number": "AJ203"
+    },
+    {
+      "chapter": 9,
+      "section": 7,
+      "question": 12,
+      "number": "AJ222"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 1,
+      "number": "AJ110"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 2,
+      "number": "AJ111"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 3,
+      "number": "AJ119"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 4,
+      "number": "AJ103"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 5,
+      "number": "AJ118"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 6,
+      "number": "AJ116"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 7,
+      "number": "AJ114"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 8,
+      "number": "AJ102"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 9,
+      "number": "AJ112"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 10,
+      "number": "AJ109"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 11,
+      "number": "AJ113"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 12,
+      "number": "AJ214"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 13,
+      "number": "AJ105"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 14,
+      "number": "AJ108"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 15,
+      "number": "AJ106"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 16,
+      "number": "AJ104"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 17,
+      "number": "AJ107"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 18,
+      "number": "AJ117"
+    },
+    {
+      "chapter": 9,
+      "section": 8,
+      "question": 19,
+      "number": "AJ101"
+    },
+    {
+      "chapter": 9,
+      "section": 9,
+      "question": 1,
+      "number": "AF706"
+    },
+    {
+      "chapter": 9,
+      "section": 9,
+      "question": 2,
+      "number": "AF707"
+    },
+    {
+      "chapter": 9,
+      "section": 9,
+      "question": 3,
+      "number": "AF708"
+    },
+    {
+      "chapter": 9,
+      "section": 9,
+      "question": 4,
+      "number": "AF709"
+    },
+    {
+      "chapter": 9,
+      "section": 9,
+      "question": 5,
+      "number": "AF705"
+    },
+    {
+      "chapter": 9,
+      "section": 9,
+      "question": 6,
+      "number": "AF703"
+    },
+    {
+      "chapter": 9,
+      "section": 9,
+      "question": 7,
+      "number": "AF704"
+    },
+    {
+      "chapter": 9,
+      "section": 9,
+      "question": 8,
+      "number": "AF702"
+    },
+    {
+      "chapter": 9,
+      "section": 9,
+      "question": 9,
+      "number": "AF701"
+    },
+    {
+      "chapter": 10,
+      "section": 1,
+      "question": 1,
+      "number": "AE401"
+    },
+    {
+      "chapter": 10,
+      "section": 2,
+      "question": 1,
+      "number": "AE214"
+    },
+    {
+      "chapter": 10,
+      "section": 2,
+      "question": 2,
+      "number": "AE415"
+    },
+    {
+      "chapter": 10,
+      "section": 2,
+      "question": 3,
+      "number": "AJ221"
+    },
+    {
+      "chapter": 10,
+      "section": 2,
+      "question": 4,
+      "number": "AJ220"
+    },
+    {
+      "chapter": 10,
+      "section": 3,
+      "question": 1,
+      "number": "AA104"
+    },
+    {
+      "chapter": 10,
+      "section": 3,
+      "question": 2,
+      "number": "AE406"
+    },
+    {
+      "chapter": 10,
+      "section": 3,
+      "question": 3,
+      "number": "AE405"
+    },
+    {
+      "chapter": 10,
+      "section": 3,
+      "question": 4,
+      "number": "AE402"
+    },
+    {
+      "chapter": 10,
+      "section": 4,
+      "question": 1,
+      "number": "AE403"
+    },
+    {
+      "chapter": 10,
+      "section": 5,
+      "question": 1,
+      "number": "AE422"
+    },
+    {
+      "chapter": 10,
+      "section": 5,
+      "question": 2,
+      "number": "AE421"
+    },
+    {
+      "chapter": 10,
+      "section": 6,
+      "question": 1,
+      "number": "AE419"
+    },
+    {
+      "chapter": 10,
+      "section": 6,
+      "question": 2,
+      "number": "AE418"
+    },
+    {
+      "chapter": 10,
+      "section": 6,
+      "question": 3,
+      "number": "AE417"
+    },
+    {
+      "chapter": 10,
+      "section": 6,
+      "question": 4,
+      "number": "AE420"
+    },
+    {
+      "chapter": 10,
+      "section": 6,
+      "question": 5,
+      "number": "AE416"
+    },
+    {
+      "chapter": 10,
+      "section": 7,
+      "question": 1,
+      "number": "AE408"
+    },
+    {
+      "chapter": 10,
+      "section": 8,
+      "question": 1,
+      "number": "AE409"
+    },
+    {
+      "chapter": 10,
+      "section": 9,
+      "question": 1,
+      "number": "AE412"
+    },
+    {
+      "chapter": 10,
+      "section": 9,
+      "question": 2,
+      "number": "AE411"
+    },
+    {
+      "chapter": 10,
+      "section": 9,
+      "question": 3,
+      "number": "AE410"
+    },
+    {
+      "chapter": 10,
+      "section": 10,
+      "question": 1,
+      "number": "AE414"
+    },
+    {
+      "chapter": 10,
+      "section": 10,
+      "question": 2,
+      "number": "AE413"
+    },
+    {
+      "chapter": 10,
+      "section": 11,
+      "question": 1,
+      "number": "AF627"
+    },
+    {
+      "chapter": 10,
+      "section": 11,
+      "question": 2,
+      "number": "AF629"
+    },
+    {
+      "chapter": 10,
+      "section": 11,
+      "question": 3,
+      "number": "AF628"
+    },
+    {
+      "chapter": 10,
+      "section": 11,
+      "question": 4,
+      "number": "AF626"
+    },
+    {
+      "chapter": 10,
+      "section": 12,
+      "question": 1,
+      "number": "AE407"
+    },
+    {
+      "chapter": 11,
+      "section": 1,
+      "question": 1,
+      "number": "AF604"
+    },
+    {
+      "chapter": 11,
+      "section": 1,
+      "question": 2,
+      "number": "AF602"
+    },
+    {
+      "chapter": 11,
+      "section": 1,
+      "question": 3,
+      "number": "AF603"
+    },
+    {
+      "chapter": 11,
+      "section": 1,
+      "question": 4,
+      "number": "AF601"
+    },
+    {
+      "chapter": 11,
+      "section": 2,
+      "question": 1,
+      "number": "AF606"
+    },
+    {
+      "chapter": 11,
+      "section": 2,
+      "question": 2,
+      "number": "AF615"
+    },
+    {
+      "chapter": 11,
+      "section": 3,
+      "question": 1,
+      "number": "AF619"
+    },
+    {
+      "chapter": 11,
+      "section": 3,
+      "question": 2,
+      "number": "AF618"
+    },
+    {
+      "chapter": 11,
+      "section": 3,
+      "question": 3,
+      "number": "AF616"
+    },
+    {
+      "chapter": 11,
+      "section": 4,
+      "question": 1,
+      "number": "AF605"
+    },
+    {
+      "chapter": 11,
+      "section": 5,
+      "question": 1,
+      "number": "AF608"
+    },
+    {
+      "chapter": 11,
+      "section": 5,
+      "question": 2,
+      "number": "AF621"
+    },
+    {
+      "chapter": 11,
+      "section": 5,
+      "question": 3,
+      "number": "AF607"
+    },
+    {
+      "chapter": 11,
+      "section": 5,
+      "question": 4,
+      "number": "AF620"
+    },
+    {
+      "chapter": 11,
+      "section": 6,
+      "question": 1,
+      "number": "AF610"
+    },
+    {
+      "chapter": 11,
+      "section": 6,
+      "question": 2,
+      "number": "AF611"
+    },
+    {
+      "chapter": 11,
+      "section": 6,
+      "question": 3,
+      "number": "AF609"
+    },
+    {
+      "chapter": 11,
+      "section": 7,
+      "question": 1,
+      "number": "AF614"
+    },
+    {
+      "chapter": 11,
+      "section": 7,
+      "question": 2,
+      "number": "AF612"
+    },
+    {
+      "chapter": 11,
+      "section": 7,
+      "question": 3,
+      "number": "AF613"
+    },
+    {
+      "chapter": 11,
+      "section": 8,
+      "question": 1,
+      "number": "AF617"
+    },
+    {
+      "chapter": 11,
+      "section": 8,
+      "question": 2,
+      "number": "AF623"
+    },
+    {
+      "chapter": 11,
+      "section": 8,
+      "question": 3,
+      "number": "AF622"
+    },
+    {
+      "chapter": 11,
+      "section": 9,
+      "question": 1,
+      "number": "AF625"
+    },
+    {
+      "chapter": 11,
+      "section": 9,
+      "question": 2,
+      "number": "AF624"
+    },
+    {
+      "chapter": 11,
+      "section": 10,
+      "question": 1,
+      "number": "AB407"
+    },
+    {
+      "chapter": 11,
+      "section": 10,
+      "question": 2,
+      "number": "AB406"
+    },
+    {
+      "chapter": 11,
+      "section": 10,
+      "question": 3,
+      "number": "AB405"
+    },
+    {
+      "chapter": 11,
+      "section": 10,
+      "question": 4,
+      "number": "AB404"
+    },
+    {
+      "chapter": 11,
+      "section": 10,
+      "question": 5,
+      "number": "AF630"
+    },
+    {
+      "chapter": 11,
+      "section": 11,
+      "question": 1,
+      "number": "AF631"
+    },
+    {
+      "chapter": 11,
+      "section": 12,
+      "question": 1,
+      "number": "AF636"
+    },
+    {
+      "chapter": 11,
+      "section": 12,
+      "question": 2,
+      "number": "AF635"
+    },
+    {
+      "chapter": 11,
+      "section": 12,
+      "question": 3,
+      "number": "AE404"
+    },
+    {
+      "chapter": 11,
+      "section": 12,
+      "question": 4,
+      "number": "AF633"
+    },
+    {
+      "chapter": 11,
+      "section": 12,
+      "question": 5,
+      "number": "AF634"
+    },
+    {
+      "chapter": 11,
+      "section": 12,
+      "question": 6,
+      "number": "AF632"
+    },
+    {
+      "chapter": 11,
+      "section": 13,
+      "question": 1,
+      "number": "AF710"
+    },
+    {
+      "chapter": 11,
+      "section": 13,
+      "question": 2,
+      "number": "AF637"
+    },
+    {
+      "chapter": 12,
+      "section": 1,
+      "question": 1,
+      "number": "AG201"
+    },
+    {
+      "chapter": 12,
+      "section": 2,
+      "question": 1,
+      "number": "AG123"
+    },
+    {
+      "chapter": 12,
+      "section": 2,
+      "question": 2,
+      "number": "AG124"
+    },
+    {
+      "chapter": 12,
+      "section": 2,
+      "question": 3,
+      "number": "AG419"
+    },
+    {
+      "chapter": 12,
+      "section": 2,
+      "question": 4,
+      "number": "AG117"
+    },
+    {
+      "chapter": 12,
+      "section": 2,
+      "question": 5,
+      "number": "AG119"
+    },
+    {
+      "chapter": 12,
+      "section": 2,
+      "question": 6,
+      "number": "AG122"
+    },
+    {
+      "chapter": 12,
+      "section": 2,
+      "question": 7,
+      "number": "AG121"
+    },
+    {
+      "chapter": 12,
+      "section": 2,
+      "question": 8,
+      "number": "AG120"
+    },
+    {
+      "chapter": 12,
+      "section": 2,
+      "question": 9,
+      "number": "AG223"
+    },
+    {
+      "chapter": 12,
+      "section": 3,
+      "question": 1,
+      "number": "AG316"
+    },
+    {
+      "chapter": 12,
+      "section": 3,
+      "question": 2,
+      "number": "AG315"
+    },
+    {
+      "chapter": 12,
+      "section": 3,
+      "question": 3,
+      "number": "AG313"
+    },
+    {
+      "chapter": 12,
+      "section": 3,
+      "question": 4,
+      "number": "AG202"
+    },
+    {
+      "chapter": 12,
+      "section": 3,
+      "question": 5,
+      "number": "AG105"
+    },
+    {
+      "chapter": 12,
+      "section": 3,
+      "question": 6,
+      "number": "AG118"
+    },
+    {
+      "chapter": 12,
+      "section": 3,
+      "question": 7,
+      "number": "AG103"
+    },
+    {
+      "chapter": 12,
+      "section": 3,
+      "question": 8,
+      "number": "AG101"
+    },
+    {
+      "chapter": 12,
+      "section": 3,
+      "question": 9,
+      "number": "AG102"
+    },
+    {
+      "chapter": 12,
+      "section": 3,
+      "question": 10,
+      "number": "AG104"
+    },
+    {
+      "chapter": 12,
+      "section": 4,
+      "question": 1,
+      "number": "AG210"
+    },
+    {
+      "chapter": 12,
+      "section": 4,
+      "question": 2,
+      "number": "AG211"
+    },
+    {
+      "chapter": 12,
+      "section": 4,
+      "question": 3,
+      "number": "AG209"
+    },
+    {
+      "chapter": 12,
+      "section": 5,
+      "question": 1,
+      "number": "AG106"
+    },
+    {
+      "chapter": 12,
+      "section": 5,
+      "question": 2,
+      "number": "AG107"
+    },
+    {
+      "chapter": 12,
+      "section": 5,
+      "question": 3,
+      "number": "AG108"
+    },
+    {
+      "chapter": 12,
+      "section": 6,
+      "question": 1,
+      "number": "AG125"
+    },
+    {
+      "chapter": 12,
+      "section": 6,
+      "question": 2,
+      "number": "AG224"
+    },
+    {
+      "chapter": 12,
+      "section": 7,
+      "question": 1,
+      "number": "AG114"
+    },
+    {
+      "chapter": 12,
+      "section": 7,
+      "question": 2,
+      "number": "AG115"
+    },
+    {
+      "chapter": 12,
+      "section": 7,
+      "question": 3,
+      "number": "AG113"
+    },
+    {
+      "chapter": 12,
+      "section": 7,
+      "question": 4,
+      "number": "AG111"
+    },
+    {
+      "chapter": 12,
+      "section": 7,
+      "question": 5,
+      "number": "AG112"
+    },
+    {
+      "chapter": 12,
+      "section": 7,
+      "question": 6,
+      "number": "AG109"
+    },
+    {
+      "chapter": 12,
+      "section": 7,
+      "question": 7,
+      "number": "AG110"
+    },
+    {
+      "chapter": 12,
+      "section": 7,
+      "question": 8,
+      "number": "AG116"
+    },
+    {
+      "chapter": 12,
+      "section": 8,
+      "question": 1,
+      "number": "AG126"
+    },
+    {
+      "chapter": 12,
+      "section": 8,
+      "question": 2,
+      "number": "AG212"
+    },
+    {
+      "chapter": 12,
+      "section": 8,
+      "question": 3,
+      "number": "AG222"
+    },
+    {
+      "chapter": 12,
+      "section": 9,
+      "question": 1,
+      "number": "AG225"
+    },
+    {
+      "chapter": 12,
+      "section": 9,
+      "question": 2,
+      "number": "AG229"
+    },
+    {
+      "chapter": 12,
+      "section": 9,
+      "question": 3,
+      "number": "AG228"
+    },
+    {
+      "chapter": 12,
+      "section": 9,
+      "question": 4,
+      "number": "AG227"
+    },
+    {
+      "chapter": 12,
+      "section": 9,
+      "question": 5,
+      "number": "AG226"
+    },
+    {
+      "chapter": 12,
+      "section": 10,
+      "question": 1,
+      "number": "AG127"
+    },
+    {
+      "chapter": 12,
+      "section": 11,
+      "question": 1,
+      "number": "AG218"
+    },
+    {
+      "chapter": 12,
+      "section": 11,
+      "question": 2,
+      "number": "AG214"
+    },
+    {
+      "chapter": 12,
+      "section": 11,
+      "question": 3,
+      "number": "AG213"
+    },
+    {
+      "chapter": 12,
+      "section": 11,
+      "question": 4,
+      "number": "AG216"
+    },
+    {
+      "chapter": 12,
+      "section": 11,
+      "question": 5,
+      "number": "AG215"
+    },
+    {
+      "chapter": 12,
+      "section": 11,
+      "question": 6,
+      "number": "AG217"
+    },
+    {
+      "chapter": 12,
+      "section": 12,
+      "question": 1,
+      "number": "AG221"
+    },
+    {
+      "chapter": 12,
+      "section": 12,
+      "question": 2,
+      "number": "AG220"
+    },
+    {
+      "chapter": 12,
+      "section": 12,
+      "question": 3,
+      "number": "AG219"
+    },
+    {
+      "chapter": 12,
+      "section": 13,
+      "question": 1,
+      "number": "AG208"
+    },
+    {
+      "chapter": 12,
+      "section": 13,
+      "question": 2,
+      "number": "AG207"
+    },
+    {
+      "chapter": 12,
+      "section": 14,
+      "question": 1,
+      "number": "AG206"
+    },
+    {
+      "chapter": 12,
+      "section": 14,
+      "question": 2,
+      "number": "AG205"
+    },
+    {
+      "chapter": 12,
+      "section": 14,
+      "question": 3,
+      "number": "AG204"
+    },
+    {
+      "chapter": 12,
+      "section": 14,
+      "question": 4,
+      "number": "AG203"
+    },
+    {
+      "chapter": 12,
+      "section": 15,
+      "question": 1,
+      "number": "AG302"
+    },
+    {
+      "chapter": 12,
+      "section": 15,
+      "question": 2,
+      "number": "AG303"
+    },
+    {
+      "chapter": 12,
+      "section": 15,
+      "question": 3,
+      "number": "AG301"
+    },
+    {
+      "chapter": 12,
+      "section": 15,
+      "question": 4,
+      "number": "AG317"
+    },
+    {
+      "chapter": 12,
+      "section": 15,
+      "question": 5,
+      "number": "AG314"
+    },
+    {
+      "chapter": 12,
+      "section": 15,
+      "question": 6,
+      "number": "AG312"
+    },
+    {
+      "chapter": 12,
+      "section": 16,
+      "question": 1,
+      "number": "AG306"
+    },
+    {
+      "chapter": 12,
+      "section": 16,
+      "question": 2,
+      "number": "AG305"
+    },
+    {
+      "chapter": 12,
+      "section": 16,
+      "question": 3,
+      "number": "AG307"
+    },
+    {
+      "chapter": 12,
+      "section": 16,
+      "question": 4,
+      "number": "AG304"
+    },
+    {
+      "chapter": 12,
+      "section": 17,
+      "question": 1,
+      "number": "AG310"
+    },
+    {
+      "chapter": 12,
+      "section": 17,
+      "question": 2,
+      "number": "AG308"
+    },
+    {
+      "chapter": 12,
+      "section": 17,
+      "question": 3,
+      "number": "AG309"
+    },
+    {
+      "chapter": 12,
+      "section": 17,
+      "question": 4,
+      "number": "AG311"
+    },
+    {
+      "chapter": 12,
+      "section": 18,
+      "question": 1,
+      "number": "AG318"
+    },
+    {
+      "chapter": 12,
+      "section": 18,
+      "question": 2,
+      "number": "AG319"
+    },
+    {
+      "chapter": 12,
+      "section": 19,
+      "question": 1,
+      "number": "AG403"
+    },
+    {
+      "chapter": 12,
+      "section": 19,
+      "question": 2,
+      "number": "AG404"
+    },
+    {
+      "chapter": 12,
+      "section": 19,
+      "question": 3,
+      "number": "AG405"
+    },
+    {
+      "chapter": 12,
+      "section": 20,
+      "question": 1,
+      "number": "AI403"
+    },
+    {
+      "chapter": 12,
+      "section": 20,
+      "question": 2,
+      "number": "AI401"
+    },
+    {
+      "chapter": 12,
+      "section": 20,
+      "question": 3,
+      "number": "AI402"
+    },
+    {
+      "chapter": 12,
+      "section": 21,
+      "question": 1,
+      "number": "AI204"
+    },
+    {
+      "chapter": 12,
+      "section": 21,
+      "question": 2,
+      "number": "AI208"
+    },
+    {
+      "chapter": 12,
+      "section": 21,
+      "question": 3,
+      "number": "AI207"
+    },
+    {
+      "chapter": 12,
+      "section": 21,
+      "question": 4,
+      "number": "AI205"
+    },
+    {
+      "chapter": 12,
+      "section": 21,
+      "question": 5,
+      "number": "AI206"
+    },
+    {
+      "chapter": 12,
+      "section": 21,
+      "question": 6,
+      "number": "AI201"
+    },
+    {
+      "chapter": 12,
+      "section": 21,
+      "question": 7,
+      "number": "AI203"
+    },
+    {
+      "chapter": 12,
+      "section": 21,
+      "question": 8,
+      "number": "AI202"
+    },
+    {
+      "chapter": 12,
+      "section": 22,
+      "question": 1,
+      "number": "AG408"
+    },
+    {
+      "chapter": 12,
+      "section": 22,
+      "question": 2,
+      "number": "AG407"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 1,
+      "number": "AG416"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 2,
+      "number": "AG412"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 3,
+      "number": "AG411"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 4,
+      "number": "AG410"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 5,
+      "number": "AG409"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 6,
+      "number": "AG417"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 7,
+      "number": "AG418"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 8,
+      "number": "AG413"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 9,
+      "number": "AG414"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 10,
+      "number": "AG415"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 11,
+      "number": "AG402"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 12,
+      "number": "AG406"
+    },
+    {
+      "chapter": 12,
+      "section": 23,
+      "question": 13,
+      "number": "AG401"
+    },
+    {
+      "chapter": 12,
+      "section": 24,
+      "question": 1,
+      "number": "AG320"
+    },
+    {
+      "chapter": 12,
+      "section": 25,
+      "question": 1,
+      "number": "AG429"
+    },
+    {
+      "chapter": 12,
+      "section": 25,
+      "question": 2,
+      "number": "AG426"
+    },
+    {
+      "chapter": 12,
+      "section": 25,
+      "question": 3,
+      "number": "AG427"
+    },
+    {
+      "chapter": 12,
+      "section": 25,
+      "question": 4,
+      "number": "AG425"
+    },
+    {
+      "chapter": 12,
+      "section": 25,
+      "question": 5,
+      "number": "AJ115"
+    },
+    {
+      "chapter": 12,
+      "section": 25,
+      "question": 6,
+      "number": "AG422"
+    },
+    {
+      "chapter": 12,
+      "section": 25,
+      "question": 7,
+      "number": "AG421"
+    },
+    {
+      "chapter": 12,
+      "section": 25,
+      "question": 8,
+      "number": "AG428"
+    },
+    {
+      "chapter": 12,
+      "section": 26,
+      "question": 1,
+      "number": "AG420"
+    },
+    {
+      "chapter": 12,
+      "section": 26,
+      "question": 2,
+      "number": "AG424"
+    },
+    {
+      "chapter": 12,
+      "section": 26,
+      "question": 3,
+      "number": "AG423"
+    },
+    {
+      "chapter": 13,
+      "section": 1,
+      "question": 1,
+      "number": "AG503"
+    },
+    {
+      "chapter": 13,
+      "section": 1,
+      "question": 2,
+      "number": "AG502"
+    },
+    {
+      "chapter": 13,
+      "section": 1,
+      "question": 3,
+      "number": "AG501"
+    },
+    {
+      "chapter": 13,
+      "section": 2,
+      "question": 1,
+      "number": "AK107"
+    },
+    {
+      "chapter": 13,
+      "section": 2,
+      "question": 2,
+      "number": "AK104"
+    },
+    {
+      "chapter": 13,
+      "section": 2,
+      "question": 3,
+      "number": "AK115"
+    },
+    {
+      "chapter": 13,
+      "section": 2,
+      "question": 4,
+      "number": "AK113"
+    },
+    {
+      "chapter": 13,
+      "section": 2,
+      "question": 5,
+      "number": "AK114"
+    },
+    {
+      "chapter": 13,
+      "section": 2,
+      "question": 6,
+      "number": "AK102"
+    },
+    {
+      "chapter": 13,
+      "section": 3,
+      "question": 1,
+      "number": "AK112"
+    },
+    {
+      "chapter": 13,
+      "section": 3,
+      "question": 2,
+      "number": "AK110"
+    },
+    {
+      "chapter": 13,
+      "section": 3,
+      "question": 3,
+      "number": "AK106"
+    },
+    {
+      "chapter": 13,
+      "section": 3,
+      "question": 4,
+      "number": "AK108"
+    },
+    {
+      "chapter": 13,
+      "section": 3,
+      "question": 5,
+      "number": "AK111"
+    },
+    {
+      "chapter": 13,
+      "section": 3,
+      "question": 6,
+      "number": "AK109"
+    },
+    {
+      "chapter": 13,
+      "section": 4,
+      "question": 1,
+      "number": "AK103"
+    },
+    {
+      "chapter": 13,
+      "section": 4,
+      "question": 2,
+      "number": "AK101"
+    },
+    {
+      "chapter": 13,
+      "section": 5,
+      "question": 1,
+      "number": "AK105"
+    },
+    {
+      "chapter": 14,
+      "section": 1,
+      "question": 1,
+      "number": "AK201"
+    },
+    {
+      "chapter": 14,
+      "section": 2,
+      "question": 1,
+      "number": "AK203"
+    },
+    {
+      "chapter": 14,
+      "section": 2,
+      "question": 2,
+      "number": "AK202"
+    },
+    {
+      "chapter": 14,
+      "section": 3,
+      "question": 1,
+      "number": "AK204"
+    }
+  ]
+}
