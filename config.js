@@ -1,4 +1,7 @@
 
+import { Ohm } from "./ohm.js"
+
+
 const config_store_key = 'afu_test_config'
 const config_test_select_id = 'test_select'
 const config_print_avoid_page_break = 'print_no_page_break'
@@ -78,7 +81,7 @@ class Config {
         this.apply_print_more_margin()
     }
 
-    static update_50Ohm() {
+    static async update_50Ohm() {
         const dom = document.querySelector("#pr_or_50")
         if (dom) {
             console.log( dom.value )
@@ -86,6 +89,8 @@ class Config {
             if (dom.value === '5') {
                 document.querySelector("#ohm").classList.remove("hidden")
                 document.querySelector("#pruefung").classList.add("hidden")
+                let classN = new Ohm('N')
+                await classN.load()                
             // Bnetz Prüfungsteil
             } else {
                 document.querySelector("#ohm").classList.add("hidden")

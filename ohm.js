@@ -2,9 +2,7 @@
 
 export class Ohm {
 
-
     static targets = ['N', 'NE', 'NEA', 'E', 'A', 'EA']
-
 
     constructor(target) {
         if (Ohm.targets.indexOf(target) === -1) return
@@ -25,15 +23,15 @@ export class Ohm {
 
 
     async load() {
-
+        // check in constructor that only valid targets are accepted.
         await fetch(`./50Ohm/50Ohm_${this._target}.json`)
             .then((response) => response.json())
             .then((json) => {
                 this.sections = json.sections
                 const chap_sec = json.sections.map(c => { return { chapter: c.chapter, chapter_classes: new Set(c.chapter_classes.split("")), chapter_txt: c.chapter_txt, } })
-                this.allChapters = this._uniqBy(chap_sec, e => { return e.chapter })
+                this.chapters = this._uniqBy(chap_sec, e => { return e.chapter })
                 this.questions = json.questions
-                console.log(this.allChapters)
+                console.log(this.chapters)
                 /*
                                 Ohm.targetChapter = {}
                 

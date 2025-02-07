@@ -252,8 +252,7 @@ window.onload = async () => {
         })
     }
     Config.update_50Ohm()
-    let classN = new Ohm('N')
-    await classN.load()
+
 
 
     await render_test(test_name(current_test), current_test)
