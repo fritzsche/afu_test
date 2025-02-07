@@ -16,7 +16,7 @@ export class Ohm {
     static targets = ['N', 'NE', 'NEA', 'E', 'A', 'EA']
 
     static async load() {
-        await fetch('./50Ohm_NEA.json')
+        await fetch('./50Ohm/50Ohm_NEA.json')
             .then((response) => response.json())
             .then((json) => {
                 Ohm.sections = json.sections
@@ -37,12 +37,12 @@ export class Ohm {
                         console.log(inter)
                         if (inter.size > 0) {
                             Ohm.targetChapter[t].push(c)
-                        } 
+                        }
                     })
-                   
+
                 })
 
-     console.log(Ohm.targetChapter)
+                console.log(Ohm.targetChapter)
 
             })
 
