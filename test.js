@@ -242,18 +242,28 @@ function print_option() {
 
 window.onload = async () => {
     config.load()
+    config.update_dom()
     const current_test = config.current_test
-    
+
+
     // register event listener
     const pr_sel = document.querySelector("#pr_or_50")
     if (pr_sel) {
         pr_sel.addEventListener("change", e => {
-            Config.update_50Ohm()
+            config.read_dom()
+            config.store()
+            config.update_50Ohm()
         })
+
+        const target_sel = document.querySelector("#ziel_select")
+        if (target_sel) target_sel.addEventListener("change", e => {
+            config.read_dom()
+            config.store()            
+            config.update_50Ohm()
+        })
+        config.initDropdown()
     }
-    Config.update_50Ohm()
-
-
+    config.update_50Ohm()
 
     await render_test(test_name(current_test), current_test)
     config.set_test_select_option(current_test)

@@ -1,0 +1,52 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+}
+
+/* The button that opens/closes the dropdown */
+.dropdown-btn {
+    padding: 1px 1px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 150px;
+    font-size: 13px;
+}
+
+/* The dropdown menu (hidden by default) */
+.dropdown-menu {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    min-width: 400px;
+    padding: 2px;
+}
+
+/* Show menu when "show" class is added */
+.dropdown-menu.show {
+    display: block;
+}
+
+/* Each option inside the menu */
+.dropdown-menu label {
+    display: block;
+    padding: 1px 1px;
+    cursor: pointer;
+}
+
+.dropdown-menu label:hover {
+    background-color: #f5f5f5;
+}
+

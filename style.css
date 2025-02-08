@@ -31,3 +31,8 @@ img {
 .hidden {
   display: none;
 }
+
+.box {
+  margin-top: 10pt;
+  margin-bottom: 10pt;
+}
