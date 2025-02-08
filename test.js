@@ -250,16 +250,16 @@ window.onload = async () => {
     const pr_sel = document.querySelector("#pr_or_50")
     if (pr_sel) {
         pr_sel.addEventListener("change", e => {
-            config.read_dom()
-            config.store()
             config.update_50Ohm()
+            config.read_dom()
+            config.store()            
         })
 
         const target_sel = document.querySelector("#ziel_select")
-        if (target_sel) target_sel.addEventListener("change", e => {
-            config.read_dom()
-            config.store()            
+        if (target_sel) target_sel.addEventListener("change", e => {         
             config.update_50Ohm()
+            config.read_dom()
+            config.store()              
         })
         config.initDropdown()
     }

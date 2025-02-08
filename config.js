@@ -15,7 +15,7 @@ class Config {
         test_type: 'P',
         class_target: 'N',
         chapters: {
-            'N': [1,2,3],
+            'N': [1, 2, 3],
             'NE': [1],
             'NEA': [1],
             'E': [1],
@@ -58,6 +58,20 @@ class Config {
         // update "Lernziel"
         const target_sel = document.querySelector("#ziel_select")
         if (target_sel) this._config.class_target = target_sel.value
+        // read the chapters selected
+        const chapters = document.querySelectorAll("#dropdownMenu input")
+        let result = []
+        chapters.forEach(c => {
+            if (c.checked) {
+                const number = parseInt(c.value)
+                result.push(number)
+                             
+            }
+        })
+        console.log(result) 
+        this._config.chapters[ this._config.class_target ] = result
+        console.log( this._config)
+
     }
 
     get current_test() {
@@ -122,7 +136,7 @@ class Config {
     // Update button text based on selected options
     updateButtonLabel() {
         const dropdownBtn = document.getElementById('dropdownBtn')
-        const checkboxes = dropdownMenu.querySelectorAll('.option')        
+        const checkboxes = dropdownMenu.querySelectorAll('.option')
         const selected = [...checkboxes].filter(cb => cb.checked).length
         dropdownBtn.textContent = selected > 0 ? `${selected} Kapitel ausgewählt` : 'Bitte wähle Kapitel aus'
     }
@@ -181,8 +195,8 @@ class Config {
                 if (this._config.test_type === '5') {
                     const chap_sel = this._config.chapters[class_target]
                     chap_sel.forEach(sel => {
-                        console.log("chapter",sel)
-                        const chapter_checkbox = chapters[sel-1]
+                        console.log("chapter", sel)
+                        const chapter_checkbox = chapters[sel - 1]
                         chapter_checkbox.checked = true
                     })
                     this.updateButtonLabel()
