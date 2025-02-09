@@ -23,6 +23,10 @@ class Config {
             'EA': [1],
         }
     }
+    constructor(renderTestCallback) {
+        this._renderTestCallback = renderTestCallback
+    }
+
     store() {
         localStorage.setItem(config_store_key, JSON.stringify(this._config))
     }
@@ -34,6 +38,7 @@ class Config {
             if (conf) this._config = { ...this._config, ...conf }
         }
     }
+
 
     async update_dom() {
         this.apply_print_options()
@@ -52,6 +57,7 @@ class Config {
         // build the DOM
        this.update_50Ohm()
        Ohm.updateChaptersDom(this._config.chapters)
+
     }
 
     read_dom() {
@@ -124,6 +130,10 @@ class Config {
         this.apply_print_more_margin()
     }
 
+    renderTest() {
+        if ( this._renderTestCallback ) this._renderTestCallback()
+    }
+
     update_50Ohm() {
         const dom = document.querySelector("#pr_or_50")
         if (dom) {
@@ -138,13 +148,15 @@ class Config {
                 all_drops.forEach( d => {
                     if (d.id === target) d.classList.remove("hidden")
                        else d.classList.add("hidden")
-                })                
+                })
+                this.renderTest()
             } else {
                 // BnetzA Prüfungsteil
                 document.querySelector("#ohm").classList.add("hidden")
                 document.querySelector("#pruefung").classList.remove("hidden")
             }
         }
+        
     }
 }
 

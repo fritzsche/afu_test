@@ -56,6 +56,7 @@ export class Ohm {
         const callBack = () => {
            config.read_dom()
            config.store()
+           config.renderTest()
         }
 
         Ohm.targets.forEach(target => {
@@ -68,7 +69,6 @@ export class Ohm {
                 config.read_dom()
                 config.store()                
                 config.update_50Ohm()
-
             })
 
             const target_sel = document.querySelector("#ziel_select")
@@ -76,7 +76,6 @@ export class Ohm {
                 config.read_dom()
                 config.store()
                 config.update_50Ohm()
-
             })
         }
         config.update_50Ohm()
@@ -110,6 +109,16 @@ export class Ohm {
             })
             Ohm._dropdowns[target].updateButtonLabel()
         }
+    }
+
+    getAddQuestions(chapters) {
+      let result = []
+      this.questions.forEach( q => {
+        const isSelectedChapter = chapters.indexOf(q.chapter) !== -1
+        if (isSelectedChapter) result.push(q.number)
+
+      })
+      return result
     }
 
 

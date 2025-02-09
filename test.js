@@ -2,8 +2,16 @@ import { Config } from "./config.js"
 
 import { Ohm } from "./ohm.js"
 
-const config = new Config()
 
+
+
+
+const config = new Config(renderCallback)
+
+function renderCallback() {
+    const selected_test = config._config.current_test
+    render_test(test_name(select_test), selected_test)
+}
 
 import { Test } from "./online.js"
 const onlineTest = new Test()
@@ -129,6 +137,11 @@ function html_questions(questions, online) {
 
 async function render_test(title, test) {
 
+    let ohm
+    if(config._config.test_type === '5') {
+        ohm = new Ohm(config._config.class_target)  
+        await ohm.load()   
+    }
     await fetch('./Fragen/fragenkatalog3b.json')
         .then((response) => response.json())
         .then((json) => {
@@ -163,9 +176,18 @@ async function render_test(title, test) {
                 document.getElementById("sel_test").style.display = 'none'
 
             } else {
+                if(config._config.test_type === '5') {       
+
+                    const validQuestions = ohm.getAddQuestions(config._config.chapters[config._config.class_target])
+                    all_questions = result.filter((frage => {
+                      return  validQuestions.indexOf(frage.number) !== -1
+                    }
+                    ))
+                } else {
                 all_questions = result.filter((frage =>
                     frage.number.startsWith(test)
                 ))
+            }
                 document.getElementById("title").innerHTML = title
             }
             let sel_questions = pick(all_questions, Math.min(25, all_questions.length))
@@ -201,6 +223,8 @@ async function render_test(title, test) {
 }
 
 const test_name = (test) => {
+    const test_type = config._config.test_type
+    if (test_type  === '5') return 'DARC 50&#8486;'
     switch (test) {
         case 'B': return "Betriebstechnik"
         case 'N': return "Technik Klasse N"
