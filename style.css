@@ -35,3 +35,11 @@ img {
   margin-top: 10pt;
   margin-bottom: 10pt;
 }
+
+.flex {
+  display: flex;
+}
+
+.inline-block {
+  display: inline-block;
+}

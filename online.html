@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#000000" />
   <link rel="stylesheet" type="text/css" href="print.css" media="print" />
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="dropdown.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="online.css" type="text/css" media="screen" />
 
   <title>Afu Test - von Thomas Fritzsche - DJ1TF </title>
@@ -26,29 +27,59 @@
     <div>
       <strong>Links</strong>
       <ul>
-      <li><img class="icon" style="margin:1px;" src="icons/printer.svg"/> <a href="index.html">Fragen und Antworten ausdrucken</a> </li>
-      <li><img class="icon" style="margin:1px;" src="icons/tools.svg"/> <a href="https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/AntraegeFormulare/Hilfsmittel_12062024.pdf?__blob=publicationFile&v=2" target="_blank">Hilfsmittel</a></li>        
-      <li><img class="icon" style="margin:1px;" src="icons/github.svg"/> <a href="https://github.com/fritzsche/afu_test" target=”_blank”>GitHub</a> </li>      
+        <li><img class="icon" style="margin:1px;" src="icons/printer.svg" /> <a href="index.html">Fragen und Antworten
+            ausdrucken</a> </li>
+        <li><img class="icon" style="margin:1px;" src="icons/tools.svg" /> <a
+            href="https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/AntraegeFormulare/Hilfsmittel_12062024.pdf?__blob=publicationFile&v=2"
+            target="_blank">Hilfsmittel</a></li>
+        <li><img class="icon" style="margin:1px;" src="icons/github.svg" /> <a
+            href="https://github.com/fritzsche/afu_test" target=”_blank”>GitHub</a> </li>
       </ul>
-      <p id="sel_test">
-        <strong>Prüfungsteil:</strong>
-        <select id="test_select">
-          <option value="V">Vorschriften</option>
-          <option value="B">Betriebstechnik</option>
-          <option value="N">Technik Klasse N</option>
-          <option value="E">Technik Klasse E</option>
-          <option value="A">Technik Klasse A</option>
+    </div>
+
+    <div class="box">
+      <label class="inline-block"><strong>Prüfungsteil / DARC 50&#8486;:</strong></label>
+      <select id="pr_or_50">
+        <option value="P">Prüfungsteil</option>
+        <option value="5">DARC 50&#8486;</option>
+      </select>
+    </div>
+
+    <div class="box" id="pruefung">
+      <strong>Prüfungsteil: </strong>
+      <select id="test_select">
+        <option value="V">Vorschriften</option>
+        <option value="B">Betriebstechnik</option>
+        <option value="N">Technik Klasse N</option>
+        <option value="E">Technik Klasse E</option>
+        <option value="A">Technik Klasse A</option>
+      </select>
+    </div>
+    <div id="ohm">
+      <div class="box flex">
+        <strong>Lernziel: </strong>
+        <select id="ziel_select">
+          <option value="N">Klasse N</option>
+          <option value="NE">Klasse E</option>
+          <option value="NEA">Klasse A</option>
+          <option value="E">Von N nach E</option>
+          <option value="EA">Von N nach A</option>
+          <option value="A">Von E nach A</option>
         </select>
-      </p>
+      </div>
+
+      <label class="inline-block"><strong>Kapitel Auswahl: </strong></label>
+      <span id="all_chapters"></span>
     </div>
   </div>
+
 
   <h2 id="title" class="title" style="font-size: 16pt;"></h2>
 
   <div id="questions"> </div>
   <div>
-    <div id="online_answer" >
-      <button type="submit" id="evaluate_button" >Auswerten</button> 
+    <div id="online_answer">
+      <button type="submit" id="evaluate_button">Auswerten</button>
       <span id="online_noanswer"></span>
     </div>
     <div id="result">

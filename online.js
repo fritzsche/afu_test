@@ -4,7 +4,8 @@ class Test {
 
 
     numberOfAnsweredQuestions() {
-        return document.querySelectorAll('.option:checked').length
+        const checked = document.querySelectorAll('#questions .option:checked').length
+        return checked
     }
 
     numberOfAllQuestions() {
@@ -12,7 +13,7 @@ class Test {
     }
 
     updateAnsweredQuestions() { 
-        let no_answer = document.getElementById("online_noanswer")
+        const no_answer = document.getElementById("online_noanswer")
         if (no_answer) {
             let all = this.numberOfAllQuestions()
             let missing = all - this.numberOfAnsweredQuestions()

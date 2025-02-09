@@ -63,10 +63,7 @@ class Config {
         if (target_sel) this._config.class_target = target_sel.value
         // read the chapters selected
         const result = Ohm.readAllChapters() 
-        console.log(result) 
         this._config.chapters = result
-        console.log( this._config)
-
     }
 
     get current_test() {
@@ -136,7 +133,6 @@ class Config {
                 document.querySelector("#pruefung").classList.add("hidden")
                 const target_sel = document.querySelector("#ziel_select")
                 const target = target_sel.value
-                console.log(target) 
                 const chapters_dom = document.querySelector("#all_chapters")
                 const all_drops = chapters_dom.querySelectorAll(".dropdown")
                 all_drops.forEach( d => {

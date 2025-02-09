@@ -97,19 +97,16 @@ export class Ohm {
             })         
             result[target] = cap
         })
-        console.log(result)
         return result
     }
 
     static updateChaptersDom(conf) {
         for (const [target, chapters] of Object.entries(conf)) {
-            console.log(target,chapters)
             const all_dom = document.querySelectorAll(`#${target} .option`)
             all_dom.forEach( dom => {
                const chapter = parseInt(dom.value)
                const isSelected = chapters.indexOf(chapter) !== -1
-               dom.checked = isSelected               
-               console.log(target,dom.checked)
+               dom.checked = isSelected
             })
             Ohm._dropdowns[target].updateButtonLabel()
         }
