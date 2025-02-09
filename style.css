@@ -27,9 +27,8 @@ img {
   margin-top: 10pt;
 }
 
-
 .hidden {
-  display: none;
+  display: none !important; 
 }
 
 .box {

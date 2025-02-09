@@ -15,7 +15,7 @@ class Config {
         test_type: 'P',
         class_target: 'N',
         chapters: {
-            'N': [1, 2, 3],
+            'N': [1],
             'NE': [1],
             'NEA': [1],
             'E': [1],
@@ -47,8 +47,11 @@ class Config {
         const target_sel = document.querySelector("#ziel_select")
         const class_target = this._config.class_target
         if (target_sel) target_sel.value = class_target
+
+
         // build the DOM
-        await this.update_50Ohm()
+       this.update_50Ohm()
+       Ohm.updateChaptersDom(this._config.chapters)
     }
 
     read_dom() {
@@ -59,17 +62,9 @@ class Config {
         const target_sel = document.querySelector("#ziel_select")
         if (target_sel) this._config.class_target = target_sel.value
         // read the chapters selected
-        const chapters = document.querySelectorAll("#dropdownMenu input")
-        let result = []
-        chapters.forEach(c => {
-            if (c.checked) {
-                const number = parseInt(c.value)
-                result.push(number)
-                             
-            }
-        })
+        const result = Ohm.readAllChapters() 
         console.log(result) 
-        this._config.chapters[ this._config.class_target ] = result
+        this._config.chapters = result
         console.log( this._config)
 
     }
@@ -132,80 +127,24 @@ class Config {
         this.apply_print_more_margin()
     }
 
-
-    // Update button text based on selected options
-    updateButtonLabel() {
-        const dropdownBtn = document.getElementById('dropdownBtn')
-        const checkboxes = dropdownMenu.querySelectorAll('.option')
-        const selected = [...checkboxes].filter(cb => cb.checked).length
-        dropdownBtn.textContent = selected > 0 ? `${selected} Kapitel ausgewählt` : 'Bitte wähle Kapitel aus'
-    }
-
-    updateChapterEvents() {
-        const checkboxes = dropdownMenu.querySelectorAll('.option')
-
-        // Listen for changes in checkboxes
-        checkboxes.forEach(cb => cb.addEventListener('change', () => {
-            this.updateButtonLabel()
-            //this.read_dom()
-
-        }))
-    }
-    initDropdown() {
-        // Get references to the dropdown elements
-        const dropdownBtn = document.getElementById('dropdownBtn')
-        const dropdownMenu = document.getElementById('dropdownMenu')
-
-        // Toggle dropdown menu visibility when the button is clicked
-        dropdownBtn.addEventListener('click', e => {
-            dropdownMenu.classList.toggle('show')
-            e.stopPropagation()
-        })
-
-        // Close the dropdown menu if clicking outside of it
-        document.addEventListener('click', e => {
-            if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                dropdownMenu.classList.remove('show')
-            }
-        })
-
-    }
-
-    async updateChapterDom(target) {
-        let currentClass = new Ohm(target)
-        await currentClass.load()
-        const chapter_html = currentClass.getChapters()
-        document.querySelector("#dropdownMenu").innerHTML = chapter_html
-    }
-
-    async update_50Ohm() {
+    update_50Ohm() {
         const dom = document.querySelector("#pr_or_50")
         if (dom) {
-            // 50 Ohm selected 
             if (dom.value === '5') {
+                // 50 Ohm selected 
                 document.querySelector("#ohm").classList.remove("hidden")
                 document.querySelector("#pruefung").classList.add("hidden")
                 const target_sel = document.querySelector("#ziel_select")
                 const target = target_sel.value
-                console.log(target)
-                await this.updateChapterDom(target)
-                // now set checkboxes based on the current config
-                const chapters = document.querySelectorAll('.option')
-                const class_target = this._config.class_target
-                if (this._config.test_type === '5') {
-                    const chap_sel = this._config.chapters[class_target]
-                    chap_sel.forEach(sel => {
-                        console.log("chapter", sel)
-                        const chapter_checkbox = chapters[sel - 1]
-                        chapter_checkbox.checked = true
-                    })
-                    this.updateButtonLabel()
-                }
-
-
-                this.updateChapterEvents()
-                // BnetzA Prüfungsteil
+                console.log(target) 
+                const chapters_dom = document.querySelector("#all_chapters")
+                const all_drops = chapters_dom.querySelectorAll(".dropdown")
+                all_drops.forEach( d => {
+                    if (d.id === target) d.classList.remove("hidden")
+                       else d.classList.add("hidden")
+                })                
             } else {
+                // BnetzA Prüfungsteil
                 document.querySelector("#ohm").classList.add("hidden")
                 document.querySelector("#pruefung").classList.remove("hidden")
             }
