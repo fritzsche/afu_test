@@ -17,7 +17,8 @@ Es können jeweils 25 Fragen (mit Antworten) für die folgenden Prüfungsteile g
 __Achtung:__ Bei jedem Aufruf (auch Reload) wird ein neuer Fragebogen per Zufallsgenerator erzeugt.
 
 # Youtube
-Ein Bericht auf dem Youtube Kanal Funkwelle über AFU-Test:
+Ein Bericht auf dem Youtube Kanal Funkwelle über AFU-Test. 
+(*Anmerkung*: Dieses Video bezieht sich auf eine alte Version von AFU-Test und ist nicht mehr aktuell):
 
 [![Video Funkwelle](https://img.youtube.com/vi/dTlOy99aC1A/0.jpg)](https://www.youtube.com/watch?v=dTlOy99aC1A)
 
@@ -38,6 +39,11 @@ https://www.bundesnetzagentur.de/995320
 
 Die Fragen, die in einem echten Test zum Einsatz ausgewählt werden sind unbekannt.
 
+## DARC 50&#8486; Lernplattform
+Ursprünglich konnte mit Afu-Test entsprechend der realen Prüfung bei der BNetzA nur der Prüfungsteil (z.B. Vorschriften oder Betriebstechnik) ausgewählt werden. Dadurch konnte Afu Test erst zur finalen Prüfungsvorbereitung verwendet werden.
+Mit Version 0.15 gibt es jetzt die Möglichkeit begleitend zur DARC 50Ohm.de Lernplattform zu üben. Wenn der Modus "DARC 50&#8486;" ausgewählt wurde, wird nicht mehr der Prüfungsteil ausgewählt, sondern das individuelle Lernziel (z.B. Klasse N) und die Kapitel auf 50Ohm. 
+Es werden nur Fragen aus den Ausgewählten 5050&#8486; Kapitel berücksichtigt. 
+
 ## Auswahl der Fragen
 Die Fragen werden mittels Zufallsgenerator ausgewählt. Die Auswahl ist nicht ganz zufällig: 
 Alle sortierten Fragen eines Prüfungsteils werden in 25 gleich große Pakete unterteilt für jede Frage ein Paket. Aus jedem Paket wird dann per Zufallsgenerator eine Frage ausgewählt. Du bekommst also Fragen aus allen Teilen des Kataloges.
@@ -49,7 +55,8 @@ Der Code wurde unter Zeitdruck (nahe Prüfung) in kurzer Zeit entstanden.
 Ich teste die App aktuell nur mit Google Chrome Browser.
 Keine Garantie!
 
-# Version
+# Versionen
+* 0.15 - (11. Februar) Mit Afu Test kann jetzt entlang der DARC Lernplattform 50&#8486; gelernt werden. Diese Funktionen sollen den aktuell gestarteten Klasse-N Kurs von OV A02 Bruchsal unterstützen. Vielen Dank an Prof. Dr. Matthias Jung (DL9MJ) für die Informationen über die 50&#8486; Kapitel.
 * 0.14 - (31. Dezember 2024) Fix: Der Firefox Browser einige Fragen nicht als SVG darstellen, so dass für diese Fragen Grafiken im PNG Format verwendet werden.
 Grafiken: BE207, BE208, BE209, NE209, NF101, NF102, NF103, NF104, NF105, NF106, NG302
 * 0.13 - (7. Oktober 2024) Aufräumen: Entferne JSONPath Bibliothek als Abhängigkeit (Verwendet Object.entries).
@@ -70,4 +77,5 @@ Grafiken: BE207, BE208, BE209, NE209, NF101, NF102, NF103, NF104, NF105, NF106, 
 * Der Fragenkatalog wird unter der Lizenz der BNetzA weitergegeben: [https://www.govdata.de/dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)
 * Die Bibliothek KaTeX unterlieft der MIT Lizenz.
 * Das Projekt selbst unterliegt der Public Domain (Unlicense).
+* DARC 50&#8486; ist eine unabhängige Lernplattform des DARC, seit Version 0.15 ist es möglich die Kapitel-Struktur der Lernplattform bei der Auswahl der Fragen zu berücksichtigen. Vielen Dank an Prof. Dr. Matthias Jung für die Bereitstellung der Meta-Daten.
 
