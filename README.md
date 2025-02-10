@@ -56,7 +56,7 @@ Ich teste die App aktuell nur mit Google Chrome Browser.
 Keine Garantie!
 
 # Versionen
-* 0.15 - (11. Februar) Mit Afu Test kann jetzt entlang der DARC Lernplattform 50&#8486; gelernt werden. Diese Funktionen sollen den aktuell gestarteten Klasse-N Kurs von OV A02 Bruchsal unterstützen. Vielen Dank an Prof. Dr. Matthias Jung (DL9MJ) für die Informationen über die 50&#8486; Kapitel.
+* 0.15 - (10. Februar) Mit Afu Test kann jetzt entlang der DARC Lernplattform 50&#8486; gelernt werden. Diese Funktionen sollen den aktuell gestarteten Klasse-N Kurs des OV A02 Bruchsal unterstützen. Vielen Dank an Prof. Dr. Matthias Jung (DL9MJ) für die Informationen über die 50&#8486; Kapitel.
 * 0.14 - (31. Dezember 2024) Fix: Der Firefox Browser einige Fragen nicht als SVG darstellen, so dass für diese Fragen Grafiken im PNG Format verwendet werden.
 Grafiken: BE207, BE208, BE209, NE209, NF101, NF102, NF103, NF104, NF105, NF106, NG302
 * 0.13 - (7. Oktober 2024) Aufräumen: Entferne JSONPath Bibliothek als Abhängigkeit (Verwendet Object.entries).
@@ -77,5 +77,5 @@ Grafiken: BE207, BE208, BE209, NE209, NF101, NF102, NF103, NF104, NF105, NF106, 
 * Der Fragenkatalog wird unter der Lizenz der BNetzA weitergegeben: [https://www.govdata.de/dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)
 * Die Bibliothek KaTeX unterlieft der MIT Lizenz.
 * Das Projekt selbst unterliegt der Public Domain (Unlicense).
-* DARC 50&#8486; ist eine unabhängige Lernplattform des DARC, seit Version 0.15 ist es möglich die Kapitel-Struktur der Lernplattform bei der Auswahl der Fragen zu berücksichtigen. Vielen Dank an Prof. Dr. Matthias Jung für die Bereitstellung der Meta-Daten.
+* DARC 50&#8486; ist eine unabhängige Lernplattform des DARC, seit Version 0.15 ist es möglich die Kapitel-Struktur der Lernplattform bei der Auswahl der Fragen zu berücksichtigen. Vielen Dank an Prof. Dr. Matthias Jung (DL9MJ) für die Bereitstellung der Meta-Daten.
 
