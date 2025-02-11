@@ -172,8 +172,12 @@ async function render_test(title, test) {
                 all_questions = result.filter((frage =>
                     specificQuestions.indexOf(frage.number) >= 0
                 ))
+
+                const hide_dom_elements = document.querySelectorAll(".special_hide")
+                hide_dom_elements.forEach( d => {
+                  d.style.display = 'none'
+                })
                 document.getElementById("title").innerHTML = 'Fragen'
-                document.getElementById("sel_test").style.display = 'none'
 
             } else {
                 if(config._config.test_type === '5') {       
