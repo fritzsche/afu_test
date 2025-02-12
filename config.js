@@ -12,6 +12,7 @@ class Config {
         current_test: 'V',  // default "Vorschriften"
         print_avoid_page_break: false,
         print_more_margin: false,
+        max_questions: 25,
         test_type: 'P',
         class_target: 'N',
         chapters: {
