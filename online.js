@@ -52,8 +52,18 @@ class Test {
 
     eval_test() {
         var correct = 0;
+
+
+
         // calculate all correct answers
         var all_correct = document.querySelectorAll('.option[data-option=correct]:checked');
+
+        const all_questions = document.querySelectorAll('.option[data-option=correct]').length;
+        // 19 von 25 Fragen ist bestanden
+        const bestanden = Math.ceil((19 / 25 ) * all_questions )
+        // 17 von 25 Fragen gibt eventuell Nachprüfung
+        const nachpruefung = Math.ceil( ( 17 / 25 ) * all_questions )
+
         if (all_correct) correct = all_correct.length;
         // deactivate radio buttons
         var radio_buttons = document.querySelectorAll('input[type=radio]:not(:checked)');
@@ -80,11 +90,11 @@ class Test {
             element.classList.add("correct");
         });
     
-        var result_str = `<span class="red"><span class="smiley"> &#128531;</span> ${correct} von 25 Fragen richtig beantwortet: leider nicht bestanden... </span>`
-        if (correct >= 19) {
-            result_str = `<span class="green"><span class="smiley">&#128512;</span> ${correct} von 25 Fragen richtig beantwortet:  Bestanden!!! </span>`
-        } else if (correct >= 17) {
-            result_str = `<span class="yellow"><span class="smiley">&#128528;</span> ${correct} von 25 Fragen richtig beantwortet:  Eventuell eine mündliche Nachprüfung... </span>`
+        var result_str = `<span class="red"><span class="smiley"> &#128531;</span> ${correct} von ${ all_questions } Fragen richtig beantwortet: leider nicht bestanden... </span>`
+        if (correct >= bestanden ) {
+            result_str = `<span class="green"><span class="smiley">&#128512;</span> ${correct} von ${ all_questions } Fragen richtig beantwortet:  Bestanden!!! </span>`
+        } else if (correct >= nachpruefung ) {
+            result_str = `<span class="yellow"><span class="smiley">&#128528;</span> ${correct} von ${ all_questions } Fragen richtig beantwortet:  Eventuell eine mündliche Nachprüfung... </span>`
         }
         document.querySelector("#result_span").innerHTML = result_str
         this.showResult()

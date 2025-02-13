@@ -56,7 +56,8 @@ Ich teste die App aktuell nur mit Google Chrome Browser.
 Keine Garantie!
 
 # Versionen
-* 0.15 - (10. Februar) Mit Afu Test kann jetzt entlang der DARC Lernplattform 50&#8486; gelernt werden. Diese Funktionen sollen den aktuell gestarteten Klasse-N Kurs des OV A02 Bruchsal unterstützen. Vielen Dank an Prof. Dr. Matthias Jung (DL9MJ) für die Informationen über die 50&#8486; Kapitel.
+* 0.16 - (14. Februar 2025) Es ist nun möglich die Anzahl der Fragen zu verwenden + Kleine Korrekturen.
+* 0.15 - (10. Februar 2025) Mit Afu Test kann jetzt entlang der DARC Lernplattform 50&#8486; gelernt werden. Diese Funktionen sollen den aktuell gestarteten Klasse-N Kurs des OV A02 Bruchsal unterstützen. Vielen Dank an Prof. Dr. Matthias Jung (DL9MJ) für die Informationen über die 50&#8486; Kapitel.
 * 0.14 - (31. Dezember 2024) Fix: Der Firefox Browser einige Fragen nicht als SVG darstellen, so dass für diese Fragen Grafiken im PNG Format verwendet werden.
 Grafiken: BE207, BE208, BE209, NE209, NF101, NF102, NF103, NF104, NF105, NF106, NG302
 * 0.13 - (7. Oktober 2024) Aufräumen: Entferne JSONPath Bibliothek als Abhängigkeit (Verwendet Object.entries).

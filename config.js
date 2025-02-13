@@ -26,6 +26,14 @@ class Config {
     }
     constructor(renderTestCallback) {
         this._renderTestCallback = renderTestCallback
+        const allWatch = document.querySelectorAll(".watch")
+        allWatch.forEach( dom => {
+            dom.addEventListener("change", d => {
+                this.read_dom()
+                this.store()
+                this._renderTestCallback()
+            })
+        })
     }
 
     store() {
@@ -55,6 +63,11 @@ class Config {
         if (target_sel) target_sel.value = class_target
 
 
+        // max questions
+        const max_questions = document.querySelector("#anzahl")
+        if(max_questions) max_questions.value = this._config.max_questions
+
+
         // build the DOM
        this.update_50Ohm()
        Ohm.updateChaptersDom(this._config.chapters)
@@ -68,6 +81,14 @@ class Config {
         // update "Lernziel"
         const target_sel = document.querySelector("#ziel_select")
         if (target_sel) this._config.class_target = target_sel.value
+        // max questions
+
+        const max_questions = document.querySelector("#anzahl")
+        if (max_questions) {
+            const m = parseInt(max_questions.value)
+            if (m && m > 0) this._config.max_questions = m
+        }
+
         // read the chapters selected
         const result = Ohm.readAllChapters() 
         this._config.chapters = result
@@ -155,6 +176,7 @@ class Config {
                 // BnetzA Prüfungsteil
                 document.querySelector("#ohm").classList.add("hidden")
                 document.querySelector("#pruefung").classList.remove("hidden")
+                this.renderTest()                
             }
         }
         

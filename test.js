@@ -10,7 +10,9 @@ const config = new Config(renderCallback)
 
 function renderCallback() {
     const selected_test = config._config.current_test
-    render_test(test_name(select_test), selected_test)
+    const title = test_name(selected_test)
+
+    render_test(title, selected_test)
 }
 
 import { Test } from "./online.js"
@@ -194,7 +196,7 @@ async function render_test(title, test) {
             }
                 document.getElementById("title").innerHTML = title
             }
-            let sel_questions = pick(all_questions, Math.min(25, all_questions.length))
+            let sel_questions = pick(all_questions, Math.min(config._config.max_questions, all_questions.length))
             const questions = document.getElementById("questions")
 
 
