@@ -130,7 +130,7 @@ function html_questions(questions, online) {
         }
         answer_html += `<li> <strong class="title">${question.number} </strong> (${res.correct}) ${res.answers[res.correct - 1]}</li>`
         let correct_answer = ` data-correct="${res.correct}"`
-        question_html += `<div class="quest"><li${correct_answer} class="question"> <strong class="title">${question.number} </strong>${question.question} ${picture} ${ans_html}</li></div>`
+        question_html += `<div data-question="${question.number}" class="quest"><li${correct_answer} class="question"> <strong class="title">${question.number} </strong>${question.question} ${picture} ${ans_html}</li></div>`
     }
     return { questions: question_html, answer: answer_html }
 }
@@ -140,9 +140,9 @@ function html_questions(questions, online) {
 async function render_test(title, test) {
 
     let ohm
-    if(config._config.test_type === '5') {
-        ohm = new Ohm(config._config.class_target)  
-        await ohm.load()   
+    if (config._config.test_type === '5') {
+        ohm = new Ohm(config._config.class_target)
+        await ohm.load()
     }
     await fetch('./Fragen/fragenkatalog3b.json')
         .then((response) => response.json())
@@ -176,24 +176,24 @@ async function render_test(title, test) {
                 ))
 
                 const hide_dom_elements = document.querySelectorAll(".special_hide")
-                hide_dom_elements.forEach( d => {
-                  d.style.display = 'none'
+                hide_dom_elements.forEach(d => {
+                    d.style.display = 'none'
                 })
                 document.getElementById("title").innerHTML = 'Fragen'
 
             } else {
-                if(config._config.test_type === '5') {       
+                if (config._config.test_type === '5') {
 
                     const validQuestions = ohm.getAddQuestions(config._config.chapters[config._config.class_target])
                     all_questions = result.filter((frage => {
-                      return  validQuestions.indexOf(frage.number) !== -1
+                        return validQuestions.indexOf(frage.number) !== -1
                     }
                     ))
                 } else {
-                all_questions = result.filter((frage =>
-                    frage.number.startsWith(test)
-                ))
-            }
+                    all_questions = result.filter((frage =>
+                        frage.number.startsWith(test)
+                    ))
+                }
                 document.getElementById("title").innerHTML = title
             }
             let sel_questions = pick(all_questions, Math.min(config._config.max_questions, all_questions.length))
@@ -230,7 +230,7 @@ async function render_test(title, test) {
 
 const test_name = (test) => {
     const test_type = config._config.test_type
-    if (test_type  === '5') return 'DARC 50&#8486;'
+    if (test_type === '5') return 'DARC 50&#8486;'
     switch (test) {
         case 'B': return "Betriebstechnik"
         case 'N': return "Technik Klasse N"

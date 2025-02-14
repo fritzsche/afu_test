@@ -54,20 +54,20 @@ export class Ohm {
         all_test.innerHTML = all_chapters_html
 
         const callBack = () => {
-           config.read_dom()
-           config.store()
-           config.renderTest()
+            config.read_dom()
+            config.store()
+            config.renderTest()
         }
 
         Ohm.targets.forEach(target => {
-            this._dropdowns[target] = new Dropdown(target,callBack)
+            this._dropdowns[target] = new Dropdown(target, callBack)
         })
         // register event listener
         const pr_sel = document.querySelector("#pr_or_50")
         if (pr_sel) {
             pr_sel.addEventListener("change", e => {
                 config.read_dom()
-                config.store()                
+                config.store()
                 config.update_50Ohm()
             })
 
@@ -85,15 +85,15 @@ export class Ohm {
 
     static readAllChapters() {
         let result = {}
-        Ohm.targets.forEach( target => {
+        Ohm.targets.forEach(target => {
             let cap = []
             const chapters = document.querySelectorAll(`#${target} input`)
             chapters.forEach(c => {
                 if (c.checked) {
                     const number = parseInt(c.value)
-                    cap.push(number)                           
+                    cap.push(number)
                 }
-            })         
+            })
             result[target] = cap
         })
         return result
@@ -102,23 +102,23 @@ export class Ohm {
     static updateChaptersDom(conf) {
         for (const [target, chapters] of Object.entries(conf)) {
             const all_dom = document.querySelectorAll(`#${target} .option`)
-            all_dom.forEach( dom => {
-               const chapter = parseInt(dom.value)
-               const isSelected = chapters.indexOf(chapter) !== -1
-               dom.checked = isSelected
+            all_dom.forEach(dom => {
+                const chapter = parseInt(dom.value)
+                const isSelected = chapters.indexOf(chapter) !== -1
+                dom.checked = isSelected
             })
             Ohm._dropdowns[target].updateButtonLabel()
         }
     }
 
     getAddQuestions(chapters) {
-      let result = []
-      this.questions.forEach( q => {
-        const isSelectedChapter = chapters.indexOf(q.chapter) !== -1
-        if (isSelectedChapter) result.push(q.number)
+        let result = []
+        this.questions.forEach(q => {
+            const isSelectedChapter = chapters.indexOf(q.chapter) !== -1
+            if (isSelectedChapter) result.push(q.number)
 
-      })
-      return result
+        })
+        return result
     }
 
 

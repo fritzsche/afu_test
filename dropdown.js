@@ -1,12 +1,12 @@
 export class Dropdown {
 
-    constructor(id,callback) {
+    constructor(id, callback) {
         this.id = id
         this._callback = callback
         this.container = document.getElementById(id)
         this.dropdownMenu = this.container.querySelector(`.dropdown-menu`)
         this.dropdownBtn = this.container.querySelector('.dropdown-btn')
-        this.checkboxes = this.dropdownMenu.querySelectorAll('.option')        
+        this.checkboxes = this.dropdownMenu.querySelectorAll('.option')
         this.initDropdown()
     }
 
@@ -35,7 +35,7 @@ export class Dropdown {
         // Listen for changes in checkboxes
         this.checkboxes.forEach(cb => cb.addEventListener('change', () => {
             this.updateButtonLabel()
-            if (this._callback) this._callback()            
+            if (this._callback) this._callback()
         }))
 
         this.updateButtonLabel()

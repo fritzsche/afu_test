@@ -27,7 +27,7 @@ class Config {
     constructor(renderTestCallback) {
         this._renderTestCallback = renderTestCallback
         const allWatch = document.querySelectorAll(".watch")
-        allWatch.forEach( dom => {
+        allWatch.forEach(dom => {
             dom.addEventListener("change", d => {
                 this.read_dom()
                 this.store()
@@ -65,12 +65,12 @@ class Config {
 
         // max questions
         const max_questions = document.querySelector("#anzahl")
-        if(max_questions) max_questions.value = this._config.max_questions
+        if (max_questions) max_questions.value = this._config.max_questions
 
 
         // build the DOM
-       this.update_50Ohm()
-       Ohm.updateChaptersDom(this._config.chapters)
+        this.update_50Ohm()
+        Ohm.updateChaptersDom(this._config.chapters)
 
     }
 
@@ -90,7 +90,7 @@ class Config {
         }
 
         // read the chapters selected
-        const result = Ohm.readAllChapters() 
+        const result = Ohm.readAllChapters()
         this._config.chapters = result
     }
 
@@ -153,7 +153,7 @@ class Config {
     }
 
     renderTest() {
-        if ( this._renderTestCallback ) this._renderTestCallback()
+        if (this._renderTestCallback) this._renderTestCallback()
     }
 
     update_50Ohm() {
@@ -167,19 +167,19 @@ class Config {
                 const target = target_sel.value
                 const chapters_dom = document.querySelector("#all_chapters")
                 const all_drops = chapters_dom.querySelectorAll(".dropdown")
-                all_drops.forEach( d => {
+                all_drops.forEach(d => {
                     if (d.id === target) d.classList.remove("hidden")
-                       else d.classList.add("hidden")
+                    else d.classList.add("hidden")
                 })
                 this.renderTest()
             } else {
                 // BnetzA Prüfungsteil
                 document.querySelector("#ohm").classList.add("hidden")
                 document.querySelector("#pruefung").classList.remove("hidden")
-                this.renderTest()                
+                this.renderTest()
             }
         }
-        
+
     }
 }
 
