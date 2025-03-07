@@ -2,6 +2,7 @@
 
 export class Statistic {
     static statistic_store_key = 'afu_test_statistic'
+    static max_correct = 5
 
     constructor() {
         if (Statistic._instance) {
@@ -13,15 +14,13 @@ export class Statistic {
             records: new Array()
         }
         this.load()
-
-
-
     }
 
     _applyQuestion(question, rating) {
         if (!this._questions[question]) this._questions[question] = 0
         this._questions[question] += rating
         if (this._questions[question] < 0) this._questions[question] = 0
+        if (this._questions[question] > Statistic.max_correct) this._questions[question] = Statistic.max_correct
     }
 
     _applyResult(result) {
@@ -44,6 +43,26 @@ export class Statistic {
        this._statistic.records.forEach(r  => {
           this._applyResult(r)
        })
+       
+    }
+
+    pick(all_questions,number) {
+    //    console.log(all_questions)
+    //    console.log(this._questions)
+        let not_answered = new Set()
+        all_questions.forEach( q => {
+         if(!this._questions[q.number])
+           not_answered.add(q.number)
+        })
+        
+        
+
+        const revert = obj => { 
+            Object.fromEntries(Object.entries(obj).map(a => a.reverse()))
+        }
+        const level = revert(this._questions)
+        
+        console.log(level)        
     }
 
     addResults(result) {
