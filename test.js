@@ -199,8 +199,9 @@ async function render_test(title, test) {
                 document.getElementById("title").innerHTML = title
             }
             const stat = new Statistic()
-            stat.pick(all_questions,Math.min(config._config.max_questions, all_questions.length))
-            let sel_questions = pick(all_questions, Math.min(config._config.max_questions, all_questions.length))
+            let sel_questions
+            if(!answer && config._config.intelligent) sel_questions = stat.pick(all_questions,Math.min(config._config.max_questions, all_questions.length))
+            else sel_questions = pick(all_questions, Math.min(config._config.max_questions, all_questions.length))
             const questions = document.getElementById("questions")
 
 
