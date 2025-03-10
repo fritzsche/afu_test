@@ -25,8 +25,12 @@ class Config {
             'EA': [1],
         }
     }
-    constructor(renderTestCallback) {
-        this._renderTestCallback = renderTestCallback
+    constructor() {
+        // singleton 
+        if (Config._instance) {
+            return Config._instance
+        }
+        Config._instance = this        
         const allWatch = document.querySelectorAll(".watch")
         allWatch.forEach(dom => {
             dom.addEventListener("change", d => {
@@ -35,6 +39,13 @@ class Config {
                 this._renderTestCallback()
             })
         })
+    }
+
+    /**
+     * @param {function} callback
+     */
+    set renderTestCallback(callback) {
+        this._renderTestCallback = callback
     }
 
     store() {

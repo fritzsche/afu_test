@@ -8,7 +8,8 @@ import { Statistic } from "./statistic.js"
 
 
 
-const config = new Config(renderCallback)
+const config = new Config()
+config.renderTestCallback = renderCallback
 
 function renderCallback() {
     const selected_test = config._config.current_test
@@ -200,7 +201,9 @@ async function render_test(title, test) {
             }
             const stat = new Statistic()
             let sel_questions
-            if(!answer && config._config.intelligent) sel_questions = stat.pick(all_questions,Math.min(config._config.max_questions, all_questions.length))
+            // the new "intelligent" pick only if online mode AND no specific query parameter
+            // AND intelligent is selected
+            if(!answer && !specificQuestionsString && config._config.intelligent) sel_questions = stat.pick(all_questions,Math.min(config._config.max_questions, all_questions.length))
             else sel_questions = pick(all_questions, Math.min(config._config.max_questions, all_questions.length))
             const questions = document.getElementById("questions")
 

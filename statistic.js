@@ -68,7 +68,7 @@ export class Statistic {
 
         // take all not learned elements at 2nd position
         all_questions.forEach(q => {
-            if (!this._questions[q.number])
+            if (typeof this._questions[q.number] === 'undefined')
                 pick_array[1].push(q.number)
         })
         // collect all other questions
