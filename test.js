@@ -200,6 +200,11 @@ async function render_test(title, test) {
                 document.getElementById("title").innerHTML = title
             }
             const stat = new Statistic()
+            if(!answer && !specificQuestionsString) {
+                const stat_dom = document.getElementById("stat_txt")
+                stat.status_update(all_questions,stat_dom)
+           
+            }
             let sel_questions
             // the new "intelligent" pick only if online mode AND no specific query parameter
             // AND intelligent is selected

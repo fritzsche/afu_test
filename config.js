@@ -12,6 +12,7 @@ class Config {
         current_test: 'V',  // default "Vorschriften"
         print_avoid_page_break: false,
         print_more_margin: false,
+        statistic: true,
         intelligent: true,
         max_questions: 25,
         test_type: 'P',
@@ -58,6 +59,7 @@ class Config {
             let conf = JSON.parse(config_str)
             if (conf) this._config = { ...this._config, ...conf }
         }
+        
     }
 
 
@@ -84,6 +86,10 @@ class Config {
             intelligent.checked = this._config.intelligent;
         }  
 
+        const statistic = document.querySelector("#statistic")
+        if (statistic ) {
+            statistic.checked = this._config.statistic;
+        }          
 
         // build the DOM
         this.update_50Ohm()
@@ -111,6 +117,12 @@ class Config {
         if (intelligent ) {
             this._config.intelligent = intelligent.checked;
         }            
+
+        const statistic  = document.querySelector("#statistic")
+        if ( statistic ) {
+            this._config.statistic = statistic.checked;
+        }            
+
 
         // read the chapters selected
         const result = Ohm.readAllChapters()
