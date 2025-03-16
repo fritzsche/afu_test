@@ -50,12 +50,30 @@ Alle sortierten Fragen eines Prüfungsteils werden in 25 gleich große Pakete un
 
 Auch die BnetzA wird vermutlich auch möglichst viele Bereiche des Prüfungskataloges testen.
 
+## Statistik und Intelligentes lernen
+
+### Statistik 
+Ab Version 0.17 ist es möglich in AFU-Test in der online version eine Statistik zu aktivieren.
+Ist diese Funktion aktiviert speichert AFU-Test bei der Auswertung der Fragebögen wie ihr geantwortet habt. Die Daten werden nur im lokalen Speicher des Web-Browsers gespeichert.
+Es ist also sinnvoll immer mit dem selben Web-Browser zu lernen. 
+Mit der Funktion  "Statistik löschen" kann der lokale Speicher gelöscht werden. 
+
+Die Daten werden in einer Kurzform angezeigt und die beim lernen mit Vokabel Kärtchen angezeigt (siehe Intelligentes lernen).
+
+
+### Intelligentes lernen
+Ist "Intelligentes lernen" aktiviert wird AFU-Test Fragen auswählen die noch nicht (oder falsch) beantwortet wurden. AFU-Test funktioniert dem Prinzip nach wir das Lernen von Vokabeln mit Karteikarten. Fragen die richtig beantwortet wurden wandern von dem Stapel der ungelernten Fragen auf den Stapel der 1-mal richtig beantworteten Fragen. Wird die Frage erneut richtig beantwortet, wandert sie auf den Stapel der 2-mal richtig beantworteter fragen usw. Maximal kann eine Fragen 3-mal richtig beantwortet werden. 
+Wir eine Frage hingegen falsch beantwortet, so wird sie als unbeantwortet eingestuft. 
+
+
+
 # Beta Code
-Der Code wurde unter Zeitdruck (nahe Prüfung) in kurzer Zeit entstanden. 
-Ich teste die App aktuell nur mit Google Chrome Browser.
+Der Code ist ist von mir getestet worden und funktioniert für viele Nutzer. 
+Ich teste die App mit dem Google Chrome Browser.
 Keine Garantie!
 
 # Versionen
+* 0.17 - (15. März 2025) In der Online Version ist es jetzt möglich eine Statistik zu führen und damit intelligentes lernen zu aktivieren.
 * 0.16 - (14. Februar 2025) Es ist nun möglich die Anzahl der Fragen zu verwenden + Kleine Korrekturen.
 * 0.15 - (10. Februar 2025) Mit Afu Test kann jetzt entlang der DARC Lernplattform 50&#8486; gelernt werden. Diese Funktionen sollen den aktuell gestarteten Klasse-N Kurs des OV A02 Bruchsal unterstützen. Vielen Dank an Prof. Dr. Matthias Jung (DL9MJ) für die Informationen über die 50&#8486; Kapitel.
 * 0.14 - (31. Dezember 2024) Fix: Der Firefox Browser einige Fragen nicht als SVG darstellen, so dass für diese Fragen Grafiken im PNG Format verwendet werden.

@@ -43,16 +43,22 @@ export class Statistic {
             this._statistic = statistic
             if (statistic) this._statistic = { ...this._statistic, ...statistic }
         }
+        this._reprocessResults()
+
+    }
+
+    _reprocessResults() {
         this._statistic.records.forEach(r => {
             this._applyResult(r)
         })
-
     }
 
     clearAll() {
         this._statistic = {
             records: new Array()
         }
+        this._questions = {}
+        this._reprocessResults()
         this.store()
         this._conf._renderTestCallback()
 
@@ -68,10 +74,11 @@ export class Statistic {
         return arr.slice(0, n)
     }
 
+    // Update the statistic information
     status_update(all_questions, dom) {
         const pick_array_size = Statistic.max_correct + 2
-        if (!this._questions || this._questions.length == 0) {
-            dom.innerHTML = " &vert; noch keine Statistik Daten"
+        if (!this._questions || Object.keys(this._questions).length == 0) {
+            dom.innerHTML = " &vert; noch keine Statistik."
             return
         }
         const all_selected = all_questions.length
@@ -80,7 +87,8 @@ export class Statistic {
 
         let question_str = ''
         for (let i = 2; i < pick_array_size; i++) {
-            question_str += ` &vert; ${i - 1}-mal richtig: ${pick_array[i].length}`
+            const learned = pick_array[i].length
+            if (learned > 0) question_str += ` &vert; ${i - 1}-mal richtig: ${learned}`
         }
 
         dom.innerHTML = ` &vert; Gesamt: ${all_selected} 	&vert; ungelernt: ${level0} ${question_str}`
@@ -94,9 +102,10 @@ export class Statistic {
         a.innerHTML = "Statistik löschen"
         a.href = "&"
         a.addEventListener("click", e => {
-            const sicher = confirm("Wollen sie wirklich die ganze Statistik löschen?\nDies kann nicht rückgängig gemacht werden.")
-            if(sicher) this.clearAll()
             e.preventDefault()
+            const sicher = confirm("Wollen sie wirklich die ganze Statistik löschen?\nDies kann nicht rückgängig gemacht werden.")
+            if (sicher) this.clearAll()
+
         })
         clear_statistic.appendChild(a)
         dom.appendChild(clear_statistic)
@@ -126,10 +135,11 @@ export class Statistic {
         const pick_array_size = Statistic.max_correct + 2
         let remaining_elements = number
         let pick_questions = new Array()
+
+        // collect the question in better usable sequence 
         const pick_array = this.pick_array(all_questions)
 
-        console.log(this._questions)
-        console.log(pick_array)
+
         for (let i = 0; i < pick_array_size; i++) {
             const curr_questions = pick_array[i]
             let picked = new Array()
@@ -144,7 +154,6 @@ export class Statistic {
             }
 
         }
-        console.log(pick_questions)
         let result = pick_questions.map(e => {
             return all_questions.find((q) => {
 
