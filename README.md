@@ -73,6 +73,7 @@ Ich teste die App mit dem Google Chrome Browser.
 Keine Garantie!
 
 # Versionen
+* 0.18 - (31. März 2025) Ermögliche mehr als 25 Frage mit Query Parameter Auswahl.
 * 0.17 - (15. März 2025) In der Online Version ist es jetzt möglich eine Statistik zu führen und damit intelligentes lernen zu aktivieren.
 * 0.16 - (14. Februar 2025) Es ist nun möglich die Anzahl der Fragen zu verwenden + Kleine Korrekturen.
 * 0.15 - (10. Februar 2025) Mit Afu Test kann jetzt entlang der DARC Lernplattform 50&#8486; gelernt werden. Diese Funktionen sollen den aktuell gestarteten Klasse-N Kurs des OV A02 Bruchsal unterstützen. Vielen Dank an Prof. Dr. Matthias Jung (DL9MJ) für die Informationen über die 50&#8486; Kapitel.

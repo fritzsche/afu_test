@@ -208,8 +208,10 @@ async function render_test(title, test) {
             let sel_questions
             // the new "intelligent" pick only if online mode AND no specific query parameter
             // AND intelligent is selected
-            if(!answer && !specificQuestionsString && config._config.intelligent) sel_questions = stat.pick(all_questions,Math.min(config._config.max_questions, all_questions.length))
-            else sel_questions = pick(all_questions, Math.min(config._config.max_questions, all_questions.length))
+            let no_questions = Math.min(config._config.max_questions, all_questions.length)
+            if (specificQuestionsString) no_questions = all_questions.length
+            if(!answer && !specificQuestionsString && config._config.intelligent) sel_questions = stat.pick(all_questions,no_questions)
+            else sel_questions = pick(all_questions, no_questions)
             const questions = document.getElementById("questions")
 
 
