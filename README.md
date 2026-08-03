@@ -58,11 +58,11 @@ Ist diese Funktion aktiviert speichert AFU-Test bei der Auswertung der Fragebög
 Es ist also sinnvoll immer mit dem selben Web-Browser zu lernen. 
 Mit der Funktion  "Statistik löschen" kann der lokale Speicher gelöscht werden. 
 
-Die Daten werden in einer Kurzform angezeigt und die beim lernen mit Vokabel Kärtchen angezeigt (siehe Intelligentes lernen).
+Die Daten werden in einer Kurzform angezeigt und wie beim lernen mit Vokabel Kärtchen angezeigt (siehe Intelligentes lernen).
 
 
 ### Intelligentes lernen
-Ist "Intelligentes lernen" aktiviert wird AFU-Test Fragen auswählen die noch nicht (oder falsch) beantwortet wurden. AFU-Test funktioniert dem Prinzip nach wir das Lernen von Vokabeln mit Karteikarten. Fragen die richtig beantwortet wurden wandern von dem Stapel der ungelernten Fragen auf den Stapel der 1-mal richtig beantworteten Fragen. Wird die Frage erneut richtig beantwortet, wandert sie auf den Stapel der 2-mal richtig beantworteter fragen usw. Maximal kann eine Fragen 3-mal richtig beantwortet werden. 
+Ist "Intelligentes lernen" aktiviert wird AFU-Test Fragen auswählen die noch nicht (oder falsch) beantwortet wurden. AFU-Test funktioniert dem Prinzip nach wie das Lernen von Vokabeln mit Karteikarten. Fragen die richtig beantwortet wurden wandern von dem Stapel der ungelernten Fragen auf den Stapel der 1-mal richtig beantworteten Fragen. Wird die Frage erneut richtig beantwortet, wandert sie auf den Stapel der 2-mal richtig beantworteter fragen usw. Maximal kann eine Fragen 3-mal richtig beantwortet werden. 
 Wir eine Frage hingegen falsch beantwortet, so wird sie als unbeantwortet eingestuft. 
 
 
